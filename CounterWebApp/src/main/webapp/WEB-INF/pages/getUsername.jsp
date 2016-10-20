@@ -15,7 +15,7 @@
 	<body>
 				<form method="POST" role="form">
 					<div class="form-group">
-						<label for="personID">Type your id</label>
+						<label for="person_id">Type your id</label>
 						<input type="text" class="form-control" name="person_id"/>
 						<input type="submit" name="button" value="Submit"/>
 					</div>
