@@ -25,7 +25,7 @@
 *.log
 *.sql
 *.sqlite
-/CounterWebApp/src/main/resources/*	
+../CounterWebApp/src/main/resources/*	
 
 # OS generated files #
 ######################
