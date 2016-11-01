@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<XML-S>
-	<person id="1">solvi</person>
-	<person>sunna</person> 
+<?xml version="1.0" encoding="UTF-8"?><XML-S>
+  <person id="1">solvi</person>
+  <person>sunna</person>
 </XML-S>
 
