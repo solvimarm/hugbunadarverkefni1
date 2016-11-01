@@ -25,7 +25,7 @@
 *.log
 *.sql
 *.sqlite
-persons.xml	
+hugbunadarverkefni1/CounterWebApp/src/main/resources/*	
 
 # OS generated files #
 ######################
