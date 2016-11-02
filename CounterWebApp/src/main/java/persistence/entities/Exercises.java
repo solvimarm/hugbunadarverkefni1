@@ -2,7 +2,7 @@ package persistence.entities;
 import java.util.Date;
 
 public class Exercises{
-  private String name;
+/*  private String name;
 	private String category;
 	private List <Set>;
   //Exercises extendar set SKOÐA BETUR
@@ -25,5 +25,5 @@ public class Exercises{
 
 	public List getSet(){
 		return set;// SKOÐA
-	}
+	}*/
 }

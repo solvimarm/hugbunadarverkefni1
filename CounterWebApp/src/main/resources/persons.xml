@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><XML-S>
-  <person id="1">solvi</person>
-  <person>sunna</person>
-  <person>typpi</person>
-  <person>hmmm</person>
-   <person>oke</person>
-   <person>oke</person>
-   <person>oke</person>
-   <person>oke</person>
-   <person>okeokeokeoke</person>
+  <person username="solvi">
+    <name>sölvi</name>
+    <password>solvi</password>
+    <age>22</age>
+    <goal>solvi</goal>
+    <gender>solvi</gender>
+    <userWeight>99.0</userWeight>
+    <nextUpdate>solvi</nextUpdate>
+  </person>
 </XML-S>
 

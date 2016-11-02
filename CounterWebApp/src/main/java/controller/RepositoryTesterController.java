@@ -13,7 +13,6 @@ import java.util.Date;
 import persistence.entities.User;
 import java.text.SimpleDateFormat;
 import java.util.Map;
-import org.json.*;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
@@ -57,21 +56,7 @@ public class RepositoryTesterController extends HttpServlet{
 
 		
 		Object user = groovyXml.findUser(request.getParameter("username"));
-		//ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
-		//String json = ow.writeValueAsString(user);
-		//toMap(json);
-		//JSONArray array = (JSONArray)json;
-		//Map<String, String> map = gson.fromJson(json, new TypeToken<Map<String, String>>(){}.getType());
-		//HashMap<String, String> res = new ObjectMapper().readValue(json, HashMap.class);
-		//System.out.println(map);
-		//System.out.println(json.name);
-		//model.addAttribute("name",user.name);
-		//model.addAttribute("username",user.password;
-		//model.addAttribute("age",user.getAge());
-		//model.addAttribute("goal",user.getGoal());
-		//model.addAttribute("gender",user.getGender());
-		//model.addAttribute("weight",user.getUserWeight());
-		//model.addAttribute("nextUpdate",user.getNextUpdate());		
+		
 		
 		if(user instanceof User){
 			System.out.println("eg er inni if bby");
