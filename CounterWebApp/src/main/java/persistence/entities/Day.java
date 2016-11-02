@@ -2,7 +2,7 @@ package persistence.entities;
 import java.util.Date;
 
 public class Day{
-  private Double weight;
+/*  private Double weight;
 	private String date;
 	private Boolean wenttogym;
 	private List <Exercises>;
@@ -32,4 +32,4 @@ public class Day{
 	public List Exercises(){
 		return exercises;
 	}
-}
+*/}

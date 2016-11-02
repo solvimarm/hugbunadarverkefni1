@@ -3,7 +3,7 @@ import java.util.Date;
 
 public class Food{
   private String name;
-	private String gategory;
+	private String category;
 	private String typeofmeal;
 
 
