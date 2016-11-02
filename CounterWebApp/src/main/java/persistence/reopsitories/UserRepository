@@ -1,0 +1,30 @@
+package com.mkyong.controller
+
+import groovy.xml.XmlUtil
+import java.security.SecureRandom
+import persistence.entities.User
+
+public class UserRepository {
+
+	def createNewUser(User user){
+		def xmlFile=new File("${new File(new File(".").getCanonicalPath())}//src//main//resources//persons.xml")
+		def xml= new XmlParser().parse(xmlFile)
+
+		def username = xml.person.find{it -> 
+			it.@username == user.getUsername()}
+	}
+
+	if(username == null){
+		def userNode = new Node (xml, "person",[username: user.getUsername()])
+		new Node (userNode, "name", user.getName())
+		new Node (userNode, "password", user.getPassword())
+		new Node (userNode, "age", user.getAge())
+		new Node (userNode, "goal", user.getGoal())
+		new Node (userNode, "gender", user.getGender())
+		new Node (userNode, "userWeight", user.getUserWeight())
+		new Node (userNode, "nextUpdate", user.getNextUpdate()))
+		return true;
+	}
+	else return false;
+
+}	
