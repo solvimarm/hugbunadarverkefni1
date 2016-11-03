@@ -1,3 +1,5 @@
+package com.mkyong.controller;
+
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -15,13 +17,13 @@ public class WorkoutController extends HttpServlet{
 	private static String VIEW_INDEX = "index";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WorkoutController.class);
 
-	@RequestMapping(value = "", method = RequestMethod.GET)
+	@RequestMapping(value = "currentWorkoutCycle", method = RequestMethod.GET)
 	public String getCurrentCycleGet(){
-		
+			VIEW_INDEX = "currentCycle";
 		return VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "", method = RequestMethod.POST)
+	@RequestMapping(value = "currentCycle", method = RequestMethod.POST)
 	public String getCurrentCyclePost(){
 
 		return VIEW_INDEX;
