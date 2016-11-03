@@ -2,11 +2,11 @@
   <person username="solvi">
     <name>sölvi</name>
     <password>solvi</password>
-    <age>22</age>
-    <goal>stronger</goal>
+    <age>33</age>
+    <goal>good</goal>
     <gender>solvi</gender>
-    <userWeight>99.0</userWeight>
-    <nextUpdate>07/11/2016</nextUpdate>
+    <userWeight>10.0</userWeight>
+    <nextUpdate>08/11/2016</nextUpdate>
     <workoutPlan>
       <day id="Wed Nov 02 00:00:00 GMT 2016">
         <exercise id="1">
@@ -105,6 +105,31 @@
         <exercise id="2"/>
       </day>
       <day id="06/11/2016">
+        <exercise id="1"/>
+        <exercise id="2"/>
+      </day>
+      <day id="03/11/2016">
+        <exercise id="1">
+          <name>æfing 1</name>
+          <set id="1">
+            <reps>4-6</reps>
+          </set>
+        </exercise>
+        <exercise id="2"/>
+      </day>
+      <day id="04/11/2016">
+        <exercise id="1"/>
+        <exercise id="2"/>
+      </day>
+      <day id="05/11/2016">
+        <exercise id="1"/>
+        <exercise id="2"/>
+      </day>
+      <day id="06/11/2016">
+        <exercise id="1"/>
+        <exercise id="2"/>
+      </day>
+      <day id="07/11/2016">
         <exercise id="1"/>
         <exercise id="2"/>
       </day>

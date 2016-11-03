@@ -20,13 +20,13 @@ public class UserController extends HttpServlet{
 
 
 
-	@RequestMapping(value = "login", method = RequestMethod.GET)
-	public String login() {
-			VIEW_INDEX = "login";
+	@RequestMapping(value = "Register", method = RequestMethod.GET)
+	public String registerGet() {
+			VIEW_INDEX = "Register";
 		return VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "login", method = RequestMethod.POST)
+	@RequestMapping(value = "Register", method = RequestMethod.POST)
 	public String loginPost(HttpServletRequest request) {
 			
 			groovyXml.addPerson(request.getParameter("person_id"));

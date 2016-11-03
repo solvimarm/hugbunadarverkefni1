@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class testUpdateUser_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class createNewUserTester_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -55,7 +55,7 @@ public final class testUpdateUser_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\n");
       out.write("<html>\n");
       out.write("\t<head>\n");
-      out.write("\t\t<title>update user</title>\n");
+      out.write("\t\t<title>create new user</title>\n");
       out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \n");
       out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\n");
       out.write("\t\t<meta charset=\"utf-8\">\n");
@@ -67,18 +67,39 @@ public final class testUpdateUser_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\t<body>\n");
       out.write("\t\t\t\t<form method=\"POST\" role=\"form\">\n");
       out.write("\t\t\t\t\t<div class=\"form-group\">\n");
-      out.write("\t\t\t\t\t\t<label for=\"username\">Type your Name</label>\n");
+      out.write("\t\t\t\t\t\t<label for=\"name\">Type your Name</label>\n");
+      out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"name\"/>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t<label for=\"password\">Type the password</label>\n");
+      out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"password\"/>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t<label for=\"username\">Type the username</label>\n");
       out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"username\"/>\n");
-      out.write("\t\t\t\t\t\t<label for=\"age\">Type your age</label>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t<label for=\"age\">Type the age</label>\n");
       out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"age\"/>\n");
-      out.write("\t\t\t\t\t\t<label for=\"goal\">Type your goal</label>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t<label for=\"goal\">Type the goal</label>\n");
       out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"goal\"/>\n");
-      out.write("\t\t\t\t\t\t<label for=\"weight\">Type your weight</label>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t<label for=\"gender\">Type the gender</label>\n");
+      out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"gender\"/>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t<label for=\"weight\">Type the weight</label>\n");
       out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"weight\"/>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t<label for=\"nextUpdate\">Type the nextUpdate</label>\n");
+      out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"nextUpdate\"/>\n");
       out.write("\t\t\t\t\t</div>\n");
       out.write("\t\t\t\t\t<input type=\"submit\" name=\"button\" value=\"Submit\"/>\n");
       out.write("\t\t\t\t</form>\n");
-      out.write("\n");
       out.write("\t</body>\n");
       out.write("</html>");
     } catch (Throwable t) {

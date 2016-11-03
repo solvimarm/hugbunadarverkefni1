@@ -1,7 +1,7 @@
-@Transactional
+//@Transactional
 public class WorkoutService{
 
-	public UserRepository userRepository
+	/*public UserRepository userRepository
 	public WorkoutRepository workoutRepository
 
 	public void createNewCycle(user User){
@@ -15,6 +15,6 @@ public class WorkoutService{
 	}
 	public Day getSpecificDay(user User, date Date){
 		return null
-	}
+	}*/
 
 }
