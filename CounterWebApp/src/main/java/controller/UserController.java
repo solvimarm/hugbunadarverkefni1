@@ -16,22 +16,37 @@ public class UserController extends HttpServlet{
 
 	private static String VIEW_INDEX = "index";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(UserController.class);
-	private static addToXml groovyXml=new addToXml();
 
 
 
-	@RequestMapping(value = "Register", method = RequestMethod.GET)
-	public String registerGet() {
-			VIEW_INDEX = "Register";
+	@RequestMapping(value = "index", method = RequestMethod.GET)
+	public String indexGet() {
+			VIEW_INDEX = "index";
+		return VIEW_INDEX;
+	}
+	@RequestMapping(value = "index", method = RequestMethod.POST)
+	public String indexRegister(HttpServletRequest request) {
+		if(request.getParameter("login")!= null){
+			VIEW_INDEX = "login";
+		}
+		else if(request.getParameter("register")!=null){
+			VIEW_INDEX = "register";
+		}
+
 		return VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "Register", method = RequestMethod.POST)
-	public String loginPost(HttpServletRequest request) {
+	@RequestMapping(value = "register", method = RequestMethod.GET)
+	public String registerGet() {
 			
-			groovyXml.addPerson(request.getParameter("person_id"));
+			VIEW_INDEX = "register";
+		return VIEW_INDEX;
+	}
 
-			VIEW_INDEX = "login";
+	@RequestMapping(value = "register", method = RequestMethod.POST)
+	public String registerPost(HttpServletRequest request) {
+			
+			VIEW_INDEX = "homepage";
 		return VIEW_INDEX;
 	}
 
@@ -44,7 +59,6 @@ public class UserController extends HttpServlet{
 	@RequestMapping(value = "getname", method = RequestMethod.POST)
 	public String getUsernamePost(HttpServletRequest request, ModelMap model){
 				System.out.println(request.getParameter("personID"));
-				model.addAttribute("Username",groovyXml.getUserName(request.getParameter("person_id")) );
 				VIEW_INDEX = "pub";
 				
 			
