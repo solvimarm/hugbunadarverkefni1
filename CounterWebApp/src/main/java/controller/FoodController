@@ -12,5 +12,13 @@ import java.util.ArrayList;
 @Controller
 public class FoodController extends HttpServlet{
 
+	private static String VIEW_INDEX = "index";
+	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(FoodController.class);
+
+	@RequestMapping(value = "", method = RequestMethod.GET)
+	public String publishsuggestedFoodsPost(){
+		
+		return VIEW_INDEX;
+	}
 
 }
