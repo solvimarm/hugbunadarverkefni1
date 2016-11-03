@@ -12,5 +12,30 @@ import java.util.ArrayList;
 @Controller
 public class WorkoutController extends HttpServlet{
 
+	private static String VIEW_INDEX = "index";
+	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WorkoutController.class);
 
+	@RequestMapping(value = "", method = RequestMethod.GET)
+	public String getCurrentCycleGet(){
+		
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "", method = RequestMethod.POST)
+	public String getCurrentCyclePost(){
+
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "", method = RequestMethod.GET)
+	public String getSpecificDayGet(){
+
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "", method= RequestMethod.POST)
+	public String getSpecificDayPost(){
+
+		return VIEW_INDEX;
+	}
 }
