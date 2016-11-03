@@ -9,7 +9,7 @@
 				</set>
 			</exercise>
 			<exercise id = "2">
-			
+				
 			</exercise>
 		
 		</day>
@@ -45,7 +45,7 @@
 			
 			</exercise>
 		</day>
-	<\plan>
+	</plan>
 	<plan id="buffer">
 		<day id="1">
 			<exercise id = "1">
@@ -88,7 +88,7 @@
 			</exercise>
 		</day>
 	
-	<\plan>
+	</plan>	
 	<plan id="leaner">
 		<day id="1">
 			<exercise id = "1">
@@ -131,6 +131,6 @@
 			</exercise>
 		</day>
 	
-	<\plan>
+	</plan>
 		
 </XML-S>

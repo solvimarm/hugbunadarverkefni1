@@ -1,17 +1,18 @@
 package persistence.entities;
 import java.util.Date;
+import java.util.ArrayList;
 
 public class Exercises{
-/*  private String name;
+  private String name;
 	private String category;
-	private List <Set>;
+	private ArrayList<Set> set;
   //Exercises extendar set SKOÐA BETUR
 
 
-	public Exercises (String name, String category, List set){
-    this.name=name;
-    this.category=category;
-    this.set=set; // Skoða betur!!!
+	public Exercises (String name, String category, ArrayList<Set> set){
+	    this.name=name;
+	    this.category=category;
+	    this.set=set; // Skoða betur!!!
 
 	}
 
@@ -19,11 +20,11 @@ public class Exercises{
 		return name;
 	}
 
-	public String getGategory(){
-		return gategory;
+	public String getCategory(){
+		return category;
 	}
 
-	public List getSet(){
+	public ArrayList<Set> getSet(){
 		return set;// SKOÐA
-	}*/
+	}
 }

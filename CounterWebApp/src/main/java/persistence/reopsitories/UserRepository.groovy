@@ -25,6 +25,7 @@ public class UserRepository {
 			new Node (userNode, "gender", user.getGender())
 			new Node (userNode, "userWeight", user.getUserWeight())
 			new Node (userNode, "nextUpdate", user.getNextUpdate())
+			new Node (userNode, "workoutPlan" )
 
 			xmlFile.withWriter ("utf-8") {writer ->
 			writer.writeLine(new XmlUtil().serialize(xml))

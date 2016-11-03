@@ -26,6 +26,7 @@ public class RepositoryTesterController extends HttpServlet{
 	private static String VIEW_INDEX = "index";
 	//private final static org.slf4j.Logger logger = LoggerFactory.getLogger(BaseController.class);
 	private static UserRepository groovyXml=new UserRepository();
+	private static WorkoutRepository groovyWorkout = new WorkoutRepository();
 
 
 
@@ -87,4 +88,19 @@ public class RepositoryTesterController extends HttpServlet{
 		return VIEW_INDEX;
 	}
 
+
+	@RequestMapping(value = "testworkout", method = RequestMethod.GET)
+	public String getworkout() {
+			VIEW_INDEX = "testgetworkout";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testworkout", method = RequestMethod.POST)
+	public String getworkoutPost(HttpServletRequest request) {
+			groovyWorkout.createCycle(request.getParameter("username"), request.getParameter("date"));
+
+
+			VIEW_INDEX = "testgetworkout";
+		return VIEW_INDEX;
+	}
 }
