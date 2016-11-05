@@ -46,7 +46,9 @@
 						<label for="nextUpdate">Type the nextUpdate</label>
 						<input type="text" class="form-control" name="nextUpdate"/>
 					</div>
-					<input type="submit" name="button" value="Submit"/>
+				</form>
+				<form action="homepage">
+					<input type="submit" name="submit" value="Submit"/>
 				</form>
 	</body>
 </html>

@@ -53,9 +53,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("\t<head>\n");
       out.write("\t\t<title>Login</title>\n");
+      out.write("\t\t<link rel=\"shortcut icon\" href=\"data:image/x-icon;,\" type=\"image/x-icon\"> \n");
       out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \n");
       out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\n");
       out.write("\t\t<meta charset=\"utf-8\">\n");
@@ -65,10 +67,22 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
       out.write("\t</head>\n");
       out.write("\t<body>\n");
-      out.write("\t\t\t\t<form method=\"POST\" role=\"form\">\n");
-      out.write("\t\t\t\t\t<input type=\"submit\" name=\"login\" value=\"Login\"/>\n");
-      out.write("\t\t\t\t\t<input type=\"submit\" name=\"register\" value=\"Register\"/>\n");
-      out.write("\t\t\t\t</form>\n");
+      out.write("\t\t<img src=\"../img/frontb.jpg\" alt=\"Health\">\n");
+      out.write("\t\t<div class = \"row\">\n");
+      out.write("\t\t\t<div class =\"col-md-2\"></div>\n");
+      out.write("\t\t\t<div class = \"col-md-8\">\n");
+      out.write("\t\t\t\t<img src=\"../img/frontb.jpg\" alt=\"\">\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class = \"col-md-2\"></div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<div class = \"row\">\n");
+      out.write("\t\t\t<form class = \"col-md-1\" action = \"login\">\n");
+      out.write("\t\t\t\t<input class =\"btn-primary\" type=\"submit\" name=\"login\" value=\"Login\"/>\n");
+      out.write("\t\t\t</form>\n");
+      out.write("\t\t\t<form class = \"col-md-1\" action=\"register\">\n");
+      out.write("\t\t\t\t<input class =\"btn-primary\t\" type=\"submit\" name=\"register\" value=\"Register\" />\n");
+      out.write("\t\t\t</form>\n");
+      out.write("\t\t</div>\n");
       out.write("\t</body>\n");
       out.write("</html>");
     } catch (Throwable t) {

@@ -24,17 +24,7 @@ public class UserController extends HttpServlet{
 			VIEW_INDEX = "index";
 		return VIEW_INDEX;
 	}
-	@RequestMapping(value = "index", method = RequestMethod.POST)
-	public String indexRegister(HttpServletRequest request) {
-		if(request.getParameter("login")!= null){
-			VIEW_INDEX = "login";
-		}
-		else if(request.getParameter("register")!=null){
-			VIEW_INDEX = "register";
-		}
 
-		return VIEW_INDEX;
-	}
 
 	@RequestMapping(value = "register", method = RequestMethod.GET)
 	public String registerGet() {
@@ -50,22 +40,36 @@ public class UserController extends HttpServlet{
 		return VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "getname", method = RequestMethod.GET)
+	@RequestMapping(value = "login", method = RequestMethod.GET)
 	public String getUsername(){
-		VIEW_INDEX = "getUsername";
+		VIEW_INDEX = "login";
 		return VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "getname", method = RequestMethod.POST)
-	public String getUsernamePost(HttpServletRequest request, ModelMap model){
-				System.out.println(request.getParameter("personID"));
-				VIEW_INDEX = "pub";
-				
-			
-
+	@RequestMapping(value = "login", method = RequestMethod.POST)
+	public String getUsernamePost(HttpServletRequest request){
+				VIEW_INDEX = "homepage";	
 			return VIEW_INDEX;
 	}
-	
 
+	@RequestMapping(value = "homepage", method = RequestMethod.GET)
+	public String getHomepage(){
+		VIEW_INDEX = "homepage";
+		return VIEW_INDEX;
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

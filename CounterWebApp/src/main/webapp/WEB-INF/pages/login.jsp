@@ -22,7 +22,9 @@
 						<label for="pw">Type the password</label>
 						<input type="password" class="form-control" name="pw"/>
 					</div>
-					<input type="submit" name="button" value="Submit"/>
+				</form>
+				<form action="homepage">
+					<input type="submit" name="login" value="Login"/>
 				</form>
 	</body>
 </html>
