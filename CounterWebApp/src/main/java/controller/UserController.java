@@ -46,7 +46,13 @@ public class UserController extends HttpServlet{
 	@RequestMapping(value = "register", method = RequestMethod.POST)
 	public String registerPost(HttpServletRequest request) {
 			String name = request.getParameter("name");
-			System.out.print(name);
+			String password	= request.getParameter("password");
+			String username = request.getParameter("username");
+			String age = request.getParameter("age");
+			String goal = request.getParameter("goal");
+			String gender = request.getParameter("gender");
+			String weight = request.getParameter("weight");
+
 			VIEW_INDEX = "homepage";
 		return "redirect:/"+VIEW_INDEX;
 	}
@@ -59,8 +65,10 @@ public class UserController extends HttpServlet{
 
 	@RequestMapping(value = "login", method = RequestMethod.POST)
 	public String loginPost(HttpServletRequest request){
-				VIEW_INDEX = "homepage";	
-			return  "redirect:/"+VIEW_INDEX;
+		String password	= request.getParameter("pw");
+		String username = request.getParameter("person_id");
+		VIEW_INDEX = "homepage";	
+		return  "redirect:/"+VIEW_INDEX;
 	}
 
 	@RequestMapping(value = "homepage", method = RequestMethod.GET)

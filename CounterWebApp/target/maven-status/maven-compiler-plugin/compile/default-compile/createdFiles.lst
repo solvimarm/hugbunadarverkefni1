@@ -15,7 +15,6 @@ com/mkyong/controller/UserRepository$_updateUser_closure5.class
 com/mkyong/controller/WorkoutRepository$_createCycle_closure2.class
 persistence/entities/Day.class
 com/mkyong/controller/addToXml.class
-com/mkyong/controller/UserController.class
 com/mkyong/controller/WorkoutRepository.class
 UserService.class
 com/mkyong/controller/RepositoryTesterController.class
