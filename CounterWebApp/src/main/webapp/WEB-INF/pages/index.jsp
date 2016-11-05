@@ -15,20 +15,21 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<img src="../img/frontb.jpg" alt="Health">
 		<div class = "row">
 			<div class ="col-md-2"></div>
 			<div class = "col-md-8">
-				<img src="../img/frontb.jpg" alt="">
+				<img src="/frontb.png" alt="">
 			</div>
 			<div class = "col-md-2"></div>
 		</div>
 		<div class = "row">
-			<form class = "col-md-1" action = "login">
-				<input class ="btn-primary" type="submit" name="login" value="Login"/>
-			</form>
-			<form class = "col-md-1" action="register">
-				<input class ="btn-primary	" type="submit" name="register" value="Register" />
+			<form method="POST">
+				<div class = "col-md-1">
+					<input class ="btn-primary" type="submit" name="login" value="Login"/>
+				</div>
+				<div class = "col-md-1" >
+					<input class ="btn-primary	" type="submit" name="register" value="Register" />
+				</div>
 			</form>
 		</div>
 	</body>

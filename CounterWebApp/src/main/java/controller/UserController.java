@@ -25,31 +25,42 @@ public class UserController extends HttpServlet{
 		return VIEW_INDEX;
 	}
 
+		@RequestMapping(value = "index", method = RequestMethod.POST)
+	public String indexPost(HttpServletRequest request) {
+		if(request.getParameter("login")!=null){
+			VIEW_INDEX = "login";
+		}
+		else if(request.getParameter("register")!=null){
+			VIEW_INDEX = "register";
+		}
+		return "redirect:/"+VIEW_INDEX;
+	}
+
 
 	@RequestMapping(value = "register", method = RequestMethod.GET)
 	public String registerGet() {
-			
 			VIEW_INDEX = "register";
 		return VIEW_INDEX;
 	}
 
 	@RequestMapping(value = "register", method = RequestMethod.POST)
 	public String registerPost(HttpServletRequest request) {
-			
+			String name = request.getParameter("name");
+			System.out.print(name);
 			VIEW_INDEX = "homepage";
-		return VIEW_INDEX;
+		return "redirect:/"+VIEW_INDEX;
 	}
 
 	@RequestMapping(value = "login", method = RequestMethod.GET)
-	public String getUsername(){
+	public String loginGet(){
 		VIEW_INDEX = "login";
 		return VIEW_INDEX;
 	}
 
 	@RequestMapping(value = "login", method = RequestMethod.POST)
-	public String getUsernamePost(HttpServletRequest request){
+	public String loginPost(HttpServletRequest request){
 				VIEW_INDEX = "homepage";	
-			return VIEW_INDEX;
+			return  "redirect:/"+VIEW_INDEX;
 	}
 
 	@RequestMapping(value = "homepage", method = RequestMethod.GET)
