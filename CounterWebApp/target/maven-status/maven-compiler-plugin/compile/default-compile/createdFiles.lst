@@ -7,6 +7,7 @@ com/mkyong/controller/WorkoutController.class
 persistence/entities/Food.class
 com/mkyong/controller/UserRepository$_createNewUser_closure1.class
 com/mkyong/controller/addToXml$_addPerson_closure1.class
+com/mkyong/controller/FoodController.class
 com/mkyong/controller/Password.class
 com/mkyong/controller/WorkoutRepository$_createCycle_closure4.class
 com/mkyong/controller/UserRepository$_findUser_closure3.class

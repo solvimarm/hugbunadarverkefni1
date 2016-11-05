@@ -13,14 +13,14 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-				<form method="POST" role="form">
-					<div class="form-group">
-						<label for="username">Type your Username</label>
-						<input type="text" class="form-control" name="username"/>
-						<label for="date">Type your date</label>
-						<input type="text" class="form-control" name="date"/>
-					</div>
-					<input type="submit" name="button" value="Submit"/>
-				</form>
+		<form method="POST" role="form">
+			<div class="form-group">
+				<label for="username">Type your Username</label>
+				<input type="text" class="form-control" name="username"/>
+				<label for="date">Type your date</label>
+				<input type="text" class="form-control" name="date"/>		
+			</div>
+			<input type="submit" name="button" value="Submit"/>
+		</form>
 	</body>
 </html>

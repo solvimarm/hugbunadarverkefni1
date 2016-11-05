@@ -16,28 +16,33 @@ public class WorkoutController extends HttpServlet{
 
 	private static String VIEW_INDEX = "index";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WorkoutController.class);
-
-	@RequestMapping(value = "currentWorkoutCycle", method = RequestMethod.GET)
+	//private static WorkoutService workoutService = new WorkoutService();
+	
+	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
 	public String getCurrentCycleGet(){
-			VIEW_INDEX = "currentCycle";
+
+		VIEW_INDEX = "currentCycle";
 		return VIEW_INDEX;
 	}
 
 	@RequestMapping(value = "currentCycle", method = RequestMethod.POST)
 	public String getCurrentCyclePost(){
 
-		return VIEW_INDEX;
+		VIEW_INDEX = "workoutOfToday";
+		return "redirect:/"+VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "", method = RequestMethod.GET)
+	@RequestMapping(value = "workoutOfToday", method = RequestMethod.GET)
 	public String getSpecificDayGet(){
 
+		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "", method= RequestMethod.POST)
+	@RequestMapping(value = "workoutOfToday", method= RequestMethod.POST)
 	public String getSpecificDayPost(){
 
-		return VIEW_INDEX;
+		VIEW_INDEX = "homepage";
+		return "redirect:/"+VIEW_INDEX;
 	}
 }
