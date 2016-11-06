@@ -24,7 +24,7 @@ public class WorkoutController extends HttpServlet{
 	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
 	public String getCurrentCycleGet(HttpSession session){
 		
-		Object username = session.getAttribute("user");
+		Object username = session.getAttribute("username");
 
 		ArrayList<Day> cycle = workoutService.getCurrentCycle("username");
 		VIEW_INDEX = "currentCycle";
