@@ -2,13 +2,14 @@ package com.mkyong.controller;
 
 public class UserService{
 
-	/*public UserRepository userRepository
+	public UserRepository userRepository = new UserRepository();
 
-	public void createNewuser(user User){
+	public void createNewUser(String name, String password, String username, String age,
+								String goal, String gender, String weight){
 
 	}
-	private boolean authUser(username String, password String){
-		return null
-	}*/
+	private boolean authUser(String username, String password){
+		return true;
+	}
 
 }

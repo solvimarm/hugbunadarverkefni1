@@ -16,7 +16,7 @@ public class UserController extends HttpServlet{
 
 	private static String VIEW_INDEX = "index";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(UserController.class);
-
+	private static UserService userService = new UserService();
 
 
 	@RequestMapping(value = "index", method = RequestMethod.GET)
