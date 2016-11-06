@@ -1,21 +1,24 @@
 package com.mkyong.controller;
 
+import java.util.ArrayList;
+import persistence.entities.Day;
+
 public class WorkoutService{
 
-	/*public UserRepository userRepository
-	public WorkoutRepository workoutRepository
+	public UserRepository userRepository = new UserRepository();
+	public WorkoutRepository workoutRepository = new WorkoutRepository();
 
-	public void createNewCycle(user User){
+	public void createNewCycle(User user){
 
 	}
-	public void updateDay(day Day, user User){
+	public void updateDay(Day day,User user){
 		
 	}
-	public list<Day> getCurrentCycle(user User){
+	public ArrayList<Day> getCurrentCycle(String username){
 		return null
 	}
-	public Day getSpecificDay(user User, date Date){
+	public Day getSpecificDay(User user, Date date){
 		return null
-	}*/
+	}
 
 }
