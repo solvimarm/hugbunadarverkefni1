@@ -1,5 +1,6 @@
 package com.mkyong.controller;
 
+//Not fully implemented
 public class VerifyService{
 
 	public Boolean verifyName(String name){

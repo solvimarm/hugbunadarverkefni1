@@ -10,14 +10,14 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.ArrayList;
 
-
+//Not fully implemented
 @Controller
 public class FoodController extends HttpServlet{
 
 	private static String VIEW_INDEX = "index";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(FoodController.class);
 	private static FoodService foodService = new FoodService();
-	//private static UserService userService = new UserService();
+	private static UserService userService = new UserService();
 
 	@RequestMapping(value = "foodPlan", method = RequestMethod.GET)
 	public String publishSuggestedFoodsPost(){

@@ -20,7 +20,7 @@ public class WorkoutController extends HttpServlet{
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WorkoutController.class);
 	private static WorkoutService workoutService = new WorkoutService();
 	
-	
+	//Not fully implemented
 	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
 	public String getCurrentCycleGet(HttpSession session){
 		
@@ -31,6 +31,7 @@ public class WorkoutController extends HttpServlet{
 		return VIEW_INDEX;
 	}
 
+	//Not fully implemented
 	@RequestMapping(value = "currentCycle", method = RequestMethod.POST)
 	public String getCurrentCyclePost(){
 
@@ -38,6 +39,7 @@ public class WorkoutController extends HttpServlet{
 		return "redirect:/"+VIEW_INDEX;
 	}
 
+	//Not fully implemented
 	@RequestMapping(value = "workoutOfToday", method = RequestMethod.GET)
 	public String getSpecificDayGet(){
 
@@ -45,6 +47,7 @@ public class WorkoutController extends HttpServlet{
 		return VIEW_INDEX;
 	}
 
+	//Not fully implemented
 	@RequestMapping(value = "workoutOfToday", method= RequestMethod.POST)
 	public String getSpecificDayPost(){
 

@@ -3,6 +3,7 @@ package com.mkyong.controller;
 import java.util.ArrayList;
 import persistence.entities.Food;
 
+//Not fully implemented
 public class FoodService{
 
 	//public FoodRepository foodRepository
