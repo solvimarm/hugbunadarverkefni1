@@ -45,10 +45,6 @@
 			<div class="form-group">
 				<label for="weight">Type the weight</label>
 				<input value="${weight}" type="text" class="form-control" name="weight" required/>
-				</div>
-			<div class="form-group">
-				<label for="nextUpdate">Type the nextUpdate</label>
-				<input type="text" class="form-control" name="nextUpdate"/>
 			</div>
 			<div>
 				<c:forEach var="i" items="${error}">

@@ -74,6 +74,11 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t<label for=\"pw\">Type the password</label>\n");
       out.write("\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"pw\"/>\n");
       out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div>\n");
+      out.write("\t\t\t\t<p>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${error}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</p>\n");
+      out.write("\t\t\t</div>\n");
       out.write("\t\t\t<input type=\"submit\" name=\"login\" value=\"Login\"/>\n");
       out.write("\t\t</form>\n");
       out.write("\t</body>\n");

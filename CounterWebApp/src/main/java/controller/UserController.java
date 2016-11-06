@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.ArrayList;
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 
 @Controller
@@ -18,6 +22,7 @@ public class UserController extends HttpServlet{
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(UserController.class);
 	private static UserService userService = new UserService();
 	private static VerifyService verifyService = new VerifyService();
+	DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
 
 	@RequestMapping(value = "index", method = RequestMethod.GET)
@@ -45,7 +50,8 @@ public class UserController extends HttpServlet{
 	}
 
 	@RequestMapping(value = "register", method = RequestMethod.POST)
-	public String registerPost(HttpServletRequest request, ModelMap model) {
+	public String registerPost(HttpServletRequest request, ModelMap model, HttpSession session) {
+
 		String name = request.getParameter("name");
 		String password	= request.getParameter("password");
 		String email = request.getParameter("email");
@@ -54,7 +60,8 @@ public class UserController extends HttpServlet{
 		String goal = request.getParameter("goal");
 		String gender = request.getParameter("gender");
 		String weight = request.getParameter("weight");
-		String nextUpdate = request.getParameter("nextUpdate");
+		Date date = new Date();
+		String nextUpdate = (String)dateFormat.format(date);
 		ArrayList error = new ArrayList();
 		if(!verifyService.verifyName(name)||!verifyService.verifyUsername(username)||
 			!verifyService.verifyPass(password)||!verifyService.verifyEmail(email)||!verifyService.verifyWeight(weight)){
@@ -75,6 +82,7 @@ public class UserController extends HttpServlet{
 			}
 		}
 		else{
+			session.setAttribute("user", username);
 			userService.createNewUser(name,password,email,username,age,goal,gender,weight,nextUpdate);
 			VIEW_INDEX = "homepage";
 			return "redirect:/"+VIEW_INDEX;
@@ -99,24 +107,36 @@ public class UserController extends HttpServlet{
 	}
 
 	@RequestMapping(value = "login", method = RequestMethod.POST)
-	public String loginPost(HttpServletRequest request){
+	public String loginPost(HttpServletRequest request, ModelMap model, HttpSession session){
 		String password	= request.getParameter("pw");
 		String username = request.getParameter("person_id");
 
 		if(userService.authUser(username, password)){
+			session.setAttribute("username", username);
 			VIEW_INDEX = "homepage";	
 			return  "redirect:/"+VIEW_INDEX;
 		}
 		else{
-			
+			model.addAttribute("error", "Invalid Username or Password");
 			return null;
 		}
 
 	}
 
 	@RequestMapping(value = "homepage", method = RequestMethod.GET)
-	public String getHomepage(){
-		VIEW_INDEX = "homepage";
+	public String getHomepage(HttpSession session, ModelMap model){
+		if(session == null){
+			indexGet();
+		}
+		else{
+			String username =  (String)session.getAttribute("username");
+			ArrayList user = new ArrayList();
+			user = userService.findUser(username);
+			model.addAttribute("name",user.get(0));
+			model.addAttribute("email",user.get(2));
+			model.addAttribute("goal",user.get(1));
+			VIEW_INDEX = "homepage";
+		}
 		return VIEW_INDEX;
 	}
 

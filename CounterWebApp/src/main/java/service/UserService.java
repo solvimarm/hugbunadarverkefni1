@@ -1,6 +1,7 @@
 package com.mkyong.controller;
 
 import persistence.entities.User;
+import java.util.*;
 
 public class UserService{
 
@@ -26,6 +27,22 @@ public class UserService{
 			}
 		}
 		return false;
+	}
+
+	public ArrayList findUser(String username){
+		User find = (User)userRepository.findUser(username);
+		ArrayList user = new ArrayList();
+		String name = (String)find.getName();
+		String goal = (String)find.getGoal();
+		String email = (String)find.getEmail();
+		//Double weight = find.getUserWeight();
+		user.add(name);
+		user.add(goal);
+		user.add(email);
+		//user.add(weight);
+		//user.add(find);
+
+		return user;
 	}
 
 }

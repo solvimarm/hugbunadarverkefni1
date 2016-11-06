@@ -68,18 +68,15 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
       out.write("\t</head>\n");
       out.write("\t<body>\n");
-      out.write("<<<<<<< HEAD\n");
       out.write("\t\t\n");
       out.write("\t\t<div class = \"row\">\n");
       out.write("\t\t\t<div class =\"col-md-2\"></div>\n");
       out.write("\t\t\t<div class = \"col-md-8\">\n");
       out.write("\t\t\t\t<img src='/src/main/img/frontb.jpg' />\n");
-      out.write("=======\n");
       out.write("\t\t<div class = \"row\">\n");
       out.write("\t\t\t<div class =\"col-md-2\"></div>\n");
       out.write("\t\t\t<div class = \"col-md-8\">\n");
       out.write("\t\t\t\t<img src=\"/frontb.png\" alt=\"\">\n");
-      out.write(">>>>>>> 93637e2a9f26bcd2a354ba9e0a2f3be16cc8a72e\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<div class = \"col-md-2\"></div>\n");
       out.write("\t\t</div>\n");

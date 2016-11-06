@@ -68,8 +68,9 @@
           </set>
         </exercise>
 
+
 	&gt;
-		            </day>
+		                  </day>
       <day id="05/11/2016">
         <exercise id="1">
           <name>æfing 1</name>
@@ -121,6 +122,17 @@
     <gender>888</gender>
     <userWeight>88.0</userWeight>
     <nextUpdate>88</nextUpdate>
+    <workoutPlan/>
+  </person>
+  <person username="viktor52">
+    <name>viktor</name>
+    <password>1234</password>
+    <email>1234</email>
+    <age>42</age>
+    <goal>strong</goal>
+    <gender>male</gender>
+    <userWeight>96.0</userWeight>
+    <nextUpdate>06/11/2016</nextUpdate>
     <workoutPlan/>
   </person>
 </XML-S>

@@ -16,18 +16,15 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-<<<<<<< HEAD
 		
 		<div class = "row">
 			<div class ="col-md-2"></div>
 			<div class = "col-md-8">
 				<img src='/src/main/img/frontb.jpg' />
-=======
 		<div class = "row">
 			<div class ="col-md-2"></div>
 			<div class = "col-md-8">
 				<img src="/frontb.png" alt="">
->>>>>>> 93637e2a9f26bcd2a354ba9e0a2f3be16cc8a72e
 			</div>
 			<div class = "col-md-2"></div>
 		</div>

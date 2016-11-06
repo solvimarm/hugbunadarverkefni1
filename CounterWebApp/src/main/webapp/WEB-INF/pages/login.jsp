@@ -22,6 +22,9 @@
 				<label for="pw">Type the password</label>
 				<input type="password" class="form-control" name="pw"/>
 			</div>
+			<div>
+				<p>${error}</p>
+			</div>
 			<input type="submit" name="login" value="Login"/>
 		</form>
 	</body>
