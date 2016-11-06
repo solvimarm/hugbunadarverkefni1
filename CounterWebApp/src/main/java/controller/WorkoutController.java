@@ -9,18 +9,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.ArrayList;
+import java.util.ArrayList;
+import persistence.entities.Day;
 
 
 @Controller
 public class WorkoutController extends HttpServlet{
 
-	private static String VIEW_INDEX = "index";
+	private static String VIEW_INDEX = "homepage";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WorkoutController.class);
-	//private static WorkoutService workoutService = new WorkoutService();
+	private static WorkoutService workoutService = new WorkoutService();
 	
 	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
-	public String getCurrentCycleGet(){
+	public String getCurrentCycleGet(HttpSession session){
+		
+		Object username = session.getAttribute("user");
 
+		ArrayList<Day> cycle = workoutService.getCurrentCycle("username");
 		VIEW_INDEX = "currentCycle";
 		return VIEW_INDEX;
 	}

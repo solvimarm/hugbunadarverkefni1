@@ -1,12 +1,15 @@
 package com.mkyong.controller;
 
+import java.util.ArrayList;
+import persistence.entities.Food;
+
 public class FoodService{
 
 	//public FoodRepository foodRepository
-	//public UserRepository userRepository
+	public UserRepository userRepository = new UserRepository();
 
-	/*public list<Food> getDietPlan(goal String){
+	public ArrayList<Food> getDietPlan(String goal){
 		return null;
-	}*/
+	}
 
 }
