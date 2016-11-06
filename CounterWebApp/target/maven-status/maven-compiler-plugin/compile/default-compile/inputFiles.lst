@@ -8,6 +8,7 @@
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Food.java
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Day.java
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/User.java
+/Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/service/VerifyService.java
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/UserRepository.groovy
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/RepositoryTesterController.java
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/WorkoutRepository.groovy

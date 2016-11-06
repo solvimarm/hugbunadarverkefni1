@@ -19,12 +19,16 @@
 				<input type="text" class="form-control" name="name"/>
 			</div>
 			<div class="form-group">
-				<label for="password">Type the password</label>
-				<input type="text" class="form-control" name="password"/>
+				<label for="password">Type the email</label>
+				<input type="text" class="form-control" name="email"/>
 			</div>
 			<div class="form-group">
 				<label for="username">Type the username</label>
 				<input type="text" class="form-control" name="username"/>
+			</div>
+			<div class="form-group">
+				<label for="password">Type the password</label>
+				<input type="text" class="form-control" name="password"/>
 			</div>
 			<div class="form-group">
 				<label for="age">Type the age</label>

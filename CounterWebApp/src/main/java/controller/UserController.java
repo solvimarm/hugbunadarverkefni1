@@ -17,6 +17,7 @@ public class UserController extends HttpServlet{
 	private static String VIEW_INDEX = "index";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(UserController.class);
 	private static UserService userService = new UserService();
+	private static VerifyService verifyService = new VerifyService();
 
 
 	@RequestMapping(value = "index", method = RequestMethod.GET)
@@ -47,12 +48,14 @@ public class UserController extends HttpServlet{
 	public String registerPost(HttpServletRequest request) {
 			String name = request.getParameter("name");
 			String password	= request.getParameter("password");
+			String email = request.getParameter('email');
 			String username = request.getParameter("username");
 			String age = request.getParameter("age");
 			String goal = request.getParameter("goal");
 			String gender = request.getParameter("gender");
 			String weight = request.getParameter("weight");
 
+			userService.createNewUser(name,password,email,username,age,goal,gender,weight);
 			VIEW_INDEX = "homepage";
 		return "redirect:/"+VIEW_INDEX;
 	}
@@ -67,6 +70,8 @@ public class UserController extends HttpServlet{
 	public String loginPost(HttpServletRequest request){
 		String password	= request.getParameter("pw");
 		String username = request.getParameter("person_id");
+
+		userService.authUser(username, password);
 		VIEW_INDEX = "homepage";	
 		return  "redirect:/"+VIEW_INDEX;
 	}

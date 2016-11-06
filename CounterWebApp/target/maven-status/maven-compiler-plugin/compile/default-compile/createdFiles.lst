@@ -1,3 +1,4 @@
+com/mkyong/controller/WorkoutService.class
 com/mkyong/controller/UserRepository$_updateUser_closure4.class
 com/mkyong/controller/WorkoutRepository$_createCycle_closure1.class
 com/mkyong/controller/addToXml$_getUserName_closure2.class
@@ -8,6 +9,7 @@ persistence/entities/Food.class
 com/mkyong/controller/UserRepository$_createNewUser_closure1.class
 com/mkyong/controller/addToXml$_addPerson_closure1.class
 com/mkyong/controller/FoodController.class
+com/mkyong/controller/UserService.class
 com/mkyong/controller/Password.class
 com/mkyong/controller/WorkoutRepository$_createCycle_closure4.class
 com/mkyong/controller/UserRepository$_findUser_closure3.class
@@ -18,10 +20,9 @@ persistence/entities/Day.class
 com/mkyong/controller/addToXml.class
 com/mkyong/controller/UserController.class
 com/mkyong/controller/WorkoutRepository.class
-UserService.class
+com/mkyong/controller/VerifyService.class
 com/mkyong/controller/RepositoryTesterController.class
 com/mkyong/controller/UserRepository.class
 persistence/entities/Set.class
 com/mkyong/controller/WorkoutRepository$_createCycle_closure3.class
 persistence/entities/Exercises.class
-WorkoutService.class
