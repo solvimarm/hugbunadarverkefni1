@@ -2,6 +2,8 @@ package com.mkyong.controller;
 
 import java.util.ArrayList;
 import persistence.entities.Day;
+import persistence.entities.User;
+import java.util.*;
 
 public class WorkoutService{
 
@@ -15,10 +17,10 @@ public class WorkoutService{
 		
 	}
 	public ArrayList<Day> getCurrentCycle(String username){
-		return null
+		return null;
 	}
 	public Day getSpecificDay(User user, Date date){
-		return null
+		return null;
 	}
 
 }

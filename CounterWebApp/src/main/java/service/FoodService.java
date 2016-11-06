@@ -8,7 +8,7 @@ public class FoodService{
 	//public FoodRepository foodRepository
 	public UserRepository userRepository = new UserRepository();
 
-	public ArrayList<Food> getDietPlan(goal String){
+	public ArrayList<Food> getDietPlan(String goal){
 		return null;
 	}
 
