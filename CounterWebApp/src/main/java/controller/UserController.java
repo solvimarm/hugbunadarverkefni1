@@ -143,7 +143,7 @@ public class UserController extends HttpServlet{
 		
 		//Redirects to index if not loged in
 		if(session == null){
-			indexGet();
+			indexGet();//Vitlaust :/
 		}
 		else{
 			String username =  (String)session.getAttribute("username");
