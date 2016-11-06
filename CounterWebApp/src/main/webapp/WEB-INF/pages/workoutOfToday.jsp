@@ -15,14 +15,8 @@
 	<body>
 				<form method="POST" role="form">
 					<div class="form-group">
-						<label for="username">Type your Name</label>
-						<input type="text" class="form-control" name="username"/>
-						<label for="age">Type your age</label>
-						<input type="text" class="form-control" name="age"/>
-						<label for="goal">Type your goal</label>
-						<input type="text" class="form-control" name="goal"/>
-						<label for="weight">Type your weight</label>
-						<input type="text" class="form-control" name="weight"/>
+						<img src="http://crossfitmahwah.com/wp-content/uploads/2016/06/Wod-2.jpg" alt="">
+						<h4>Under construction :D</h4>
 					</div>
 					<input type="submit" name="button" value="Submit"/>
 				</form>

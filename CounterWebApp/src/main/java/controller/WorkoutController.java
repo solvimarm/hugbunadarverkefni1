@@ -20,6 +20,7 @@ public class WorkoutController extends HttpServlet{
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WorkoutController.class);
 	private static WorkoutService workoutService = new WorkoutService();
 	
+	
 	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
 	public String getCurrentCycleGet(HttpSession session){
 		

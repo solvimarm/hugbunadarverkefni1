@@ -139,6 +139,20 @@ public class UserController extends HttpServlet{
 		}
 		return VIEW_INDEX;
 	}
+		@RequestMapping(value = "homepage", method = RequestMethod.POST)
+	public String homeToNextDest(HttpServletRequest request){
+		if(request.getParameter("week")!=null){
+			VIEW_INDEX = "currentCycle";
+		}
+		else if(request.getParameter("day")!=null){
+			VIEW_INDEX = "workoutOfToday";
+		}
+		else if(request.getParameter("food")!=null){
+			VIEW_INDEX = "foodPlan";
+		}
+
+		return "redirect:/"+VIEW_INDEX;
+	}
 
 }
 
