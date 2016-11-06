@@ -1,4 +1,5 @@
-//@Transactional
+package com.mkyong.controller;
+
 public class WorkoutService{
 
 	/*public UserRepository userRepository

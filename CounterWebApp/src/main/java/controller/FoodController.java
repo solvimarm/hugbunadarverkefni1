@@ -16,7 +16,7 @@ public class FoodController extends HttpServlet{
 
 	private static String VIEW_INDEX = "index";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(FoodController.class);
-	//private static FoodService foodService = new FoodService();
+	private static FoodService foodService = new FoodService();
 	//private static UserService userService = new UserService();
 
 	@RequestMapping(value = "foodPlan", method = RequestMethod.GET)
