@@ -4,6 +4,7 @@ import java.util.Date;
 public class User{
 	private String name;
 	private String password;
+	private String email;
 	private int age;
 	private String username;
 	private String goal;
@@ -11,9 +12,10 @@ public class User{
 	private Double userWeight;
 	private String nextUpdate;//SKOÐA
 
-	public User (String name, String password, int age, String username, String goal, String gender, Double userWeight, String nextUpdate){
+	public User (String name, String password, String email, int age, String username, String goal, String gender, Double userWeight, String nextUpdate){
 		this.name = name;
 		this.password = password;
+		this.email = email;
 		this.age = age;
 		this.username = username;
 		this.goal = goal;
@@ -28,6 +30,10 @@ public class User{
 
 	public String getPassword(){
 		return password;
+	}
+
+	public String getEmail(){
+		return email;
 	}
 
 	public int getAge(){
