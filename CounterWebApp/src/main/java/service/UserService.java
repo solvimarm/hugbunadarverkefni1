@@ -1,13 +1,28 @@
-//@Transactional
+package com.mkyong.controller;
+
+import persistence.entities.User;
+
 public class UserService{
 
-	/*public UserRepository userRepository
+	public UserRepository userRepository = new UserRepository();
 
-	public void createNewuser(user User){
-
+	public void createNewUser(String name, String password, String email, String username,
+	 						String age,String goal, String gender, String weight, String nextUpdate){
+		
+		User user = new User(name,password,email,Integer.parseInt(age),username,goal,gender,Double.parseDouble(weight),nextUpdate);
+		userRepository.createNewUser(user);		
 	}
-	private boolean authUser(username String, password String){
-		return null
-	}*/
+	public boolean authUser(String username, String password){
+		
+		Object user = userRepository.findUser(username);
+
+		if(user instanceof User){
+			User userToAuth = (User) user;
+		}
+		if(password == userToAuth.password){
+			return true;
+		}
+		return false;
+	}
 
 }

@@ -16,10 +16,13 @@ public class FoodController extends HttpServlet{
 
 	private static String VIEW_INDEX = "index";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(FoodController.class);
+	private static FoodService foodService = new FoodService();
+	//private static UserService userService = new UserService();
 
-	@RequestMapping(value = "", method = RequestMethod.GET)
+	@RequestMapping(value = "foodPlan", method = RequestMethod.GET)
 	public String publishSuggestedFoodsPost(){
 		
+		VIEW_INDEX = "foodPlan";
 		return VIEW_INDEX;
 	}
 

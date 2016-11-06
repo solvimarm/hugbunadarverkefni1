@@ -65,6 +65,7 @@ public final class testUpdateSet_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
       out.write("\t</head>\n");
       out.write("\t<body>\n");
+<<<<<<< HEAD:CounterWebApp/target/tomcat/work/localEngine/localhost/CounterWebApp/org/apache/jsp/WEB_002dINF/pages/testUpdateSet_jsp.java
       out.write("\t\t\t\t<form method=\"POST\" role=\"form\">\n");
       out.write("\t\t\t\t\t<div class=\"form-group\">\n");
       out.write("\t\t\t\t\t\t<label for=\"username\">Type your userName</label>\n");
@@ -81,6 +82,25 @@ public final class testUpdateSet_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\t\t\t\t\t<input type=\"submit\" name=\"button\" value=\"Submit\"/>\n");
       out.write("\t\t\t\t</form>\n");
       out.write("\n");
+=======
+      out.write("\t\t<div class = \"row\">\n");
+      out.write("\t\t\t<div class =\"col-md-2\"></div>\n");
+      out.write("\t\t\t<div class = \"col-md-8\">\n");
+      out.write("\t\t\t\t<img src=\"/frontb.png\" alt=\"\">\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class = \"col-md-2\"></div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<div class = \"row\">\n");
+      out.write("\t\t\t<form method=\"POST\">\n");
+      out.write("\t\t\t\t<div class = \"col-md-1\">\n");
+      out.write("\t\t\t\t\t<input class =\"btn-primary\" type=\"submit\" name=\"login\" value=\"Login\"/>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<div class = \"col-md-1\" >\n");
+      out.write("\t\t\t\t\t<input class =\"btn-primary\t\" type=\"submit\" name=\"register\" value=\"Register\" />\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</form>\n");
+      out.write("\t\t</div>\n");
+>>>>>>> 93637e2a9f26bcd2a354ba9e0a2f3be16cc8a72e:CounterWebApp/target/tomcat/work/localEngine/localhost/CounterWebApp/org/apache/jsp/WEB_002dINF/pages/index_jsp.java
       out.write("\t</body>\n");
       out.write("</html>");
     } catch (Throwable t) {

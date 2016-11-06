@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com/mkyong/controller/RepositoryTesterController.class
 com/mkyong/controller/WorkoutRepository$_getCurrentCycle_closure5.class
 com/mkyong/controller/WorkoutRepository$_updateSet_closure13.class
@@ -5,6 +6,10 @@ com/mkyong/controller/WorkoutRepository.class
 com/mkyong/controller/WorkoutRepository$_getSpecificDay_closure10_closure17.class
 com/mkyong/controller/WorkoutRepository$_createCycle_closure4.class
 persistence/entities/Set.class
+=======
+com/mkyong/controller/WorkoutService.class
+com/mkyong/controller/UserRepository$_updateUser_closure4.class
+>>>>>>> 93637e2a9f26bcd2a354ba9e0a2f3be16cc8a72e
 com/mkyong/controller/WorkoutRepository$_createCycle_closure1.class
 com/mkyong/controller/UserController.class
 com/mkyong/controller/WorkoutRepository$_getSpecificDay_closure9.class
@@ -16,6 +21,7 @@ com/mkyong/controller/WorkoutRepository$_createCycle_closure3.class
 com/mkyong/controller/WorkoutRepository$_updateSet_closure14.class
 com/mkyong/controller/UserRepository$_updateUser_closure5.class
 com/mkyong/controller/addToXml$_addPerson_closure1.class
+<<<<<<< HEAD
 com/mkyong/controller/UserRepository$_findUser_closure3.class
 com/mkyong/controller/addToXml.class
 com/mkyong/controller/WorkoutRepository$_updateSet_closure11.class
@@ -37,3 +43,23 @@ com/mkyong/controller/WorkoutRepository$_getCurrentCycle_closure7.class
 com/mkyong/controller/WorkoutRepository$_getSpecificDay_closure10.class
 com/mkyong/controller/UserRepository.class
 com/mkyong/controller/WorkoutRepository$_createCycle_closure2.class
+=======
+com/mkyong/controller/FoodController.class
+com/mkyong/controller/UserService.class
+com/mkyong/controller/Password.class
+com/mkyong/controller/WorkoutRepository$_createCycle_closure4.class
+com/mkyong/controller/UserRepository$_findUser_closure3.class
+com/mkyong/controller/FoodService.class
+com/mkyong/controller/UserRepository$_updateUser_closure5.class
+com/mkyong/controller/WorkoutRepository$_createCycle_closure2.class
+persistence/entities/Day.class
+com/mkyong/controller/addToXml.class
+com/mkyong/controller/UserController.class
+com/mkyong/controller/WorkoutRepository.class
+com/mkyong/controller/VerifyService.class
+com/mkyong/controller/RepositoryTesterController.class
+com/mkyong/controller/UserRepository.class
+persistence/entities/Set.class
+com/mkyong/controller/WorkoutRepository$_createCycle_closure3.class
+persistence/entities/Exercises.class
+>>>>>>> 93637e2a9f26bcd2a354ba9e0a2f3be16cc8a72e

@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>Current Workout Plan</title>
+		<title>Suggested food plan</title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css">         
 		<script src="../js/bootstrap.min.js"></script>
 		<meta charset="utf-8">

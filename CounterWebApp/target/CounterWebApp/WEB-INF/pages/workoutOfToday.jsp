@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>Current Workout Plan</title>
+		<title>workout of today</title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css">         
 		<script src="../js/bootstrap.min.js"></script>
 		<meta charset="utf-8">
@@ -13,14 +13,19 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<form method="POST" role="form">
-			<div class="form-group">
-				<label for="username">Type your Username</label>
-				<input type="text" class="form-control" name="username"/>
-				<label for="date">Type your date</label>
-				<input type="text" class="form-control" name="date"/>		
-			</div>
-			<input type="submit" name="button" value="Submit"/>
-		</form>
+				<form method="POST" role="form">
+					<div class="form-group">
+						<label for="username">Type your Name</label>
+						<input type="text" class="form-control" name="username"/>
+						<label for="age">Type your age</label>
+						<input type="text" class="form-control" name="age"/>
+						<label for="goal">Type your goal</label>
+						<input type="text" class="form-control" name="goal"/>
+						<label for="weight">Type your weight</label>
+						<input type="text" class="form-control" name="weight"/>
+					</div>
+					<input type="submit" name="button" value="Submit"/>
+				</form>
+
 	</body>
 </html>
