@@ -6,7 +6,8 @@
 	<head>
 		<title>Login</title>
 		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
-		<link rel="stylesheet" href="../css/bootstrap.min.css">         
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/testcss.css">       
 		<script src="../js/bootstrap.min.js"></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +16,11 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<img src="../img/frontb.jpg" alt="Health">
+		
 		<div class = "row">
 			<div class ="col-md-2"></div>
 			<div class = "col-md-8">
-				<img src="../img/frontb.jpg" alt="">
+				<img src='/src/main/img/frontb.jpg' />
 			</div>
 			<div class = "col-md-2"></div>
 		</div>

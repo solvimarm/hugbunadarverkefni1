@@ -11,6 +11,8 @@ import javax.servlet.http.*;
 import java.util.ArrayList;
 import java.util.Date;
 import persistence.entities.User;
+import persistence.entities.Day;
+import persistence.entities.Exercises;
 import java.text.SimpleDateFormat;
 import java.util.Map;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -101,6 +103,67 @@ public class RepositoryTesterController extends HttpServlet{
 
 
 			VIEW_INDEX = "testgetworkout";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testgetcycle", method = RequestMethod.GET)
+	public String getworkoutCycle() {
+			VIEW_INDEX = "testgetCycle";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testgetcycle", method = RequestMethod.POST)
+	public String getworkoutCyclePost(HttpServletRequest request) {
+			Object cc = groovyWorkout.getCurrentCycle(request.getParameter("username"));
+
+			if(cc instanceof ArrayList<?>){
+			System.out.println("eg er inni if bby");
+			ArrayList<Day> days = (ArrayList<Day>) cc;
+			ArrayList<Exercises> exer = days.get(0).getExercises();
+			System.out.println(days.get(0).getWentToGym());
+			System.out.println(exer.get(0).getName());
+			}
+
+
+			VIEW_INDEX = "testgetCycle";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testgetday", method = RequestMethod.GET)
+	public String getSpecificDay() {
+			VIEW_INDEX = "testgetday";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testgetday", method = RequestMethod.POST)
+	public String getSpecificDay(HttpServletRequest request) {
+			Object cc = groovyWorkout.getSpecificDay(request.getParameter("username"), request.getParameter("date"));
+
+			if(cc instanceof Day){
+			System.out.println("eg er inni if bby");
+			Day days = (Day) cc;
+			System.out.println(days.getWentToGym());
+			}
+
+
+			VIEW_INDEX = "testgetday";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testUpdateSet", method = RequestMethod.GET)
+	public String updateSet() {
+			VIEW_INDEX = "testUpdateSet";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testUpdateSet", method = RequestMethod.POST)
+	public String updateSetPost(HttpServletRequest request) {
+			
+			groovyWorkout.updateSet(request.getParameter("username"), Double.parseDouble(request.getParameter("dbWeight")),Integer.parseInt(request.getParameter("noOfSet")),Integer.parseInt(request.getParameter("exerciseID")), request.getParameter("date"));
+
+		
+
+			VIEW_INDEX = "testUpdateSet";
 		return VIEW_INDEX;
 	}
 }

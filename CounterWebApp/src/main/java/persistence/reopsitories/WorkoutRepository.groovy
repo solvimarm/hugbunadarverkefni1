@@ -4,6 +4,8 @@ import groovy.xml.XmlUtil
 import java.security.SecureRandom
 import persistence.entities.User
 import persistence.entities.Day
+import persistence.entities.Exercises
+import persistence.entities.Set
 import java.util.ArrayList
 
 
@@ -45,7 +47,7 @@ public class WorkoutRepository {
 		}	
 
 	}
-/*
+
 	def getCurrentCycle(String username){
 		def userNode = personXML.person.find{it -> 
 			it.@username == username}
@@ -55,21 +57,88 @@ public class WorkoutRepository {
 		ArrayList<Day> currCycle = new ArrayList<Day>()
 		for(int i = 0; i<5; i++){
 			d = d.previous()
-			prevDate= d.format("dd/MM/yyyy")
+			def prevDate= d.format("dd/MM/yyyy")
 			def workoutDay=userNode.workoutPlan[0].day.find{it ->
 				it.@id == prevDate}
 			
 			ArrayList<Exercises> exercises = new ArrayList<Exercises>()
+
 			workoutDay.exercise.each{it ->
-				
+				ArrayList<Set> sets = new ArrayList<Set>()
+				it.set.each{iterator ->
+					Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
+					sets.add(set)
+				}
+				Exercises exercise = new Exercises( it.name.text(), sets, it.@id )
+				exercises.add(exercise)
 			}
 
-			Day day = new Day(userNode.userWeight.text().toDouble(), prevDate, true, ArrayList<Exercises> exercises)
+			Day day = new Day(userNode.userWeight.text().toDouble(), prevDate, true, exercises)
+			currCycle.add(day)	
+		}
 
+		return currCycle
+
+	}
+
+
+	def getSpecificDay(String username, String date){
+		def userNode = personXML.person.find{it -> 
+			it.@username == username}
+
+		def workoutDay = userNode.workoutPlan[0].day.find{it ->
+			it.@id == date}
+
+			ArrayList<Exercises> exercises = new ArrayList<Exercises>()
+
+			workoutDay.exercise.each{it ->
+				ArrayList<Set> sets = new ArrayList<Set>()
+				it.set.each{iterator ->
+					Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
+					sets.add(set)
+				}
+				Exercises exercise = new Exercises( it.name.text(), sets, it.@id )
+				exercises.add(exercise)
+			}
+
+			Day day = new Day(userNode.userWeight.text().toDouble(), date, true, exercises)
+			
+			return day
+
+	}
+
+	def updateSet(String username, Double dbWeight, int noOfSet, int exerciseID, String date){
+		def userNode = personXML.person.find{it -> 
+			it.@username == username}
+		if(userNode != null){
+		def workoutDay = userNode.workoutPlan[0].day.find{it ->
+			it.@id == date}
+
+			if(workoutDay != null){
+				def exerciseNode = workoutDay.exercise.find{it ->
+					it.@id == exerciseID}
+				if(exerciseNode != null){
+					def setNode = workoutDay.set.find{it ->
+						it.@id == noOfSet}
+					if(setNode != null){
+						new Node (setNode, "dbWeight", dbWeight)
+						println "updateset er her"
+						personFile.withWriter ("utf-8") {writer ->
+							writer.writeLine(new XmlUtil().serialize(personXML))}
+						return true
+
+					}
+					
+
+				}
+				
+			}
+					
 		}
 
 
 	}
 
-*/
+
+
 }	
