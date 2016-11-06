@@ -126,7 +126,7 @@ public class UserController extends HttpServlet{
 	@RequestMapping(value = "homepage", method = RequestMethod.GET)
 	public String getHomepage(HttpSession session, ModelMap model){
 		if(session == null){
-			indexGet();
+			indexGet();//Vitlaust :/
 		}
 		else{
 			String username =  (String)session.getAttribute("username");
