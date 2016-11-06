@@ -20,6 +20,7 @@ public class UserRepository {
 			def userNode = new Node (xml, "person",[username: user.getUsername()])
 			new Node (userNode, "name", user.getName())
 			new Node (userNode, "password", user.getPassword())
+			new Node (userNode, "email", user.getPassword())
 			new Node (userNode, "age", user.getAge())
 			new Node (userNode, "goal", user.getGoal())
 			new Node (userNode, "gender", user.getGender())
@@ -45,7 +46,7 @@ public class UserRepository {
 
 		if(userNode!=null){
 			//def obj = [name: userNode.name.text(), password: userNode.password.text()]
-			User user = new User(userNode.name.text(), userNode.password.text(), userNode.age.text().toInteger(), userNode.@username, userNode.goal.text(), userNode.gender.text(),userNode.userWeight.text().toDouble(), userNode.nextUpdate.text())
+			User user = new User(userNode.name.text(), userNode.password.text(), userNode.email.text(), userNode.age.text().toInteger(), userNode.@username, userNode.goal.text(), userNode.gender.text(),userNode.userWeight.text().toDouble(), userNode.nextUpdate.text())
 			//println obj.get("name")
 
 			return user;

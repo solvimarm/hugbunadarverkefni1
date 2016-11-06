@@ -54,7 +54,7 @@
 				<c:forEach var="i" items="${error}">
 					<tr>
 						<td>${i}</td>
-					
+					</tr>
 				</c:forEach>
 			</div>
 			<input type="submit" name="submit" value="Submit"/>

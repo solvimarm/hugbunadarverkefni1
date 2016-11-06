@@ -41,7 +41,7 @@ public class RepositoryTesterController extends HttpServlet{
 	@RequestMapping(value = "test", method = RequestMethod.POST)
 	public String loginPost(HttpServletRequest request) {
 			//SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
-			User user = new User(request.getParameter("name"), request.getParameter("password"), Integer.parseInt(request.getParameter("age")), request.getParameter("username"), request.getParameter("goal"), request.getParameter("gender"), Double.parseDouble(request.getParameter("weight")), request.getParameter("nextUpdate"));
+			User user = new User(request.getParameter("name"), request.getParameter("password"), request.getParameter("email"), Integer.parseInt(request.getParameter("age")), request.getParameter("username"), request.getParameter("goal"), request.getParameter("gender"), Double.parseDouble(request.getParameter("weight")), request.getParameter("nextUpdate"));
 			groovyXml.createNewUser(user);
 
 			VIEW_INDEX = "createNewUserTester";
@@ -83,7 +83,7 @@ public class RepositoryTesterController extends HttpServlet{
 
 	@RequestMapping(value = "testUpdate", method = RequestMethod.POST)
 	public String updatepost(HttpServletRequest request) {
-			User user = new User(null, null, Integer.parseInt(request.getParameter("age")), request.getParameter("username"), request.getParameter("goal"), null, Double.parseDouble(request.getParameter("weight")), null);
+			User user = new User(null, null, null, Integer.parseInt(request.getParameter("age")), request.getParameter("username"), request.getParameter("goal"), null, Double.parseDouble(request.getParameter("weight")), null);
 			groovyXml.updateUser(user);
 
 			VIEW_INDEX = "testUpdateUser";

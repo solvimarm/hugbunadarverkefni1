@@ -17,10 +17,13 @@ public class UserService{
 		Object user = userRepository.findUser(username);
 
 		if(user instanceof User){
+			System.out.println("ég er réttur user");
 			User userToAuth = (User) user;
-		}
-		if(password == userToAuth.password){
-			return true;
+			System.out.println(password +"og"+ userToAuth.getPassword());
+			if(password.equals(userToAuth.getPassword())){
+				System.out.println("ég er rétt password");
+				return true;
+			}
 		}
 		return false;
 	}

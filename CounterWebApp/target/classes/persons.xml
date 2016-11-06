@@ -67,8 +67,9 @@
             <reps>6</reps>
           </set>
         </exercise>
+
 	&gt;
-		      </day>
+		            </day>
       <day id="05/11/2016">
         <exercise id="1">
           <name>æfing 1</name>
@@ -110,6 +111,17 @@
         </exercise>
       </day>
     </workoutPlan>
+  </person>
+  <person username="astros">
+    <name>Ástrós Einarsdóttir</name>
+    <password>viktor</password>
+    <email>viktor</email>
+    <age>88</age>
+    <goal>88</goal>
+    <gender>888</gender>
+    <userWeight>88.0</userWeight>
+    <nextUpdate>88</nextUpdate>
+    <workoutPlan/>
   </person>
 </XML-S>
 

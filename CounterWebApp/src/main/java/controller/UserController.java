@@ -103,9 +103,15 @@ public class UserController extends HttpServlet{
 		String password	= request.getParameter("pw");
 		String username = request.getParameter("person_id");
 
-		userService.authUser(username, password);
-		VIEW_INDEX = "homepage";	
-		return  "redirect:/"+VIEW_INDEX;
+		if(userService.authUser(username, password)){
+			VIEW_INDEX = "homepage";	
+			return  "redirect:/"+VIEW_INDEX;
+		}
+		else{
+			
+			return null;
+		}
+
 	}
 
 	@RequestMapping(value = "homepage", method = RequestMethod.GET)
