@@ -11,6 +11,8 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
+
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
 
@@ -19,11 +21,13 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
+    _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
+    _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -68,35 +72,61 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<form method=\"POST\" role=\"form\">\n");
       out.write("\t\t\t<div class=\"form-group\">\n");
       out.write("\t\t\t\t<label for=\"name\">Type your Name</label>\n");
-      out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"name\"/>\n");
+      out.write("\t\t\t\t<input value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\" type=\"text\" class=\"form-control\" name=\"name\" required/>\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<div class=\"form-group\">\n");
-      out.write("\t\t\t\t<label for=\"password\">Type the password</label>\n");
-      out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"password\"/>\n");
+      out.write("\t\t\t\t<label for=\"email\">Type the email</label>\n");
+      out.write("\t\t\t\t<input value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${email}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\" type=\"text\" class=\"form-control\" name=\"email\" required/>\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<div class=\"form-group\">\n");
       out.write("\t\t\t\t<label for=\"username\">Type the username</label>\n");
-      out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"username\"/>\n");
+      out.write("\t\t\t\t<input value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${username}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\" type=\"text\" class=\"form-control\" name=\"username\" required/>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t<label for=\"password\">Type the password</label>\n");
+      out.write("\t\t\t\t<input value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${password}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\" type=\"text\" class=\"form-control\" name=\"password\" required/>\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<div class=\"form-group\">\n");
       out.write("\t\t\t\t<label for=\"age\">Type the age</label>\n");
-      out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"age\"/>\n");
+      out.write("\t\t\t\t<input value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${age}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\" type=\"text\" class=\"form-control\" name=\"age\" required/>\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<div class=\"form-group\">\n");
       out.write("\t\t\t\t<label for=\"goal\">Type the goal</label>\n");
-      out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"goal\"/>\n");
+      out.write("\t\t\t\t<input age=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${goal}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\" type=\"text\" class=\"form-control\" name=\"goal\" required/>\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<div class=\"form-group\">\n");
       out.write("\t\t\t\t<label for=\"gender\">Type the gender</label>\n");
-      out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"gender\"/>\n");
+      out.write("\t\t\t\t<input value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${gender}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\" type=\"text\" class=\"form-control\" name=\"gender\" required/>\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<div class=\"form-group\">\n");
       out.write("\t\t\t\t<label for=\"weight\">Type the weight</label>\n");
-      out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"weight\"/>\n");
+      out.write("\t\t\t\t<input value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${weight}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\" type=\"text\" class=\"form-control\" name=\"weight\" required/>\n");
       out.write("\t\t\t\t</div>\n");
       out.write("\t\t\t<div class=\"form-group\">\n");
       out.write("\t\t\t\t<label for=\"nextUpdate\">Type the nextUpdate</label>\n");
       out.write("\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"nextUpdate\"/>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div>\n");
+      out.write("\t\t\t\t");
+      if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
+        return;
+      out.write("\n");
       out.write("\t\t\t</div>\n");
       out.write("\t\t\t<input type=\"submit\" name=\"submit\" value=\"Submit\"/>\n");
       out.write("\t\t</form>\n");
@@ -112,5 +142,48 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
+  }
+
+  private boolean _jspx_meth_c_005fforEach_005f0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fforEach_005f0.setParent(null);
+    // /WEB-INF/pages/register.jsp(54,4) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setVar("i");
+    // /WEB-INF/pages/register.jsp(54,4) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/register.jsp(54,4) '${error}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${error}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
+      if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("\t\t\t\t\t<tr>\n");
+          out.write("\t\t\t\t\t\t<td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write("</td>\n");
+          out.write("\t\t\t\t\t\n");
+          out.write("\t\t\t\t");
+          int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_005fforEach_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_005fforEach_005f0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_005fforEach_005f0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_005fforEach_005f0.doFinally();
+      _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.reuse(_jspx_th_c_005fforEach_005f0);
+    }
+    return false;
   }
 }

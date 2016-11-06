@@ -16,35 +16,46 @@
 		<form method="POST" role="form">
 			<div class="form-group">
 				<label for="name">Type your Name</label>
-				<input type="text" class="form-control" name="name"/>
+				<input value="${name}" type="text" class="form-control" name="name" required/>
 			</div>
 			<div class="form-group">
-				<label for="password">Type the password</label>
-				<input type="text" class="form-control" name="password"/>
+				<label for="email">Type the email</label>
+				<input value="${email}" type="text" class="form-control" name="email" required/>
 			</div>
 			<div class="form-group">
 				<label for="username">Type the username</label>
-				<input type="text" class="form-control" name="username"/>
+				<input value="${username}" type="text" class="form-control" name="username" required/>
+			</div>
+			<div class="form-group">
+				<label for="password">Type the password</label>
+				<input value="${password}" type="text" class="form-control" name="password" required/>
 			</div>
 			<div class="form-group">
 				<label for="age">Type the age</label>
-				<input type="text" class="form-control" name="age"/>
+				<input value="${age}" type="text" class="form-control" name="age" required/>
 			</div>
 			<div class="form-group">
 				<label for="goal">Type the goal</label>
-				<input type="text" class="form-control" name="goal"/>
+				<input age="${goal}" type="text" class="form-control" name="goal" required/>
 			</div>
 			<div class="form-group">
 				<label for="gender">Type the gender</label>
-				<input type="text" class="form-control" name="gender"/>
+				<input value="${gender}" type="text" class="form-control" name="gender" required/>
 			</div>
 			<div class="form-group">
 				<label for="weight">Type the weight</label>
-				<input type="text" class="form-control" name="weight"/>
+				<input value="${weight}" type="text" class="form-control" name="weight" required/>
 				</div>
 			<div class="form-group">
 				<label for="nextUpdate">Type the nextUpdate</label>
 				<input type="text" class="form-control" name="nextUpdate"/>
+			</div>
+			<div>
+				<c:forEach var="i" items="${error}">
+					<tr>
+						<td>${i}</td>
+					
+				</c:forEach>
 			</div>
 			<input type="submit" name="submit" value="Submit"/>
 		</form>

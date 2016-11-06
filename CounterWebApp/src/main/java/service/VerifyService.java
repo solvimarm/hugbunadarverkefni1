@@ -18,7 +18,7 @@ public class VerifyService{
 		return true;
 	}
 
-	public Boolean verifyWeight(int weight){
+	public Boolean verifyWeight(String weight){
 		return true;
 	}
 	
