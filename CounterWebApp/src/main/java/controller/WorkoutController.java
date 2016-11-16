@@ -41,7 +41,14 @@ public class WorkoutController extends HttpServlet{
 
 	//Not fully implemented
 	@RequestMapping(value = "workoutOfToday", method = RequestMethod.GET)
-	public String getSpecificDayGet(){
+	public String getSpecificDayGet(HttpSession session, ModelMap model){
+
+		//Get parameters
+		String username = (String)session.getAttribute("username");
+		String date = "vantar hvernig tökum dagsetningu";
+
+		Day day = workoutService.getSpecificDay(username, date);
+		//Input information from day into view. Not implemennted
 
 		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;

@@ -17,9 +17,23 @@ public class WorkoutService{
 		
 	}
 	public ArrayList<Day> getCurrentCycle(String username){
+
+		Object currentCycleObject = workoutRepository.getCurrentCycle(username);
+
+		if(currentCycleObject instanceof ArrayList<?>){
+			ArrayList<Day> currentCycle = (ArrayList<Day>) currentCycleObject;
+			return currentCycle;
+		}
 		return null;
 	}
-	public Day getSpecificDay(User user, Date date){
+	public Day getSpecificDay(String username, String date){
+		
+		Object dayObject = workoutRepository.getSpecificDay(username, date);
+
+		if(dayObject instanceof Day){
+			Day day = (Day) dayObject;
+			return day;
+		}
 		return null;
 	}
 
