@@ -13,6 +13,7 @@ import java.util.Date;
 import persistence.entities.User;
 import persistence.entities.Day;
 import persistence.entities.Exercises;
+import persistence.entities.Food;
 import java.text.SimpleDateFormat;
 import java.util.Map;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -28,7 +29,7 @@ public class RepositoryTesterController extends HttpServlet{
 	//private final static org.slf4j.Logger logger = LoggerFactory.getLogger(BaseController.class);
 	private static UserRepository groovyXml=new UserRepository();
 	private static WorkoutRepository groovyWorkout = new WorkoutRepository();
-
+	private static FoodRepository groovyFood = new FoodRepository();
 
 
 	@RequestMapping(value = "test", method = RequestMethod.GET)
@@ -163,6 +164,29 @@ public class RepositoryTesterController extends HttpServlet{
 		
 
 			VIEW_INDEX = "testUpdateSet";
+		return VIEW_INDEX;
+	}
+
+
+	@RequestMapping(value = "testgetdietplan", method = RequestMethod.GET)
+	public String getdietplan() {
+			VIEW_INDEX = "testgetdietplan";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testgetdietplan", method = RequestMethod.POST)
+	public String getdietplanpost(HttpServletRequest request) {
+			Object cc = groovyFood.getDietPlan(request.getParameter("username"));
+
+			if(cc instanceof ArrayList<?>){
+				System.out.println("eg er inni if bby");
+				ArrayList<Food> foods = (ArrayList<Food>) cc;
+				System.out.println(foods.get(0).getName()+"   NAME BABY");
+				
+			}
+
+
+			VIEW_INDEX = "testgetdietplan";
 		return VIEW_INDEX;
 	}
 }
