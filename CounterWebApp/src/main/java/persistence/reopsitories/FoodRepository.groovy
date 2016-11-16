@@ -24,7 +24,7 @@ public class FoodRepository {
 				it.@id == goal}
 			dietCategory.name.each{it ->
 				println it.@typeOfMeal
-				
+				 
 			Food foods = new Food(it.text(), goal, it.@typeOfMeal )
 			dietplan.add(foods)
 			}

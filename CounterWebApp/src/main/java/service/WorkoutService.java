@@ -11,7 +11,7 @@ public class WorkoutService{
 	public WorkoutRepository workoutRepository = new WorkoutRepository();
 
 	public void createNewCycle(User user){
-
+		
 	}
 	public void updateDay(Day day,User user){
 		
