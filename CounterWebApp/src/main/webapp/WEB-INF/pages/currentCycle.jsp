@@ -13,42 +13,64 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="row">
-  			<div class="col-sm-6">
-   				<div class="card card-block">
-      				<h3 class="card-title">Mánudagur</h3>
-     				 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      				<a href="#" class="btn btn-primary">Go somewhere</a>
-    			</div>
-  			</div>
- 			 <div class="col-sm-6">
-    			<div class="card card-block">
-      				<h3 class="card-title">Þriðjudagur</h3>
-      				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-     				<a href="#" class="btn btn-primary">Go somewhere</a>
-    			</div>
-  			</div>
-  			<div class="col-sm-6">
-    			<div class="card card-block">
-      				<h3 class="card-title">Miðvikudagur</h3>
-      				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-     				<a href="#" class="btn btn-primary">Go somewhere</a>
-    			</div>
-  			</div>
-  			<div class="col-sm-6">
-    			<div class="card card-block">
-      				<h3 class="card-title">Fimmtudagur</h3>
-      				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-     				<a href="#" class="btn btn-primary">Go somewhere</a>
-    			</div>
-  			</div>
-  			<div class="col-sm-6">
-    			<div class="card card-block">
-      				<h3 class="card-title">Föstudagur</h3>
-      				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-     				<a href="#" class="btn btn-primary">Go somewhere</a>
-    			</div>
-  			</div>
+		<div class= "container">
+			<div class="row">
+	  			<div class="col-sm-6">
+	   				<div class="card card-block">
+	      				<h3 class="card-title">Monday</h3>
+	     				 <ul class="list-group list-group-flush">
+    						<li class="list-group-item">Workout 1</li>
+    						<li class="list-group-item">Workout 2</li>
+    						<li class="list-group-item">Workout 3</li>
+ 				 		</ul>
+	      				<a href="#" class="btn btn-primary">Fill in results</a>
+	    			</div>
+	  			</div>
+	 			 <div class="col-sm-6">
+	    			<div class="card card-block">
+	      				<h3 class="card-title">Tuesday</h3>
+	      				<ul class="list-group list-group-flush">
+    						<li class="list-group-item">Workout 1</li>
+    						<li class="list-group-item">Workout 2</li>
+    						<li class="list-group-item">Workout 3</li>
+ 				 		</ul>
+	      				<a href="#" class="btn btn-primary">Fill in results</a>
+	    			</div>
+	  			</div>
+	  			<div class="col-sm-6">
+	    			<div class="card card-block">
+	      				<h3 class="card-title">Wednesday</h3>
+	      				<ul class="list-group list-group-flush">
+    						<li class="list-group-item">Workout 1</li>
+    						<li class="list-group-item">Workout 2</li>
+    						<li class="list-group-item">Workout 3</li>
+ 				 		</ul>
+	      				<a href="#" class="btn btn-primary">Fill in results</a>
+	    			</div>
+	  			</div>
+	  			<div class="col-sm-6">
+	    			<div class="card card-block">
+	      				<h3 class="card-title">Thursday</h3>
+	      				<ul class="list-group list-group-flush">
+    						<li class="list-group-item">Workout 1</li>
+    						<li class="list-group-item">Workout 2</li>
+    						<li class="list-group-item">Workout 3</li>
+ 				 		</ul>
+	      				<a href="#" class="btn btn-primary">Fill in results</a>
+	    			</div>
+	  			</div>
+	  			<div class="col-sm-6">
+	    			<div class="card card-block">
+	      				<h3 class="card-title">Friday</h3>
+	      				<ul class="list-group list-group-flush">
+    						<li class="list-group-item">Workout 1</li>
+    						<li class="list-group-item">Workout 2</li>
+    						<li class="list-group-item">Workout 3</li>
+ 				 		</ul>
+	      				<a href="#" class="btn btn-primary">Fill in results</a>
+	    			</div>
+	  			</div>
+			</div>
 		</div>
 	</body>
 </html>
