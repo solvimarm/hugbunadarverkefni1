@@ -11,6 +11,7 @@ import javax.servlet.http.*;
 import java.util.ArrayList;
 import java.util.ArrayList;
 import persistence.entities.Day;
+import persistence.entities.Exercises;
 
 
 @Controller
@@ -26,7 +27,9 @@ public class WorkoutController extends HttpServlet{
 		
 		String username = (String)session.getAttribute("username");
 
-		ArrayList<Day> cycle = workoutService.getCurrentCycle("username");
+		ArrayList<Day> cycle = workoutService.getCurrentCycle(username);
+
+
 		VIEW_INDEX = "currentCycle";
 		return VIEW_INDEX;
 	}

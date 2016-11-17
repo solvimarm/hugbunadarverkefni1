@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class testgetCycle_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class currentCycle_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -55,7 +55,7 @@ public final class testgetCycle_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\n");
       out.write("<html>\n");
       out.write("\t<head>\n");
-      out.write("\t\t<title>get workoutplan</title>\n");
+      out.write("\t\t<title>Current Workout Plan</title>\n");
       out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \n");
       out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\n");
       out.write("\t\t<meta charset=\"utf-8\">\n");
@@ -65,13 +65,43 @@ public final class testgetCycle_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
       out.write("\t</head>\n");
       out.write("\t<body>\n");
-      out.write("\t\t\t\t<form method=\"POST\" role=\"form\">\n");
-      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
-      out.write("\t\t\t\t\t\t<label for=\"username\">Type your userName</label>\n");
-      out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"username\"/>\n");
-      out.write("\t\t\t\t\t</div>\n");
-      out.write("\t\t\t\t\t<input type=\"submit\" name=\"button\" value=\"Submit\"/>\n");
-      out.write("\t\t\t\t</form>\n");
+      out.write("\t\t<div class=\"row\">\n");
+      out.write("  \t\t\t<div class=\"col-sm-6\">\n");
+      out.write("   \t\t\t\t<div class=\"card card-block\">\n");
+      out.write("      \t\t\t\t<h3 class=\"card-title\">MÃ¡nudagur</h3>\n");
+      out.write("     \t\t\t\t <p class=\"card-text\">With supporting text below as a natural lead-in to additional content.</p>\n");
+      out.write("      \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n");
+      out.write("    \t\t\t</div>\n");
+      out.write("  \t\t\t</div>\n");
+      out.write(" \t\t\t <div class=\"col-sm-6\">\n");
+      out.write("    \t\t\t<div class=\"card card-block\">\n");
+      out.write("      \t\t\t\t<h3 class=\"card-title\">ÃriÃ°judagur</h3>\n");
+      out.write("      \t\t\t\t<p class=\"card-text\">With supporting text below as a natural lead-in to additional content.</p>\n");
+      out.write("     \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n");
+      out.write("    \t\t\t</div>\n");
+      out.write("  \t\t\t</div>\n");
+      out.write("  \t\t\t<div class=\"col-sm-6\">\n");
+      out.write("    \t\t\t<div class=\"card card-block\">\n");
+      out.write("      \t\t\t\t<h3 class=\"card-title\">MiÃ°vikudagur</h3>\n");
+      out.write("      \t\t\t\t<p class=\"card-text\">With supporting text below as a natural lead-in to additional content.</p>\n");
+      out.write("     \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n");
+      out.write("    \t\t\t</div>\n");
+      out.write("  \t\t\t</div>\n");
+      out.write("  \t\t\t<div class=\"col-sm-6\">\n");
+      out.write("    \t\t\t<div class=\"card card-block\">\n");
+      out.write("      \t\t\t\t<h3 class=\"card-title\">Fimmtudagur</h3>\n");
+      out.write("      \t\t\t\t<p class=\"card-text\">With supporting text below as a natural lead-in to additional content.</p>\n");
+      out.write("     \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n");
+      out.write("    \t\t\t</div>\n");
+      out.write("  \t\t\t</div>\n");
+      out.write("  \t\t\t<div class=\"col-sm-6\">\n");
+      out.write("    \t\t\t<div class=\"card card-block\">\n");
+      out.write("      \t\t\t\t<h3 class=\"card-title\">FÃ¶studagur</h3>\n");
+      out.write("      \t\t\t\t<p class=\"card-text\">With supporting text below as a natural lead-in to additional content.</p>\n");
+      out.write("     \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n");
+      out.write("    \t\t\t</div>\n");
+      out.write("  \t\t\t</div>\n");
+      out.write("\t\t</div>\n");
       out.write("\t</body>\n");
       out.write("</html>");
     } catch (Throwable t) {

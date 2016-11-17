@@ -6,7 +6,7 @@ import java.util.*;
 import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 import java.util.Date;
-
+import persistence.entities.Exercises;
 
 public class WorkoutService{
 
@@ -55,9 +55,12 @@ public class WorkoutService{
 	public ArrayList<Day> getCurrentCycle(String username){
 
 		Object currentCycleObject = workoutRepository.getCurrentCycle(username);
-
+		
 		if(currentCycleObject instanceof ArrayList<?>){
 			ArrayList<Day> currentCycle = (ArrayList<Day>) currentCycleObject;
+			ArrayList<Exercises> exer = currentCycle.get(0).getExercises();
+			System.out.println(currentCycle.get(0).getWentToGym());
+			System.out.println(exer.get(0).getName());
 			return currentCycle;
 		}
 		return null;
