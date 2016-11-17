@@ -6,10 +6,17 @@ import persistence.entities.Food;
 //Not fully implemented
 public class FoodService{
 
-	//public FoodRepository foodRepository
-	public UserRepository userRepository = new UserRepository();
+	public FoodRepository foodRepository = new FoodRepository();
 
-	public ArrayList<Food> getDietPlan(String goal){
+	//Gets diet plan from repository for specific user
+	public ArrayList<Food> getDietPlan(String username){
+
+		Object dietPlanObject = foodRepository.getDietPlan(username);
+
+		if(dietPlanObject instanceof ArrayList<?>){
+			ArrayList<Food> dietPlan = (ArrayList<Food>) dietPlanObject;
+			return dietPlan;
+		}
 		return null;
 	}
 

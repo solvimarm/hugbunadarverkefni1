@@ -18,11 +18,15 @@
 			<h1>Matarplan</h1>
 			
 			<h4>Morgunmatur</h4>
-			<p>Hafragrautur</p>
+			<p>${breakfast}</p>
 			<h4>Hádegismatur</h4>
-			<p>Kjúklingur, brún hrísgrjón</p>
+			<p>${lunch}</p>
 			<h4>Kvöldmatur</h4>
+<<<<<<< HEAD
 			<p>Nautakjöt, sætar kartöflur</p>
+=======
+			<p>${dinner}</p>
+>>>>>>> ab6d56d812e4bd577e450531f98bbb72df9472b3
 		</div>
 	</body>
 </html>
