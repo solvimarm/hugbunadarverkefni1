@@ -13,14 +13,42 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<form method="POST" role="form">
-			<div class="form-group">
-				<label for="username">Type your Username</label>
-				<input type="text" class="form-control" name="username"/>
-				<label for="date">Type your date</label>
-				<input type="text" class="form-control" name="date"/>		
-			</div>
-			<input type="submit" name="button" value="Submit"/>
-		</form>
+		<div class="row">
+  			<div class="col-sm-6">
+   				<div class="card card-block">
+      				<h3 class="card-title">Mánudagur</h3>
+     				 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      				<a href="#" class="btn btn-primary">Go somewhere</a>
+    			</div>
+  			</div>
+ 			 <div class="col-sm-6">
+    			<div class="card card-block">
+      				<h3 class="card-title">Þriðjudagur</h3>
+      				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+     				<a href="#" class="btn btn-primary">Go somewhere</a>
+    			</div>
+  			</div>
+  			<div class="col-sm-6">
+    			<div class="card card-block">
+      				<h3 class="card-title">Miðvikudagur</h3>
+      				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+     				<a href="#" class="btn btn-primary">Go somewhere</a>
+    			</div>
+  			</div>
+  			<div class="col-sm-6">
+    			<div class="card card-block">
+      				<h3 class="card-title">Fimmtudagur</h3>
+      				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+     				<a href="#" class="btn btn-primary">Go somewhere</a>
+    			</div>
+  			</div>
+  			<div class="col-sm-6">
+    			<div class="card card-block">
+      				<h3 class="card-title">Föstudagur</h3>
+      				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+     				<a href="#" class="btn btn-primary">Go somewhere</a>
+    			</div>
+  			</div>
+		</div>
 	</body>
 </html>
