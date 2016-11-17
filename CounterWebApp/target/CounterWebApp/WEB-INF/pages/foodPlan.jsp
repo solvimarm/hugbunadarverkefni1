@@ -13,16 +13,16 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div>
+		<div class= "container">
 			<img src="https://assets.entrepreneur.com/content/16x9/822/20150408144705-90-minute-morning-routine-workday-more-productive-healthy-breakfast-cereal-fruit-smoothie.jpeg" alt="">
-				<h1>Matarplan</h1>
-				<h4>Morgunmatur</h4>
-				<p>Hafragrautur</p>
-				<h4>Hádegismatur</h4>
-				<p>Kjúklingur, brún hrísgrjón</p>
-				<h4>Kvöldmatur</h4>
-				<p>Nautakjöt, sætar kartöflur</p>
-				<p>Virkaðu drasl</p>
-				</div>
+			<h1>Matarplan</h1>
+			<h4>Morgunmatur</h4>
+			<p>Hafragrautur</p>
+			<h4>Hádegismatur</h4>
+			<p>Kjúklingur, brún hrísgrjón</p>
+			<h4>Kvöldmatur</h4>
+			<p>Nautakjöt, sætar kartöflur</p>
+			<p>Virkaðu drasl</p>
+		</div>
 	</body>
 </html>
