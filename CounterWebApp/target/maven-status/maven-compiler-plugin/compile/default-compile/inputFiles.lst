@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Day.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/FoodService.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/FoodRepository.groovy
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/WorkoutRepository.groovy
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/UserService.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Exercises.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/UserController.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/WorkoutController.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/Password.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/VerifyService.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Food.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/WorkoutService.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Set.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/FoodController.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/RepositoryTesterController.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/User.java
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/UserRepository.groovy
+/home/solvi/Documents/hugbunaðarverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/addToXml.groovy
+=======
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/UserController.java
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/WorkoutController.java
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/FoodController.java
@@ -16,3 +36,4 @@
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/service/Password.java
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/addToXml.groovy
 /Users/astrosei/Projects/HB1/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Exercises.java
+>>>>>>> ab6d56d812e4bd577e450531f98bbb72df9472b3

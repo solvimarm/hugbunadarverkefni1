@@ -203,4 +203,20 @@ public class RepositoryTesterController extends HttpServlet{
 			VIEW_INDEX = "testgetdietplan";
 		return VIEW_INDEX;
 	}
+
+	@RequestMapping(value = "testwtg", method = RequestMethod.GET)
+	public String getwtg() {
+			VIEW_INDEX = "testwtg";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testwtg", method = RequestMethod.POST)
+	public String getwtgpost(HttpServletRequest request) {
+			groovyWorkout.wentToGym(request.getParameter("username"), request.getParameter("date"));
+
+
+
+			VIEW_INDEX = "testwtg";
+		return VIEW_INDEX;
+	}
 }
