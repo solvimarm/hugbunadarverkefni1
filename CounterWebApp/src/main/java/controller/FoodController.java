@@ -20,7 +20,9 @@ public class FoodController extends HttpServlet{
 	private static UserService userService = new UserService();
 
 	@RequestMapping(value = "foodPlan", method = RequestMethod.GET)
-	public String publishSuggestedFoodsPost(){
+	public String publishSuggestedFoodsPost(HttpSession session){
+
+		String username = 
 
 		VIEW_INDEX = "foodPlan";
 		return VIEW_INDEX;
