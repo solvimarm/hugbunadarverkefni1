@@ -30,7 +30,7 @@ public class RepositoryTesterController extends HttpServlet{
 	private static UserRepository groovyXml=new UserRepository();
 	private static WorkoutRepository groovyWorkout = new WorkoutRepository();
 	private static FoodRepository groovyFood = new FoodRepository();
-
+	private static WorkoutService workoutService = new WorkoutService();
 
 	@RequestMapping(value = "test", method = RequestMethod.GET)
 	public String login() {
@@ -185,6 +185,20 @@ public class RepositoryTesterController extends HttpServlet{
 				
 			}
 
+
+			VIEW_INDEX = "testgetdietplan";
+		return VIEW_INDEX;
+	}
+
+	@RequestMapping(value = "testcreatenewcycleservice", method = RequestMethod.GET)
+	public String getnewcycleservice() {
+			WorkoutService ws = new WorkoutService();
+			Object cc = groovyXml.findUser("smm");
+			if(cc instanceof User){
+				User user = (User) cc;
+				workoutService.createNewCycle(user);
+			}
+			
 
 			VIEW_INDEX = "testgetdietplan";
 		return VIEW_INDEX;

@@ -81,7 +81,7 @@ public class WorkoutRepository {
 					Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
 					sets.add(set)
 				}
-				Exercises exercise = new Exercises( it.name.text(), sets, it.@id )
+				Exercises exercise = new Exercises( it.name.text(), sets, it.@id.toInteger() )
 				exercises.add(exercise)
 			}
 
@@ -161,6 +161,27 @@ public class WorkoutRepository {
 		}
 
 
+	}
+
+	def wentToGym(String username, String date){
+		def personFile=new File("${new File(new File(".").getCanonicalPath())}//src//main//resources//persons.xml")
+		def personXML= new XmlParser().parse(personFile)
+
+		def userNode = personXML.person.find{it -> 
+			it.@username == username}
+		if(userNode != null){
+			def dayNode = usernode.workoutPlan[0].day.find{it ->
+				it.@id == date}	
+
+			Date d = Date.parse("dd/MM/yyyy", date)		
+
+			new Node (dayNode, "wentToGym", "true")
+			def loop = true
+			while(loop){
+				
+			}
+		}
+			
 	}
 
 

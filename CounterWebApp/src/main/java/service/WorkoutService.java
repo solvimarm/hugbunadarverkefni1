@@ -1,9 +1,12 @@
 package com.mkyong.controller;
-
 import java.util.ArrayList;
 import persistence.entities.Day;
 import persistence.entities.User;
 import java.util.*;
+import java.text.SimpleDateFormat;
+import java.text.DateFormat;
+import java.util.Date;
+
 
 public class WorkoutService{
 
@@ -11,11 +14,44 @@ public class WorkoutService{
 	public WorkoutRepository workoutRepository = new WorkoutRepository();
 
 	public void createNewCycle(User user){
-		
+
+		//String to Date
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		String nextUpdate = user.getNextUpdate();
+		Date nextUpdateDate;
+		try{
+			nextUpdateDate = dateFormat.parse(nextUpdate);
+
+			Calendar c = Calendar.getInstance();
+			c.setTime(new Date()); // Now use today date.
+			c.add(Calendar.DATE, 1); // Adding 1 day
+			Date date = c.getTime();
+			String toomorrow = dateFormat.format(date);
+			//Date currDateFormat = dateFormat.parse(currentDate);
+			if(date.compareTo(nextUpdateDate) >= 0) {
+				workoutRepository.createCycle(user.getUsername(), toomorrow);
+			}
+
+		}catch(Exception e){
+			System.out.println("þú ert inní exception auli");
+		}	
 	}
+/*
 	public void updateDay(Day day,User user){
+		ArrayList<Exercise> exercises = day.getExercises();
+		for(int i=0; i<exercises.size(); i++){
+			Exercise exercise = exercises.get(i);
+			ArrayList<Set> sets = exercise.getSet();
+			for(int j=0; j<sets.size();j++){
+				Set set = sets.get(j);
+				workoutRepository.updateSet(user.getUsername(), set.getWeight(), set.getNumber(), exercise.getId(), day.getDate());
+			}
+		}
 		
+
+
 	}
+*/
 	public ArrayList<Day> getCurrentCycle(String username){
 
 		Object currentCycleObject = workoutRepository.getCurrentCycle(username);
