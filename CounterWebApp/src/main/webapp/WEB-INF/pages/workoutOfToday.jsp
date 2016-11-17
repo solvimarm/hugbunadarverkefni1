@@ -13,13 +13,16 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-				<form method="POST" role="form">
-					<div class="form-group">
-						<img src="http://crossfitmahwah.com/wp-content/uploads/2016/06/Wod-2.jpg" alt="">
-						<h4>Under construction :D</h4>
-					</div>
-					<input type="submit" name="button" value="Submit"/>
-				</form>
-
+		<form method="POST" role="form">
+			<div class="form-group">
+				<c:forEach var="i" items="${}">
+					<tr>
+						<td>${i}</td>
+					</tr>
+				</c:forEach>
+				<input type="Submit">
+			</div>
+			<input type="submit" name="button" value="Submit"/>
+		</form>
 	</body>
 </html>

@@ -48,7 +48,7 @@ public class WorkoutController extends HttpServlet{
 
 		//Get parameters
 		String username = (String)session.getAttribute("username");
-		String date = "vantar hvernig tökum dagsetningu";
+		String date = "03/01/2016";
 
 		Day day = workoutService.getSpecificDay(username, date);
 		//Input information from day into view. Not implemennted

@@ -222,5 +222,16 @@
     <nextUpdate>20/11/2016</nextUpdate>
     <workoutPlan/>
   </person>
+  <person username="viktor">
+    <name>viktor</name>
+    <password>1234</password>
+    <email>1234</email>
+    <age>34</age>
+    <goal>stronger</goal>
+    <gender>male</gender>
+    <userWeight>98.0</userWeight>
+    <nextUpdate>17/11/2016</nextUpdate>
+    <workoutPlan/>
+  </person>
 </XML-S>
 
