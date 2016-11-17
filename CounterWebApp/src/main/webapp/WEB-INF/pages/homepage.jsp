@@ -13,24 +13,30 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<form method="POST" role="form">
-			<div class = "form-group">
-				<div class="row">
-					<div class ="col-md-4">
-						<input class="btn-primary" type="submit" name="food" value="Food">
+		<div class="container">
+			<ul class="nav nav-tabs">
+  				<li role="presentation" class="active"><a href="hompage">Home</a></li>
+				<li role="presentation"><a href="currentCycle">My Profile</a></li>
+			</ul>			
+			<form method="POST" role="form">
+				<div class = "form-group">
+					<div class="row">
+						<div class ="col-md-4">
+							<input class="btn-primary" type="submit" name="food" value="Food">
+						</div>
+						<div class ="col-md-4">
+							<input class="btn-primary" type="submit" name="week" value="Current cycle">
+						</div>
+						<div class ="col-md-4">
+							<input class="btn-primary" type="submit" name="day" value="Current Day">
+						</div>
 					</div>
-					<div class ="col-md-4">
-						<input class="btn-primary" type="submit" name="week" value="Current cycle">
-					</div>
-					<div class ="col-md-4">
-						<input class="btn-primary" type="submit" name="day" value="Current Day">
-					</div>
+					<h3>Welcome to your home page</h3>
+					<h4>${name}</h4>
+					<h4>${email}</h4>
+					<h4>${goal}</h4>
 				</div>
-				<h3>Welcome to your home page</h3>
-				<h4>${name}</h4>
-				<h4>${email}</h4>
-				<h4>${goal}</h4>
-			</div>
-		</form>
+			</form>
+		</div>
 	</body>
 </html>

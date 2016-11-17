@@ -16,27 +16,28 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		
-		<div class = "row">
-			<div class ="col-md-2"></div>
-			<div class = "col-md-8">
-				<img src='/src/main/img/frontb.jpg' />
-		<div class = "row">
-			<div class ="col-md-2"></div>
-			<div class = "col-md-8">
-				<img src="/frontb.png" alt="">
+		<div class= "container">	
+			<div class = "row">
+				<div class ="col-md-2"></div>
+				<div class = "col-md-8">
+					<img src='/src/main/img/frontb.jpg' />
+			<div class = "row">
+				<div class ="col-md-2"></div>
+				<div class = "col-md-8">
+					<img src="/frontb.png" alt="">
+				</div>
+				<div class = "col-md-2"></div>
 			</div>
-			<div class = "col-md-2"></div>
-		</div>
-		<div class = "row">
-			<form method="POST">
-				<div class = "col-md-1">
-					<input class ="btn-primary" type="submit" name="login" value="Login"/>
-				</div>
-				<div class = "col-md-1" >
-					<input class ="btn-primary	" type="submit" name="register" value="Register" />
-				</div>
-			</form>
+			<div class = "row">
+				<form method="POST">
+					<div class = "col-md-1">
+						<input class ="btn-primary" type="submit" name="login" value="Login"/>
+					</div>
+					<div class = "col-md-1" >
+						<input class ="btn-primary	" type="submit" name="register" value="Register" />
+					</div>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>

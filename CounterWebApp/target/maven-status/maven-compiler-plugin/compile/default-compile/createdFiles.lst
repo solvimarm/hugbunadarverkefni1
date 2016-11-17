@@ -19,7 +19,6 @@ com/mkyong/controller/addToXml.class
 com/mkyong/controller/WorkoutRepository.class
 com/mkyong/controller/WorkoutRepository$_updateSet_closure14.class
 com/mkyong/controller/RepositoryTesterController.class
-persistence/entities/Exercises.class
 com/mkyong/controller/UserRepository$_updateUser_closure4.class
 com/mkyong/controller/WorkoutRepository$_createCycle_closure1.class
 com/mkyong/controller/addToXml$_getUserName_closure2.class

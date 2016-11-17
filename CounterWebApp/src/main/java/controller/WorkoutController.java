@@ -21,14 +21,36 @@ public class WorkoutController extends HttpServlet{
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WorkoutController.class);
 	private static WorkoutService workoutService = new WorkoutService();
 	
-	//Not fully implemented
+	//Gets the current workout cycle and shows it to the user
 	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
-	public String getCurrentCycleGet(HttpSession session){
+	public String getCurrentCycleGet(HttpSession session, ModelMap model){
 		
 		String username = (String)session.getAttribute("username");
 
 		ArrayList<Day> cycle = workoutService.getCurrentCycle(username);
 
+		Day monday = cycle.get(0);
+		Day tuesday = cycle.get(1);
+		Day wednesday = cycle.get(2);
+		Day thursday = cycle.get(3);
+		Day friday = cycle.get(4);
+
+		ArrayList<Exercises> mondayEx = monday.getExercises();
+		ArrayList<Exercises> tuesdayEx = tuesday.getExercises();
+		ArrayList<Exercises> wednesdayEx = wednesday.getExercises();
+		ArrayList<Exercises> thursdayEx = thursday.getExercises();
+		ArrayList<Exercises> fridayEx = friday.getExercises();
+
+		model.addAttribute("mondayDate",monday.getDate());
+		model.addAttribute("tuesdayDate",tuesday.getDate());
+		model.addAttribute("wednesdayDate",wednesday.getDate());
+		model.addAttribute("thursdayDate",thursday.getDate());
+		model.addAttribute("fridayDate", friday.getDate());
+		model.addAttribute("mondayEx",mondayEx);
+		model.addAttribute("tuesdayEx",tuesdayEx);
+		model.addAttribute("wednesdayEx",wednesdayEx);
+		model.addAttribute("thursdayEx",thursdayEx);
+		model.addAttribute("fridayEx",fridayEx);
 
 		VIEW_INDEX = "currentCycle";
 		return VIEW_INDEX;
@@ -36,8 +58,12 @@ public class WorkoutController extends HttpServlet{
 
 	//Not fully implemented
 	@RequestMapping(value = "currentCycle", method = RequestMethod.POST)
-	public String getCurrentCyclePost(){
+	public String getCurrentCyclePost(HttpSession session, HttpServletRequest request){
 
+		if(request.getParameter("monday")!=null){
+			session.setAttribute("date","dagur");
+			System.out.println("ég er hjér að ýta á mánudagggggggg");
+		}
 		VIEW_INDEX = "workoutOfToday";
 		return "redirect:/"+VIEW_INDEX;
 	}

@@ -15,61 +15,68 @@
 	<body>
 		<div class= "container">
 			<div class="row">
-	  			<div class="col-sm-6">
-	   				<div class="card card-block">
-	      				<h3 class="card-title">Monday</h3>
-	     				 <ul class="list-group list-group-flush">
-    						<li class="list-group-item">Workout 1</li>
-    						<li class="list-group-item">Workout 2</li>
-    						<li class="list-group-item">Workout 3</li>
- 				 		</ul>
-	      				<a href="#" class="btn btn-primary">Fill in results</a>
-	    			</div>
-	  			</div>
-	 			 <div class="col-sm-6">
-	    			<div class="card card-block">
-	      				<h3 class="card-title">Tuesday</h3>
-	      				<ul class="list-group list-group-flush">
-    						<li class="list-group-item">Workout 1</li>
-    						<li class="list-group-item">Workout 2</li>
-    						<li class="list-group-item">Workout 3</li>
- 				 		</ul>
-	      				<a href="#" class="btn btn-primary">Fill in results</a>
-	    			</div>
-	  			</div>
-	  			<div class="col-sm-6">
-	    			<div class="card card-block">
-	      				<h3 class="card-title">Wednesday</h3>
-	      				<ul class="list-group list-group-flush">
-    						<li class="list-group-item">Workout 1</li>
-    						<li class="list-group-item">Workout 2</li>
-    						<li class="list-group-item">Workout 3</li>
- 				 		</ul>
-	      				<a href="#" class="btn btn-primary">Fill in results</a>
-	    			</div>
-	  			</div>
-	  			<div class="col-sm-6">
-	    			<div class="card card-block">
-	      				<h3 class="card-title">Thursday</h3>
-	      				<ul class="list-group list-group-flush">
-    						<li class="list-group-item">Workout 1</li>
-    						<li class="list-group-item">Workout 2</li>
-    						<li class="list-group-item">Workout 3</li>
- 				 		</ul>
-	      				<a href="#" class="btn btn-primary">Fill in results</a>
-	    			</div>
-	  			</div>
-	  			<div class="col-sm-6">
-	    			<div class="card card-block">
-	      				<h3 class="card-title">Friday</h3>
-	      				<ul class="list-group list-group-flush">
-    						<li class="list-group-item">Workout 1</li>
-    						<li class="list-group-item">Workout 2</li>
-    						<li class="list-group-item">Workout 3</li>
- 				 		</ul>
-	      				<a href="#" class="btn btn-primary">Fill in results</a>
-	    			</div>
-	  			</div>
+				<form method="POST", role="form">
+		  			<div class="col-sm-6">
+		   				<div class="card card-block">
+		      				<h3 class="card-title">Monday</h3>
+		      				<p>${mondayDate}</p>
+		     				 <ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${mondayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<input type="submit" name="monday" class="btn btn-primary" value="Fill in results"></input>
+		    			</div>
+		  			</div>
+		 			 <div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Tuesday</h3>
+		      				<p>${tuesdayDate}</p>
+		      				<ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${tuesdayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<a href="#" class="btn btn-primary">Fill in results</a>
+		    			</div>
+		  			</div>
+		  			<div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Wednesday</h3>
+		      				<p>${wednesdayDate}</p>
+		      				<ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${wednesdayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<a href="#" class="btn btn-primary">Fill in results</a>
+		    			</div>
+		  			</div>
+		  			<div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Thursday</h3>
+		      				<p>${thursdayDate}</p>
+		      				<ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${thursdayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<a href="#" class="btn btn-primary">Fill in results</a>
+		    			</div>
+		  			</div>
+		  			<div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Friday</h3>
+		      				<p>${fridayDate}</p>
+		      				<ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${fridayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<a href="#" class="btn btn-primary">Fill in results</a>
+		    			</div>
+		  			</div>
+		  		</form>
 			</div>
 		</div>
 	</body>
