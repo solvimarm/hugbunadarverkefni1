@@ -21,7 +21,7 @@ public class FoodController extends HttpServlet{
 
 	@RequestMapping(value = "foodPlan", method = RequestMethod.GET)
 	public String publishSuggestedFoodsPost(){
-		
+
 		VIEW_INDEX = "foodPlan";
 		return VIEW_INDEX;
 	}
