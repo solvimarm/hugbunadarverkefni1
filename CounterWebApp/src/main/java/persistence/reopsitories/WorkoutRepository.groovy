@@ -115,11 +115,12 @@ public class WorkoutRepository {
 					Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
 					sets.add(set)
 				}
-				Exercises exercise = new Exercises( it.name.text(), sets, it.@id )
+				Exercises exercise = new Exercises( it.name.text(), sets, it.@id.toInteger() )
 				exercises.add(exercise)
 			}
 
-			Day day = new Day(userNode.userWeight.text().toDouble(), date, true, exercises)
+
+			Day day = new Day(userNode.userWeight.text().toDouble(), date, workoutDay.wentToGym.text(), exercises)
 			
 			return day
 
@@ -170,16 +171,36 @@ public class WorkoutRepository {
 		def userNode = personXML.person.find{it -> 
 			it.@username == username}
 		if(userNode != null){
-			def dayNode = usernode.workoutPlan[0].day.find{it ->
-				it.@id == date}	
+			def dayNode = userNode.workoutPlan[0].day.find{it ->
+				it.@id == date}
 
-			Date d = Date.parse("dd/MM/yyyy", date)		
+				if(dayNode!=null){
+					Date d = Date.parse("dd/MM/yyyy", date)		
 
-			new Node (dayNode, "wentToGym", "true")
-			def loop = true
-			while(loop){
-				
-			}
+					new Node (dayNode, "wentToGym", "true")
+
+					def loop = true
+					while(loop){
+						d=d.previous()
+						def preDayNode = userNode.workoutPlan[0].day.find{it ->
+							it.@id == d.format("dd/MM/yyyy")}
+						if(preDayNode!=null){
+							def check = preDayNode.wentToGym.findAll{}	
+							if(check.size()>0){
+								loop = false
+							}
+							else{
+								new Node (preDayNode, "wentToGym", "false")
+							
+							}
+						}
+						else loop = false
+					}
+					personFile.withWriter ("utf-8") {writer ->
+							writer.writeLine(new XmlUtil().serialize(personXML))}
+				}
+
+
 		}
 			
 	}

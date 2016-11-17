@@ -1,18 +1,18 @@
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\controller\RepositoryTesterController.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\service\Password.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\entities\Day.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\reopsitories\FoodRepository.groovy
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\service\FoodService.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\service\VerifyService.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\service\WorkoutService.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\entities\Exercises.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\entities\User.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\controller\WorkoutController.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\controller\FoodController.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\reopsitories\UserRepository.groovy
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\controller\UserController.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\entities\Food.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\entities\Set.java
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\reopsitories\WorkoutRepository.groovy
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\persistence\reopsitories\addToXml.groovy
-C:\Users\ÍvarKristinn\Desktop\Cleandesk\Skóli\3.ár\1.önn\Hugbúnaðarverkefni 1\hugbunadarverkefni1\CounterWebApp\src\main\java\service\UserService.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Day.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/FoodService.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/FoodRepository.groovy
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/WorkoutRepository.groovy
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/UserService.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Exercises.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/UserController.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/WorkoutController.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/Password.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/VerifyService.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Food.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/service/WorkoutService.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/Set.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/FoodController.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/controller/RepositoryTesterController.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/entities/User.java
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/UserRepository.groovy
+/home/solvi/Documents/hugbunaÃ°arverkefni/hugbunadarverkefni1/CounterWebApp/src/main/java/persistence/reopsitories/addToXml.groovy
