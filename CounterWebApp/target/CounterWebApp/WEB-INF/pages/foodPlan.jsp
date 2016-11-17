@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>Matarplan til dæmis</title>
+		<title>Suggested foodplan</title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<script src="../js/bootstrap.min.js"></script>
 		<meta charset="utf-8">
@@ -16,13 +16,13 @@
 		<div class= "container">
 			<img src="https://assets.entrepreneur.com/content/16x9/822/20150408144705-90-minute-morning-routine-workday-more-productive-healthy-breakfast-cereal-fruit-smoothie.jpeg" alt="">
 			<h1>Matarplan</h1>
+			
 			<h4>Morgunmatur</h4>
-			<p>Hafragrautur</p>
+			<p>${breakfast}</p>
 			<h4>Hádegismatur</h4>
-			<p>Kjúklingur, brún hrísgrjón</p>
+			<p>${lunch}</p>
 			<h4>Kvöldmatur</h4>
-			<p>Nautakjöt, sætar kartöflur</p>
-			<p>Virkaðu drasl</p>
+			<p>${dinner}</p>
 		</div>
 	</body>
 </html>

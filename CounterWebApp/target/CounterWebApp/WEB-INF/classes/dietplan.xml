@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XML-S>
 	<category id = "stronger">
-			<name typeOfMeal="morgunmatur">Hafragrautur</name>
-			<name typeOfMeal ="hádegismatur">Kjúklingur, brún hrísgrjón</name>
-			<name typeOfMeal="kvöldmatur">Nautakjöt, sætar kartöflur</name>
+			<name typeOfMeal="morgunmatur">Hafragrautur,soldai</name>
+			<name typeOfMeal ="hádegismatur">Kjúklingur, brún hrísgrjón.solvvi</name>
+			<name typeOfMeal="kvöldmatur">Nautakjöt, sætar kartöflur, sölvi</name>
 	</category>
 		<category id = "leaner">
 			<name typeOfMeal="morgunmatur">Hafragrautur</name>

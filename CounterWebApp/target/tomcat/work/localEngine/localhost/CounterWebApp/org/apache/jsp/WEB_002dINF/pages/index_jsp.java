@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -53,10 +53,13 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("\t<head>\n");
-      out.write("\t\t<title>username</title>\n");
-      out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \n");
+      out.write("\t\t<title>Login</title>\n");
+      out.write("\t\t<link rel=\"shortcut icon\" href=\"data:image/x-icon;,\" type=\"image/x-icon\"> \n");
+      out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">\n");
+      out.write("\t\t<link rel=\"stylesheet\" href=\"../css/testcss.css\">       \n");
       out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\n");
       out.write("\t\t<meta charset=\"utf-8\">\n");
       out.write("\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
@@ -65,31 +68,28 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
       out.write("\t</head>\n");
       out.write("\t<body>\n");
-      out.write("\t\t<form method=\"POST\" role=\"form\">\n");
-      out.write("\t\t\t<div class = \"form-group\">\n");
-      out.write("\t\t\t\t<div class=\"row\">\n");
-      out.write("\t\t\t\t\t<div class =\"col-md-4\">\n");
-      out.write("\t\t\t\t\t\t<input class=\"btn-primary\" type=\"submit\" name=\"food\" value=\"Food\">\n");
-      out.write("\t\t\t\t\t</div>\n");
-      out.write("\t\t\t\t\t<div class =\"col-md-4\">\n");
-      out.write("\t\t\t\t\t\t<input class=\"btn-primary\" type=\"submit\" name=\"week\" value=\"Current cycle\">\n");
-      out.write("\t\t\t\t\t</div>\n");
-      out.write("\t\t\t\t\t<div class =\"col-md-4\">\n");
-      out.write("\t\t\t\t\t\t<input class=\"btn-primary\" type=\"submit\" name=\"day\" value=\"Current Day\">\n");
-      out.write("\t\t\t\t\t</div>\n");
-      out.write("\t\t\t\t</div>\n");
-      out.write("\t\t\t\t<h3>Welcome to your home page</h3>\n");
-      out.write("\t\t\t\t<h4>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</h4>\n");
-      out.write("\t\t\t\t<h4>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${email}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</h4>\n");
-      out.write("\t\t\t\t<h4>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${goal}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</h4>\n");
+      out.write("\t\t\n");
+      out.write("\t\t<div class = \"row\">\n");
+      out.write("\t\t\t<div class =\"col-md-2\"></div>\n");
+      out.write("\t\t\t<div class = \"col-md-8\">\n");
+      out.write("\t\t\t\t<img src='/src/main/img/frontb.jpg' />\n");
+      out.write("\t\t<div class = \"row\">\n");
+      out.write("\t\t\t<div class =\"col-md-2\"></div>\n");
+      out.write("\t\t\t<div class = \"col-md-8\">\n");
+      out.write("\t\t\t\t<img src=\"/frontb.png\" alt=\"\">\n");
       out.write("\t\t\t</div>\n");
-      out.write("\t\t</form>\n");
+      out.write("\t\t\t<div class = \"col-md-2\"></div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<div class = \"row\">\n");
+      out.write("\t\t\t<form method=\"POST\">\n");
+      out.write("\t\t\t\t<div class = \"col-md-1\">\n");
+      out.write("\t\t\t\t\t<input class =\"btn-primary\" type=\"submit\" name=\"login\" value=\"Login\"/>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<div class = \"col-md-1\" >\n");
+      out.write("\t\t\t\t\t<input class =\"btn-primary\t\" type=\"submit\" name=\"register\" value=\"Register\" />\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</form>\n");
+      out.write("\t\t</div>\n");
       out.write("\t</body>\n");
       out.write("</html>");
     } catch (Throwable t) {
