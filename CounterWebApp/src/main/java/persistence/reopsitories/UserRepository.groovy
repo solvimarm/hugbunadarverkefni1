@@ -20,7 +20,7 @@ public class UserRepository {
 			def userNode = new Node (xml, "person",[username: user.getUsername()])
 			new Node (userNode, "name", user.getName())
 			new Node (userNode, "password", user.getPassword())
-			new Node (userNode, "email", user.getPassword())
+			new Node (userNode, "email", user.getEmail())
 			new Node (userNode, "age", user.getAge())
 			new Node (userNode, "goal", user.getGoal())
 			new Node (userNode, "gender", user.getGender())
