@@ -236,8 +236,115 @@
     <goal>stronger</goal>
     <gender>male</gender>
     <userWeight>98.0</userWeight>
-    <nextUpdate>17/11/2016</nextUpdate>
-    <workoutPlan/>
+    <nextUpdate>23/11/2016</nextUpdate>
+    <workoutPlan>
+      <day id="18/11/2016">
+        <exercise id="1">
+          <name>æfing 1</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>æfing 2</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>æfing 3</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="4">
+          <name>æfing 4</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="19/11/2016">
+        <exercise id="1">
+          <name>æfing 1</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>æfing 2</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>æfing 3</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="20/11/2016">
+        <exercise id="1">
+          <name>æfing 1</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>æfing 2</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>æfing 3</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="21/11/2016">
+        <exercise id="1">
+          <name>æfing 1</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>æfing 2</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>æfing 3</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="22/11/2016">
+        <exercise id="1">
+          <name>æfing 1</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>æfing 2</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>æfing 3</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+    </workoutPlan>
   </person>
   <person username="sun">
     <name>sunna</name>

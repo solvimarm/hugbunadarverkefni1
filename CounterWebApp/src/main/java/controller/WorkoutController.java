@@ -74,7 +74,7 @@ public class WorkoutController extends HttpServlet{
 
 		//Get parameters
 		String username = (String)session.getAttribute("username");
-		String date = "03/01/2016";
+		String date = "8/11/2016";
 
 		Day day = workoutService.getSpecificDay(username, date);
 		//Input information from day into view. Not implemennted
@@ -85,7 +85,7 @@ public class WorkoutController extends HttpServlet{
 			//set.add(exercise.get(i).getSet());
 			workout.add(exercise.get(i).getName());
 		}
-		model.addAttribute("workout",workout);
+		model.addAttribute("workout", workout);
 
 		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;
