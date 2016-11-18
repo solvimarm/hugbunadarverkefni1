@@ -54,103 +54,103 @@ public final class currentCycle_jsp extends org.apache.jasper.runtime.HttpJspBas
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("\t<head>\n");
-      out.write("\t\t<title>Current Workout Plan</title>\n");
-      out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \n");
-      out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\n");
-      out.write("\t\t<meta charset=\"utf-8\">\n");
-      out.write("\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
-      out.write("\t\t<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">\n");
-      out.write("\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js\"></script>\n");
-      out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
-      out.write("\t</head>\n");
-      out.write("\t<body>\n");
-      out.write("\t\t<div class= \"container\">\n");
-      out.write("\t\t\t<div class=\"row\">\n");
-      out.write("\t\t\t\t<form method=\"POST\", role=\"form\">\n");
-      out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\n");
-      out.write("\t\t   \t\t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Monday</h3>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("\t<head>\r\n");
+      out.write("\t\t<title>Current Workout Plan</title>\r\n");
+      out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \r\n");
+      out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\r\n");
+      out.write("\t\t<meta charset=\"utf-8\">\r\n");
+      out.write("\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
+      out.write("\t\t<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">\r\n");
+      out.write("\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js\"></script>\r\n");
+      out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\r\n");
+      out.write("\t</head>\r\n");
+      out.write("\t<body>\r\n");
+      out.write("\t\t<div class= \"container\">\r\n");
+      out.write("\t\t\t<div class=\"row\">\r\n");
+      out.write("\t\t\t\t<form method=\"POST\", role=\"form\">\r\n");
+      out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\r\n");
+      out.write("\t\t   \t\t\t\t<div class=\"card card-block\">\r\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Monday</h3>\r\n");
       out.write("\t\t      \t\t\t\t<p>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mondayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</p>\n");
-      out.write("\t\t     \t\t\t\t <ul class=\"list-group list-group-flush\">\n");
+      out.write("</p>\r\n");
+      out.write("\t\t     \t\t\t\t <ul class=\"list-group list-group-flush\">\r\n");
       out.write("\t\t     \t\t\t\t \t");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t \t\t\t\t \t\t</ul>\n");
-      out.write("\t\t      \t\t\t\t<input type=\"submit\" name=\"monday\" class=\"btn btn-primary\" value=\"Fill in results\"></input>\n");
-      out.write("\t\t    \t\t\t</div>\n");
-      out.write("\t\t  \t\t\t</div>\n");
-      out.write("\t\t \t\t\t <div class=\"col-sm-6\">\n");
-      out.write("\t\t    \t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Tuesday</h3>\n");
+      out.write("\r\n");
+      out.write("\t \t\t\t\t \t\t</ul>\r\n");
+      out.write("\t\t      \t\t\t\t<input type=\"submit\" name=\"monday\" class=\"btn btn-primary\" value=\"Fill in results\"></input>\r\n");
+      out.write("\t\t    \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t\t</div>\r\n");
+      out.write("\t\t \t\t\t <div class=\"col-sm-6\">\r\n");
+      out.write("\t\t    \t\t\t<div class=\"card card-block\">\r\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Tuesday</h3>\r\n");
       out.write("\t\t      \t\t\t\t<p>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${tuesdayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</p>\n");
-      out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\n");
+      out.write("</p>\r\n");
+      out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\r\n");
       out.write("\t\t     \t\t\t\t \t");
       if (_jspx_meth_c_005fforEach_005f1(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t \t\t\t\t \t\t</ul>\n");
-      out.write("\t\t      \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Fill in results</a>\n");
-      out.write("\t\t    \t\t\t</div>\n");
-      out.write("\t\t  \t\t\t</div>\n");
-      out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\n");
-      out.write("\t\t    \t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Wednesday</h3>\n");
+      out.write("\r\n");
+      out.write("\t \t\t\t\t \t\t</ul>\r\n");
+      out.write("\t\t      \t\t\t\t<input type=\"submit\" name=\"tuesday\" class=\"btn btn-primary\" value=\"Fill in results\"></input>\r\n");
+      out.write("\t\t    \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\r\n");
+      out.write("\t\t    \t\t\t<div class=\"card card-block\">\r\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Wednesday</h3>\r\n");
       out.write("\t\t      \t\t\t\t<p>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${wednesdayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</p>\n");
-      out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\n");
+      out.write("</p>\r\n");
+      out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\r\n");
       out.write("\t\t     \t\t\t\t \t");
       if (_jspx_meth_c_005fforEach_005f2(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t \t\t\t\t \t\t</ul>\n");
-      out.write("\t\t      \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Fill in results</a>\n");
-      out.write("\t\t    \t\t\t</div>\n");
-      out.write("\t\t  \t\t\t</div>\n");
-      out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\n");
-      out.write("\t\t    \t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Thursday</h3>\n");
+      out.write("\r\n");
+      out.write("\t \t\t\t\t \t\t</ul>\r\n");
+      out.write("\t\t      \t\t\t\t<input type=\"submit\" name=\"wednesday\" class=\"btn btn-primary\" value=\"Fill in results\"></input>\r\n");
+      out.write("\t\t    \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\r\n");
+      out.write("\t\t    \t\t\t<div class=\"card card-block\">\r\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Thursday</h3>\r\n");
       out.write("\t\t      \t\t\t\t<p>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${thursdayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</p>\n");
-      out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\n");
+      out.write("</p>\r\n");
+      out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\r\n");
       out.write("\t\t     \t\t\t\t \t");
       if (_jspx_meth_c_005fforEach_005f3(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t \t\t\t\t \t\t</ul>\n");
-      out.write("\t\t      \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Fill in results</a>\n");
-      out.write("\t\t    \t\t\t</div>\n");
-      out.write("\t\t  \t\t\t</div>\n");
-      out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\n");
-      out.write("\t\t    \t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Friday</h3>\n");
+      out.write("\r\n");
+      out.write("\t \t\t\t\t \t\t</ul>\r\n");
+      out.write("\t\t      \t\t\t\t<input type=\"submit\" name=\"thursday\" class=\"btn btn-primary\" value=\"Fill in results\"></input>\r\n");
+      out.write("\t\t    \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\r\n");
+      out.write("\t\t    \t\t\t<div class=\"card card-block\">\r\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Friday</h3>\r\n");
       out.write("\t\t      \t\t\t\t<p>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fridayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</p>\n");
-      out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\n");
+      out.write("</p>\r\n");
+      out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\r\n");
       out.write("\t\t     \t\t\t\t \t");
       if (_jspx_meth_c_005fforEach_005f4(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t \t\t\t\t \t\t</ul>\n");
-      out.write("\t\t      \t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Fill in results</a>\n");
-      out.write("\t\t    \t\t\t</div>\n");
-      out.write("\t\t  \t\t\t</div>\n");
-      out.write("\t\t  \t\t</form>\n");
-      out.write("\t\t\t</div>\n");
-      out.write("\t\t</div>\n");
-      out.write("\t</body>\n");
+      out.write("\r\n");
+      out.write("\t \t\t\t\t \t\t</ul>\r\n");
+      out.write("\t\t      \t\t\t\t<input type=\"submit\" name=\"friday\" class=\"btn btn-primary\" value=\"Fill in results\"></input>\r\n");
+      out.write("\t\t    \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t\t</div>\r\n");
+      out.write("\t\t  \t\t</form>\r\n");
+      out.write("\t\t\t</div>\r\n");
+      out.write("\t\t</div>\r\n");
+      out.write("\t</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -181,10 +181,10 @@ public final class currentCycle_jsp extends org.apache.jasper.runtime.HttpJspBas
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t    \t\t\t\t\t\t\t<li class=\"list-group-item\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i.name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</li>\n");
+          out.write("</li>\r\n");
           out.write("\t    \t\t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -222,10 +222,10 @@ public final class currentCycle_jsp extends org.apache.jasper.runtime.HttpJspBas
       int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();
       if (_jspx_eval_c_005fforEach_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t    \t\t\t\t\t\t\t<li class=\"list-group-item\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i.name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</li>\n");
+          out.write("</li>\r\n");
           out.write("\t    \t\t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -263,10 +263,10 @@ public final class currentCycle_jsp extends org.apache.jasper.runtime.HttpJspBas
       int _jspx_eval_c_005fforEach_005f2 = _jspx_th_c_005fforEach_005f2.doStartTag();
       if (_jspx_eval_c_005fforEach_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t    \t\t\t\t\t\t\t<li class=\"list-group-item\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i.name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</li>\n");
+          out.write("</li>\r\n");
           out.write("\t    \t\t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f2.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -304,10 +304,10 @@ public final class currentCycle_jsp extends org.apache.jasper.runtime.HttpJspBas
       int _jspx_eval_c_005fforEach_005f3 = _jspx_th_c_005fforEach_005f3.doStartTag();
       if (_jspx_eval_c_005fforEach_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t    \t\t\t\t\t\t\t<li class=\"list-group-item\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i.name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</li>\n");
+          out.write("</li>\r\n");
           out.write("\t    \t\t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f3.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -345,10 +345,10 @@ public final class currentCycle_jsp extends org.apache.jasper.runtime.HttpJspBas
       int _jspx_eval_c_005fforEach_005f4 = _jspx_th_c_005fforEach_005f4.doStartTag();
       if (_jspx_eval_c_005fforEach_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t    \t\t\t\t\t\t\t<li class=\"list-group-item\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i.name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</li>\n");
+          out.write("</li>\r\n");
           out.write("\t    \t\t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f4.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

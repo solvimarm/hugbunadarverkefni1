@@ -15,11 +15,26 @@
 	<body>
 		<form method="POST" role="form">
 			<div class="form-group">
-				<ul class="list-group list-group-flush">
-	 			 	<c:forEach var="i" items="${workout}">
-	   					<li class="list-group-item">${i}</li>
-	   				</c:forEach>
-	 			</ul>
+	 			<table class="table">
+  					<tr>
+    					<th>Name</th>
+    					<th>Sets</th> 
+    					<th>Reps</th>
+    					<th>Dumbel weight</th>
+  					</tr>
+  					<c:forEach var="i" items="${workout}">
+  						<tr>
+    						<td>${i}</td>
+   							<td>3</td> 
+    						<td>${rep}</td>
+    						<td>
+    							<div class="col-xs-3">
+    								<input type="int" name="${i}" class="form-control">
+    							</div>
+    						</td>
+  						</tr>
+  					</c:forEach>
+				</table>
 			</div>
 			<input type="submit" name="button" value="Submit"/>
 		</form>

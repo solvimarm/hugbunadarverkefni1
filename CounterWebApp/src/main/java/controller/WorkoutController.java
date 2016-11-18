@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.ArrayList;
 import persistence.entities.Day;
 import persistence.entities.Exercises;
+import persistence.entities.Set;
 
 
 @Controller
@@ -61,7 +62,7 @@ public class WorkoutController extends HttpServlet{
 
 	//Takes the user to a specific day in the cycle
 	@RequestMapping(value = "currentCycle", method = RequestMethod.POST)
-	public String getCurrentCyclePost(HttpSession session, HttpsServletRequest, request){
+	public String getCurrentCyclePost(HttpSession session, HttpServletRequest request){
 
 		//Find the right date and keep it in session
 		ArrayList<Day> currentCycle = (ArrayList<Day>)session.getAttribute("currentCycle");
@@ -100,18 +101,21 @@ public class WorkoutController extends HttpServlet{
 
 		//Get parameters
 		String username = (String)session.getAttribute("username");
-		String date = session.getAttribute("date");
+		String date = (String)session.getAttribute("date");
 
 		Day day = workoutService.getSpecificDay(username, date);
 		//Input information from day into view. Not implemennted
 		ArrayList<Exercises> exercise = day.getExercises();
 		ArrayList workout = new ArrayList();
+		ArrayList<Set> set = exercise.get(0).getSet();
 		for(int i = 0; i < exercise.size(); i++){
 			System.out.println(exercise.get(i).getSet());
 			//set.add(exercise.get(i).getSet());
 			workout.add(exercise.get(i).getName());
 		}
+		int rep = (int)set.get(0).getRep();
 		model.addAttribute("workout", workout);
+		model.addAttribute("rep",rep);
 
 		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;
