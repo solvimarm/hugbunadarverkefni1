@@ -18,13 +18,13 @@
 	<body>
 		<div class= "container">	
 			<div class = "row">
-				<div class ="col-md-2"></div>
 				<div class = "col-md-8">
-					<img src='/src/main/img/frontb.jpg' />
+					<img src="<c:url value='/images/picture.jpg'/>" />
+					<img src="src/main/WEB-INF/images/picture.jpg" />
 			<div class = "row">
 				<div class ="col-md-2"></div>
 				<div class = "col-md-8">
-					<img src="/frontb.png" alt="">
+					<img src="${pageContext.request.contextPath}images/frontb.png"/>
 				</div>
 				<div class = "col-md-2"></div>
 			</div>

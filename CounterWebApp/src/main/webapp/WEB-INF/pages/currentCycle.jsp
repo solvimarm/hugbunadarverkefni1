@@ -37,7 +37,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<a href="#" class="btn btn-primary">Fill in results</a>
+		      				<input type="submit" name="tuesday" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		  			<div class="col-sm-6">
@@ -49,7 +49,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<a href="#" class="btn btn-primary">Fill in results</a>
+		      				<input type="submit" name="wednesday" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		  			<div class="col-sm-6">
@@ -61,7 +61,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<a href="#" class="btn btn-primary">Fill in results</a>
+		      				<input type="submit" name="thursday" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		  			<div class="col-sm-6">
@@ -73,7 +73,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<a href="#" class="btn btn-primary">Fill in results</a>
+		      				<input type="submit" name="friday" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		  		</form>

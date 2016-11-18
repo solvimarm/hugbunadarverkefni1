@@ -25,9 +25,11 @@ public class WorkoutController extends HttpServlet{
 	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
 	public String getCurrentCycleGet(HttpSession session, ModelMap model){
 		
+		//Finds current workout cycle for the user
 		String username = (String)session.getAttribute("username");
 
 		ArrayList<Day> cycle = workoutService.getCurrentCycle(username);
+		session.setAttribute("currentCycle",cycle);
 
 		Day monday = cycle.get(0);
 		Day tuesday = cycle.get(1);
@@ -41,6 +43,7 @@ public class WorkoutController extends HttpServlet{
 		ArrayList<Exercises> thursdayEx = thursday.getExercises();
 		ArrayList<Exercises> fridayEx = friday.getExercises();
 
+		//Shows it to the user
 		model.addAttribute("mondayDate",monday.getDate());
 		model.addAttribute("tuesdayDate",tuesday.getDate());
 		model.addAttribute("wednesdayDate",wednesday.getDate());
@@ -56,13 +59,36 @@ public class WorkoutController extends HttpServlet{
 		return VIEW_INDEX;
 	}
 
-	//Not fully implemented
+	//Takes the user to a specific day in the cycle
 	@RequestMapping(value = "currentCycle", method = RequestMethod.POST)
-	public String getCurrentCyclePost(HttpSession session, HttpServletRequest request){
+	public String getCurrentCyclePost(HttpSession session, HttpsServletRequest, request){
 
+		//Find the right date and keep it in session
+		ArrayList<Day> currentCycle = (ArrayList<Day>)session.getAttribute("currentCycle");
 		if(request.getParameter("monday")!=null){
-			session.setAttribute("date","dagur");
-			System.out.println("ég er hjér að ýta á mánudagggggggg");
+
+			String date = currentCycle.get(0).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("tuesday")!=null){
+
+			String date = currentCycle.get(1).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("wednesday")!=null){
+
+			String date = currentCycle.get(2).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("thursday")!=null){
+
+			String date = currentCycle.get(3).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("friday")!=null){
+
+			String date = currentCycle.get(4).getDate();
+			session.setAttribute("date",date);
 		}
 		VIEW_INDEX = "workoutOfToday";
 		return "redirect:/"+VIEW_INDEX;
@@ -74,7 +100,7 @@ public class WorkoutController extends HttpServlet{
 
 		//Get parameters
 		String username = (String)session.getAttribute("username");
-		String date = "8/11/2016";
+		String date = session.getAttribute("date");
 
 		Day day = workoutService.getSpecificDay(username, date);
 		//Input information from day into view. Not implemennted
