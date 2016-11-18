@@ -15,7 +15,7 @@
 	<body>
 		<form method="POST" role="form">
 			<div class="form-group">
-				<c:forEach var="i" items="${}">
+				<c:forEach var="i" items="${workout}">
 					<tr>
 						<td>${i}</td>
 					</tr>

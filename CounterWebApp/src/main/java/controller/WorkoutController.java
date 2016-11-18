@@ -78,6 +78,14 @@ public class WorkoutController extends HttpServlet{
 
 		Day day = workoutService.getSpecificDay(username, date);
 		//Input information from day into view. Not implemennted
+		ArrayList<Exercises> exercise = day.getExercises();
+		ArrayList workout = new ArrayList();
+		for(int i = 0; i < exercise.size(); i++){
+			System.out.println(exercise.get(i).getSet());
+			//set.add(exercise.get(i).getSet());
+			workout.add(exercise.get(i).getName());
+		}
+		model.addAttribute("workout",workout);
 
 		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;
