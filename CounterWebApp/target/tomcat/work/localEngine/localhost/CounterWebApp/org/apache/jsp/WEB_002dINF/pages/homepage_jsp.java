@@ -50,6 +50,7 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
+<<<<<<< HEAD
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -97,6 +98,55 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</form>\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\t</body>\r\n");
+=======
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("\t<head>\n");
+      out.write("\t\t<title>username</title>\n");
+      out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \n");
+      out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\n");
+      out.write("\t\t<meta charset=\"utf-8\">\n");
+      out.write("\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("\t\t<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">\n");
+      out.write("\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js\"></script>\n");
+      out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
+      out.write("\t</head>\n");
+      out.write("\t<body>\n");
+      out.write("\t\t<div class=\"container\">\n");
+      out.write("\t\t\t<ul class=\"nav nav-tabs\">\n");
+      out.write("  \t\t\t\t<li role=\"presentation\" class=\"active\"><a href=\"hompage\">Home</a></li>\n");
+      out.write("\t\t\t\t<li role=\"presentation\"><a href=\"currentCycle\">My Profile</a></li>\n");
+      out.write("\t\t\t</ul>\t\t\t\n");
+      out.write("\t\t\t<form method=\"POST\" role=\"form\">\n");
+      out.write("\t\t\t\t<div class = \"form-group\">\n");
+      out.write("\t\t\t\t\t<div class=\"row\">\n");
+      out.write("\t\t\t\t\t\t<div class =\"col-md-4\">\n");
+      out.write("\t\t\t\t\t\t\t<input class=\"btn-primary\" type=\"submit\" name=\"food\" value=\"Food\">\n");
+      out.write("\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t<div class =\"col-md-4\">\n");
+      out.write("\t\t\t\t\t\t\t<input class=\"btn-primary\" type=\"submit\" name=\"week\" value=\"Current cycle\">\n");
+      out.write("\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t<div class =\"col-md-4\">\n");
+      out.write("\t\t\t\t\t\t\t<input class=\"btn-primary\" type=\"submit\" name=\"day\" value=\"Current Day\">\n");
+      out.write("\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<h3>Welcome to your home page</h3>\n");
+      out.write("\t\t\t\t\t<h4>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</h4>\n");
+      out.write("\t\t\t\t\t<h4>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${email}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</h4>\n");
+      out.write("\t\t\t\t\t<h4>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${goal}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</h4>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</form>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</body>\n");
+>>>>>>> 9d3bba512946d2d550468895d0c340eb780bca54
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

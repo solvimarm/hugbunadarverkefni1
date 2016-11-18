@@ -1,18 +1,26 @@
 package com.mkyong.controller;
-
 import persistence.entities.User;
 import java.util.*;
 
 public class UserService{
 
 	public UserRepository userRepository = new UserRepository();
-
+	public Password pass = new Password();
+	public WorkoutRepository workoutRepository = new WorkoutRepository();
 	//Creates new user
 	public void createNewUser(String name, String password, String email, String username,
 	 						String age,String goal, String gender, String weight, String nextUpdate){
+		try{
+			String hashandsalt = pass.getSaltedHash(password);	
+
+			User user = new User(name,hashandsalt,email,Integer.parseInt(age),username,goal,gender,Double.parseDouble(weight),nextUpdate);
+			userRepository.createNewUser(user);
+			workoutRepository.createCycle(username,nextUpdate);
+		}catch(Exception e){
+			System.out.println("pass villa :(");
+		}
 		
-		User user = new User(name,password,email,Integer.parseInt(age),username,goal,gender,Double.parseDouble(weight),nextUpdate);
-		userRepository.createNewUser(user);		
+				
 	}
 
 	//Authenticates user trying to login
@@ -22,11 +30,14 @@ public class UserService{
 
 		if(user instanceof User){
 			User userToAuth = (User) user;
-
-			if(password.equals(userToAuth.getPassword())){
-
-				return true;
+			try{
+				if(pass.check(password,userToAuth.getPassword())){
+					return true;
+				}
+			}catch(Exception e){
+				System.out.println("einhver leiðindi í gangi");
 			}
+
 		}
 		return false;
 	}

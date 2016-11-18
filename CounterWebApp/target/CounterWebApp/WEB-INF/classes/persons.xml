@@ -342,7 +342,7 @@
         </exercise>
         <wentToGym>false</wentToGym>
       </day>
-      <day id="07/11/2016">
+      <day id="03/01/2016">
         <exercise id="1">
           <name>æfing 1</name>
           <set id="1">
@@ -365,6 +365,64 @@
         <wentToGym>true</wentToGym>
       </day>
     </workoutPlan>
+  </person>
+  <person username="test">
+    <name>test</name>
+    <password>Jn36viNk1z/cfgNNWe7Ne9rgcZ0v6PKPVCzE9asoB7M=
+$TAbB2lWxRTC5Gj5HaxGOjDX1cyASBorYH5PHSz7lVW8=
+</password>
+    <email>Jn36viNk1z/cfgNNWe7Ne9rgcZ0v6PKPVCzE9asoB7M=
+$TAbB2lWxRTC5Gj5HaxGOjDX1cyASBorYH5PHSz7lVW8=
+</email>
+    <age>22</age>
+    <goal>stronger</goal>
+    <gender>male</gender>
+    <userWeight>22.0</userWeight>
+    <nextUpdate>18/11/2016</nextUpdate>
+    <workoutPlan/>
+  </person>
+  <person username="test2">
+    <name>test2</name>
+    <password>gw5s4WhQieYXS1gkXY1ur+IXIf+YHa+oasPAi1QJuuQ=
+$i/v6Qu+nocB5B4OAR+3wQB2q8kGLGrs+pCtrL9/00pY=
+</password>
+    <email>gw5s4WhQieYXS1gkXY1ur+IXIf+YHa+oasPAi1QJuuQ=
+$i/v6Qu+nocB5B4OAR+3wQB2q8kGLGrs+pCtrL9/00pY=
+</email>
+    <age>22</age>
+    <goal>leaner</goal>
+    <gender>male</gender>
+    <userWeight>22.0</userWeight>
+    <nextUpdate>18/11/2016</nextUpdate>
+    <workoutPlan/>
+  </person>
+  <person username="tes3">
+    <name>test3</name>
+    <password>96ItXqxfc0Z00uj8m7i9npFNL17NGzkYPSKd89HtT1w=
+$0Xe4oiQHenUcBIFSa6YqcqxQZw58MCD6sNJFudOI7Sk=
+</password>
+    <email>96ItXqxfc0Z00uj8m7i9npFNL17NGzkYPSKd89HtT1w=
+$0Xe4oiQHenUcBIFSa6YqcqxQZw58MCD6sNJFudOI7Sk=
+</email>
+    <age>22</age>
+    <goal>stronger</goal>
+    <gender>male</gender>
+    <userWeight>22.0</userWeight>
+    <nextUpdate>18/11/2016</nextUpdate>
+    <workoutPlan/>
+  </person>
+  <person username="test5">
+    <name>test5</name>
+    <password>uLZaNlcmUI1ldTFGeB4HLBQofpLTxobVJ2rtPIybMLQ=
+$Wsnhyb2weCslsYi86AZjY7e6+gYhhI10DflJ4sBdrho=
+</password>
+    <email>email5</email>
+    <age>22</age>
+    <goal>stronger</goal>
+    <gender>male</gender>
+    <userWeight>22.0</userWeight>
+    <nextUpdate>18/11/2016</nextUpdate>
+    <workoutPlan/>
   </person>
 </XML-S>
 
