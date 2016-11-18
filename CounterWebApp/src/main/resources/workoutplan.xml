@@ -19,7 +19,13 @@
 				<set id="1">
 					<reps>6</reps>
 				</set>
-			</exercise>		
+			</exercise>
+			<exercise id = "4">
+				<name>æfing 4</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>					
 		</day>
 		<day id="2">
 			<exercise id = "1">

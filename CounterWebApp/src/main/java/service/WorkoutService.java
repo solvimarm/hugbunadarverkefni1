@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 import java.util.Date;
 import persistence.entities.Exercises;
+import persistence.entities.Set;
 
 public class WorkoutService{
 
@@ -36,11 +37,11 @@ public class WorkoutService{
 			System.out.println("þú ert inní exception auli");
 		}	
 	}
-/*
+
 	public void updateDay(Day day,User user){
-		ArrayList<Exercise> exercises = day.getExercises();
+		ArrayList<Exercises> exercises = day.getExercises();
 		for(int i=0; i<exercises.size(); i++){
-			Exercise exercise = exercises.get(i);
+			Exercises exercise = exercises.get(i);
 			ArrayList<Set> sets = exercise.getSet();
 			for(int j=0; j<sets.size();j++){
 				Set set = sets.get(j);
@@ -48,10 +49,10 @@ public class WorkoutService{
 			}
 		}
 		
-
+		workoutRepository.wentToGym(user.getUsername(), day.getDate());
 
 	}
-*/
+
 	public ArrayList<Day> getCurrentCycle(String username){
 
 		Object currentCycleObject = workoutRepository.getCurrentCycle(username);

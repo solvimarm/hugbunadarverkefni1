@@ -15,18 +15,14 @@
 	<body>
 		<div class= "container">
 			<img src="https://assets.entrepreneur.com/content/16x9/822/20150408144705-90-minute-morning-routine-workday-more-productive-healthy-breakfast-cereal-fruit-smoothie.jpeg" alt="">
-			<h1>Matarplan</h1>
+			<h1>Diet plan</h1>
 			
-			<h4>Morgunmatur</h4>
+			<h4>Breakfast</h4>
 			<p>${breakfast}</p>
-			<h4>Hádegismatur</h4>
+			<h4>Lunch</h4>
 			<p>${lunch}</p>
-			<h4>Kvöldmatur</h4>
-<<<<<<< HEAD
-			<p>Nautakjöt, sætar kartöflur</p>
-=======
+			<h4>Dinner</h4>
 			<p>${dinner}</p>
->>>>>>> ab6d56d812e4bd577e450531f98bbb72df9472b3
 		</div>
 	</body>
 </html>

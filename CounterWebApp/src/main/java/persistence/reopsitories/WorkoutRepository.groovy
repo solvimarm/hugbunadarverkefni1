@@ -85,7 +85,7 @@ public class WorkoutRepository {
 				exercises.add(exercise)
 			}
 
-			Day day = new Day(userNode.userWeight.text().toDouble(), prevDate, true, exercises)
+			Day day = new Day(userNode.userWeight.text().toDouble(), prevDate, userNode.wentToGym.text(), exercises)
 			currCycle.add(day)	
 		}
 
@@ -132,19 +132,21 @@ public class WorkoutRepository {
 		def personXML= new XmlParser().parse(personFile)
 		def workoutFile=new File("${new File(new File(".").getCanonicalPath())}//src//main//resources//workoutplan.xml")
 		def workoutXML= new XmlParser().parse(workoutFile)
-		
+		println "comment 1"
 		def userNode = personXML.person.find{it -> 
 			it.@username == username}
 		if(userNode != null){
 		def workoutDay = userNode.workoutPlan[0].day.find{it ->
 			it.@id == date}
-
+			println "comment 2"
 			if(workoutDay != null){
 				def exerciseNode = workoutDay.exercise.find{it ->
-					it.@id == exerciseID}
+					it.@id == exerciseID.toString()}
+					println "comment 3"
 				if(exerciseNode != null){
-					def setNode = workoutDay.set.find{it ->
-						it.@id == noOfSet}
+					def setNode = exerciseNode.set.find{it ->
+						it.@id == noOfSet.toString()}
+						println "comment 4"
 					if(setNode != null){
 						new Node (setNode, "dbWeight", dbWeight)
 						println "updateset er her"

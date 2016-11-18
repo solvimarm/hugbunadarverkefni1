@@ -14,6 +14,7 @@ import persistence.entities.User;
 import persistence.entities.Day;
 import persistence.entities.Exercises;
 import persistence.entities.Food;
+import persistence.entities.Set;
 import java.text.SimpleDateFormat;
 import java.util.Map;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -217,6 +218,34 @@ public class RepositoryTesterController extends HttpServlet{
 
 
 			VIEW_INDEX = "testwtg";
+		return VIEW_INDEX;
+	}
+
+
+
+
+	@RequestMapping(value = "testUpdateSetDay", method = RequestMethod.GET)
+	public String updatetestshit(HttpServletRequest request) {
+			
+			//groovyWorkout.updateSet(request.getParameter("username"), Double.parseDouble(request.getParameter("dbWeight")),Integer.parseInt(request.getParameter("noOfSet")),Integer.parseInt(request.getParameter("exerciseID")), request.getParameter("date"));
+			//(Double weight, String date, String wenttogym, ArrayList<Exercises> exercises
+
+			WorkoutService ws = new WorkoutService();
+			Object cc = groovyXml.findUser("sun");
+			//Object bb = groovyWorkout.getSpecificDay();
+			ArrayList<Exercises> exercises = new ArrayList<Exercises>();
+			ArrayList<Set> sets = new ArrayList<Set>();
+			sets.add(new Set(6, 12.5, 1));
+			exercises.add(new Exercises("name", sets, 1));
+			Day day = new Day(70.0,"07/11/2016", null, exercises);
+			if(cc instanceof User ){
+				User user = (User) cc;
+				workoutService.updateDay(day, user);
+			}
+			
+		
+
+			VIEW_INDEX = "testgetdietplan";
 		return VIEW_INDEX;
 	}
 }
