@@ -3,310 +3,964 @@
 	<plan id="stronger">
 		<day id="1">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Squats</name>
+				<set id="1">
+					<reps>3</reps>
+				</set>
+				<set id="2">
+					<reps>3</reps>
+				</set>
+				<set id="3">
+					<reps>3</reps>
+				</set>
+				<set id="4">
+					<reps>3</reps>
+				</set>
+				<set id="5">
+					<reps>3</reps>
+				</set>				
+			</exercise>
+			<exercise id = "2">
+				<name>Seated Leg Press</name>
 				<set id="1">
 					<reps>6</reps>
 				</set>
-			</exercise>
-			<exercise id = "2">
-				<name>æfing 2</name>
-				<set id="1">
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Romaian Deadlift</name>
 				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>
 			<exercise id = "4">
-				<name>æfing 4</name>
+				<name>Lunges</name>
 				<set id="1">
-					<reps>6</reps>
+					<reps>10</reps>
+				</set>
+				<set id="2">
+					<reps>10</reps>
+				</set>
+				<set id="3">
+					<reps>10</reps>
+				</set>
+				<set id="4">
+					<reps>10</reps>
 				</set>
 			</exercise>					
 		</day>
 		<day id="2">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Barbell Bench Press</name>
 				<set id="1">
-					<reps>6</reps>
+					<reps>3</reps>
+				</set>
+				<set id="2">
+					<reps>3</reps>
+				</set>
+				<set id="3">
+					<reps>3</reps>
+				</set>
+				<set id="4">
+					<reps>3</reps>
+				</set>
+				<set id="5">
+					<reps>3</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Dumbbell Bench Press</name>
 				<set id="1">
+					<reps>3</reps>
+				</set>
+				<set id="2">
+					<reps>3</reps>
+				</set>
+				<set id="3">
+					<reps>3</reps>
+				</set>
+				<set id="4">
+					<reps>3</reps>
+				</set>
+				<set id="5">
+					<reps>3</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>Incline Dumbbell Bench Press</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Dips</name>
 				<set id="1">
 					<reps>6</reps>
 				</set>
-			</exercise>	
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
+					<reps>6</reps>
+				</set>
+			</exercise>
 		</day>
 		<day id="3">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Deadlift</name>
 				<set id="1">
-					<reps>6</reps>
+					<reps>3</reps>
+				</set>
+				<set id="2">
+					<reps>3</reps>
+				</set>
+				<set id="3">
+					<reps>2</reps>
+				</set>
+				<set id="4">
+					<reps>1</reps>
+				</set>
+				<set id="5">
+					<reps>1</reps>
+				</set>
+				<set id="6">
+					<reps>1</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Dumbbell Rows</name>
 				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Lat Pulldowns</name>
 				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>	
 		</day>
 		<day id="4">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Seating Dumbbell Shoulder Press</name>
 				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Side Lateral Raise</name>
 				<set id="1">
-					<reps>6</reps>
+					<reps>10</reps>
+				</set>
+				<set id="2">
+					<reps>10</reps>
+				</set>
+				<set id="3">
+					<reps>10</reps>
+				</set>
+				<set id="4">
+					<reps>10</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Rear Delt Fly</name>
 				<set id="1">
+					<reps>10</reps>
+				</set>
+				<set id="2">
+					<reps>10</reps>
+				</set>
+				<set id="3">
+					<reps>10</reps>
+				</set>
+				<set id="4">
+					<reps>10</reps>
+				</set>
+			</exercise>
+			<exercise id = "4">
+				<name>Shrugs</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>	
 		</day>
 		<day id="5">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>EZ Bar Curl</name>
 				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Hammer Curl</name>
 				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
 					<reps>6</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Close Grip Bench Press</name>
 				<set id="1">
 					<reps>6</reps>
 				</set>
-			</exercise>	
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>Dips</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+				<set id="2">
+					<reps>6</reps>
+				</set>
+				<set id="3">
+					<reps>6</reps>
+				</set>
+				<set id="4">
+					<reps>6</reps>
+				</set>
+			</exercise>
 		</day>
 	</plan>
 	<plan id="buffer">
 		<day id="1">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Squats</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Leg Press</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Leg Raises</name>
 				<set id="1">
 					<reps>12</reps>
 				</set>
-			</exercise>		
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "4">
+				<name>Leg Curl</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "5">
+				<name>Calf Press</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
 		</day>
 		<day id="2">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Incline Dumbbell Press</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Barbell Bench Press</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Incline Barbell Flys</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "4">
+				<name>Cable Crossovers</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>	
 		</day>
 		<day id="3">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Lat Pulldowns</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Close Grip Lat Pulldowns</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Close Grip Cable Rows</name>
 				<set id="1">
 					<reps>12</reps>
 				</set>
-			</exercise>	
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "4">
+				<name>Wide Grip Cable Rows</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "5">
+				<name>Decline Bench Dumbbell Pull-Over</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
 		</day>
 		<day id="4">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Reverse Cable Flys</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Rear Delt Fly</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Side Lateral Raises</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "4">
+				<name>One Arm Cable Side Lateral Raises</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "5">
+				<name>Standing Dumbbell Shoulder Press</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "6">
+				<name>Shrugs</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>	
 		</day>
 		<day id="5">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Dips</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Cable Pushdowns</name>
 				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
 					<reps>12</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Preacher Curls</name>
 				<set id="1">
 					<reps>12</reps>
 				</set>
-			</exercise>	
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>Hammer Curls</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+				<set id="2">
+					<reps>12</reps>
+				</set>
+				<set id="3">
+					<reps>12</reps>
+				</set>
+				<set id="4">
+					<reps>12</reps>
+				</set>
+			</exercise>
 		</day>
 	</plan>
 	<plan id="leaner">
 		<day id="1">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Leg Raises</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Leg Curls</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Lunges</name>
 				<set id="1">
 					<reps>24</reps>
 				</set>
-			</exercise>		
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "4">
+				<name>Calf Press</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
+					<reps>24</reps>
+				</set>
+			</exercise>
 		</day>
 		<day id="2">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Cable Crossovers</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Incline Flys</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Incline Dumbbel Press</name>
 				<set id="1">
 					<reps>24</reps>
 				</set>
-			</exercise>	
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "4">
+				<name>Bench Press</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
+					<reps>24</reps>
+				</set>
+			</exercise>
 		</day>
 		<day id="3">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Wide Grip Barbell Row</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>One Hand Dumbbell Row</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Lat Pulldown</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>	
 		</day>
 		<day id="4">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Front Raises</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Side Lateral Raises</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Rear Delt Flys</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>	
 		</day>
 		<day id="5">
 			<exercise id = "1">
-				<name>æfing 1</name>
+				<name>Cable Pushdowns</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "2">
-				<name>æfing 2</name>
+				<name>Cable Kickbacks</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>
 			<exercise id = "3">
-				<name>æfing 3</name>
+				<name>Barbell Curls</name>
 				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
+					<reps>24</reps>
+				</set>
+			</exercise>	
+			<exercise id = "4">
+				<name>Cable Curls w/Rope</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+				<set id="2">
+					<reps>24</reps>
+				</set>
+				<set id="3">
+					<reps>24</reps>
+				</set>
+				<set id="4">
 					<reps>24</reps>
 				</set>
 			</exercise>	

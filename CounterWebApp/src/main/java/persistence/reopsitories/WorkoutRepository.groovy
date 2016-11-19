@@ -1,4 +1,4 @@
-package com.mkyong.controller
+package com.mkyong.repository
 
 import groovy.xml.XmlUtil
 import java.security.SecureRandom
@@ -40,7 +40,8 @@ public class WorkoutRepository {
 				println "comment 3"
 				workoutNode.day.each{it -> 
 					def node = userNode.workoutPlan[0]	
-					it.@id = d.format("dd/MM/yyyy")
+					it.@Date = d.format("dd/MM/yyyy")
+					it.@Goal = userNode.goal.text()
 					//new Node (node,"", d.toString())
 					node.append(it)
 					d=d.next()
@@ -71,7 +72,7 @@ public class WorkoutRepository {
 			d = d.previous()
 			def prevDate= d.format("dd/MM/yyyy")
 			def workoutDay=userNode.workoutPlan[0].day.find{it ->
-				it.@id == prevDate}
+				it.@Date == prevDate}
 			
 			ArrayList<Exercises> exercises = new ArrayList<Exercises>()
 
@@ -105,7 +106,7 @@ public class WorkoutRepository {
 			it.@username == username}
 
 		def workoutDay = userNode.workoutPlan[0].day.find{it ->
-			it.@id == date}
+			it.@Date == date}
 
 			ArrayList<Exercises> exercises = new ArrayList<Exercises>()
 
@@ -137,7 +138,7 @@ public class WorkoutRepository {
 			it.@username == username}
 		if(userNode != null){
 		def workoutDay = userNode.workoutPlan[0].day.find{it ->
-			it.@id == date}
+			it.@Date == date}
 			println "comment 2"
 			if(workoutDay != null){
 				def exerciseNode = workoutDay.exercise.find{it ->
@@ -206,6 +207,26 @@ public class WorkoutRepository {
 		}
 			
 	}
+	
+	def getDaysByID(String username, int id, String goal ){
+		def personFile=new File("${new File(new File(".").getCanonicalPath())}//src//main//resources//persons.xml")
+		def personXML= new XmlParser().parse(personFile)
+
+		def userNode = personXML.person.find{it -> 
+			it.@username == username}	
+
+		println "comment 0" 
+
+		userNode.workoutPlan[0].day.each{it ->
+			println "fyrir if <----------------"
+			if(it.@id == id.toString() && goal.compareTo(it.@Goal ) == 0){
+				ArrayList<Day> daysByID = new ArrayList<Day>();
+					daysByID.add(getSpecificDay(username, it.@Date ))
+				}
+			}
+			return daysByID
+
+		}
 
 
 

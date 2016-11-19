@@ -1,4 +1,5 @@
 package com.mkyong.controller;
+
 import java.util.ArrayList;
 import persistence.entities.Day;
 import persistence.entities.User;
