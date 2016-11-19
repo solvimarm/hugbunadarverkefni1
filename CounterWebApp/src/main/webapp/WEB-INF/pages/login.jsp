@@ -13,19 +13,22 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<form method="POST" role="form">
-			<div class="form-group">
-				<label for="person_id">Type your username</label>
-				<input type="text" class="form-control" name="person_id"/>
-			</div>
-			<div class="form-group">
-				<label for="pw">Type the password</label>
-				<input type="password" class="form-control" name="pw"/>
-			</div>
-			<div>
-				<p>${error}</p>
-			</div>
-			<input type="submit" name="login" value="Login"/>
-		</form>
+		<div class="container">
+		</p>
+			<form method="POST" role="form">
+				<div class="form-group">
+					<label for="person_id">Type Your Username</label>
+					<input type="text" class="form-control" name="person_id"/>
+				</div>
+				<div class="form-group">
+					<label for="pw">Type Your Password</label>
+					<input type="password" class="form-control" name="pw"/>
+				</div>
+				<div>
+					<p>${error}</p>
+				</div>
+				<input class="btn btn-primary" type="submit" name="login" value="Login"/>
+			</form>
+		</div>
 	</body>
 </html>

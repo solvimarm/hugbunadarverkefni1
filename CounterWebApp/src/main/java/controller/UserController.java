@@ -137,44 +137,6 @@ public class UserController extends HttpServlet{
 
 	}
 
-	//Gets homepage specific for each user
-	@RequestMapping(value = "homepage", method = RequestMethod.GET)
-	public String getHomepage(HttpSession session, ModelMap model){
-		
-		//Redirects to index if not loged in
-		if(session == null){
-			indexGet();//Vitlaust :/
-		}
-		else{
-			String username =  (String)session.getAttribute("username");
-			ArrayList user = new ArrayList();
-
-			user = userService.findUser(username);
-
-			model.addAttribute("name",user.get(0));
-			model.addAttribute("email",user.get(2));
-			model.addAttribute("goal",user.get(1));
-			VIEW_INDEX = "homepage";
-		}
-		return VIEW_INDEX;
-	}
-
-	//Redirect from homepage
-	@RequestMapping(value = "homepage", method = RequestMethod.POST)
-	public String homeToNextDest(HttpServletRequest request){
-		if(request.getParameter("week")!=null){
-			VIEW_INDEX = "currentCycle";
-		}
-		else if(request.getParameter("day")!=null){
-			VIEW_INDEX = "workoutOfToday";
-		}
-		else if(request.getParameter("food")!=null){
-			VIEW_INDEX = "foodPlan";
-		}
-
-		return "redirect:/"+VIEW_INDEX;
-	}
-
 }
 
 

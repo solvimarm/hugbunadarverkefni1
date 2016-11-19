@@ -16,28 +16,15 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class= "container">	
-			<div class = "row">
-				<div class = "col-md-8">
-					<img src="<c:url value='/images/picture.jpg'/>" />
-					<img src="src/main/WEB-INF/images/picture.jpg" />
-			<div class = "row">
-				<div class ="col-md-2"></div>
-				<div class = "col-md-8">
-					<img src="${pageContext.request.contextPath}images/frontb.png"/>
-				</div>
-				<div class = "col-md-2"></div>
-			</div>
-			<div class = "row">
-				<form method="POST">
-					<div class = "col-md-1">
-						<input class ="btn-primary" type="submit" name="login" value="Login"/>
-					</div>
-					<div class = "col-md-1" >
-						<input class ="btn-primary	" type="submit" name="register" value="Register" />
-					</div>
-				</form>
-			</div>
+		<div class= "container">
+			<div class="jumbotron">
+  				<h1>Your Health & fitness</h1>
+  				<p>A health and lifestyle application that will help users to improve their overall health. The system makes exercise plans and tracks user progress.</p>
+  				<p>
+  					<a class="btn btn-primary btn-lg" href="login" role="button">Login</a>
+  					<a class="btn btn-primary btn-lg" href="register" role="button">Register</a>
+  				</p>
+			</div>	
 		</div>
 	</body>
 </html>
