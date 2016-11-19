@@ -24,14 +24,18 @@ public class VerifyService{
 	}
 
 	public Boolean verifyPass(String password){
+		if(password.length() < 6)return false;
 		return true;	
 	}
 
 	public Boolean verifyEmail(String email){
+		String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+		if(!email.matches(EMAIL_PATTERN))return false;
 		return true;
 	}
 
 	public Boolean verifyWeight(String weight){
+		if(!weight.matches("[0-9]+"))return false;
 		return true;
 	}
 	
