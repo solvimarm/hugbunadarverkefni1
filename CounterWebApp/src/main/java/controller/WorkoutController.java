@@ -23,7 +23,7 @@ public class WorkoutController extends HttpServlet{
 	private static WorkoutService workoutService = new WorkoutService();
 	
 	//Gets the current workout cycle and shows it to the user
-	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
+	@RequestMapping(value = "homepage", method = RequestMethod.GET)
 	public String getCurrentCycleGet(HttpSession session, ModelMap model){
 		
 		//Finds current workout cycle for the user
@@ -56,16 +56,17 @@ public class WorkoutController extends HttpServlet{
 		model.addAttribute("thursdayEx",thursdayEx);
 		model.addAttribute("fridayEx",fridayEx);
 
-		VIEW_INDEX = "currentCycle";
+		VIEW_INDEX = "homepage";
 		return VIEW_INDEX;
 	}
 
 	//Takes the user to a specific day in the cycle
-	@RequestMapping(value = "currentCycle", method = RequestMethod.POST)
+	@RequestMapping(value = "homepage", method = RequestMethod.POST)
 	public String getCurrentCyclePost(HttpSession session, HttpServletRequest request){
 
 		//Find the right date and keep it in session
 		ArrayList<Day> currentCycle = (ArrayList<Day>)session.getAttribute("currentCycle");
+		VIEW_INDEX = "workoutOfToday";
 		if(request.getParameter("monday")!=null){
 
 			String date = currentCycle.get(0).getDate();
@@ -91,7 +92,9 @@ public class WorkoutController extends HttpServlet{
 			String date = currentCycle.get(4).getDate();
 			session.setAttribute("date",date);
 		}
-		VIEW_INDEX = "workoutOfToday";
+		if(request.getParameter("food")!=null){
+			VIEW_INDEX = "foodPlan";
+		}
 		return "redirect:/"+VIEW_INDEX;
 	}
 
