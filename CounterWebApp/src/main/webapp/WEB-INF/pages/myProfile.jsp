@@ -25,7 +25,18 @@
 			</div>
 			<form method="POST" role="form">
 				<div class="form-group">
-					
+					<h3>Name</h3>
+					<p>${name}<p>
+					<h3>Email</h3>
+					<p>${email}</p>
+					<h3>Age</h3>
+					<p>${age}</p>
+					<h3>Goal</h3>
+					<p>${goal}</p>
+					<h3>Gender</h3>
+					<p>${gender}</p>
+					<h3>Weight</h3>
+					<p>${weight}</p>
 				</div>
 				<input class="btn btn-primary" type="submit" name="button" value="Submit"/>
 			</form>

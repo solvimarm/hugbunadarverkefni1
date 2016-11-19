@@ -136,7 +136,23 @@ public class UserController extends HttpServlet{
 		}
 
 	}
+	//Gets the user profile page
+	@RequestMapping(value = "myProfile", method = RequestMethod.GET)
+	public String myProfileGet(HttpSession session, ModelMap model){
 
+		String username = (String)session.getAttribute("username");
+		ArrayList user = userService.findUser(username);
+
+		model.addAttribute("name",user.get(0));
+		model.addAttribute("goal",user.get(1));
+		model.addAttribute("email",user.get(2));
+		model.addAttribute("age",user.get(3));
+		model.addAttribute("gender",user.get(4));
+		model.addAttribute("weight",user.get(5));
+
+		VIEW_INDEX = "myProfile";
+		return VIEW_INDEX;
+	}
 }
 
 
