@@ -75,7 +75,7 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\" />\n");
       out.write("\t\t\t<ul class=\"nav nav-tabs\">\n");
-      out.write("  \t\t\t\t<li role=\"presentation\" class=\"active\"><a href=\"hompage\">Home</a></li>\n");
+      out.write("  \t\t\t\t<li role=\"presentation\" class=\"active\"><a href=\"homepage\">Home</a></li>\n");
       out.write("\t\t\t\t<li role=\"presentation\"><a href=\"currentCycle\">My Profile</a></li>\n");
       out.write("\t\t\t</ul>\t\t\t\n");
       out.write("\t\t\t<form method=\"POST\" role=\"form\">\n");
