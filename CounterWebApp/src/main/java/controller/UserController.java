@@ -79,7 +79,7 @@ public class UserController extends HttpServlet{
 				error.add("Invalid username");
 			}
 			if(!verifyService.verifyPass(password)){
-				error.add("Invalid password");
+				error.add("Password must be at least six characters");
 			}
 			if(!verifyService.verifyEmail(email)){
 				error.add("Invalid email");
@@ -105,7 +105,7 @@ public class UserController extends HttpServlet{
 		model.addAttribute("goal", goal );
 		model.addAttribute("gender", gender);
 		model.addAttribute("weight", weight);
-		model.addAttribute("error", error+":");
+		model.addAttribute("error", error);
 
 		return null;
 	}
