@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML-S>
+	<plan id="stronger">
+		<day id="1">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "4">
+				<name>æfing 4</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>					
+		</day>
+		<day id="2">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="3">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="4">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="5">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>6</reps>
+				</set>
+			</exercise>	
+		</day>
+	</plan>
+	<plan id="buffer">
+		<day id="1">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>		
+		</day>
+		<day id="2">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="3">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="4">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="5">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>12</reps>
+				</set>
+			</exercise>	
+		</day>
+	</plan>
+	<plan id="leaner">
+		<day id="1">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>		
+		</day>
+		<day id="2">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="3">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="4">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>	
+		</day>
+		<day id="5">
+			<exercise id = "1">
+				<name>æfing 1</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "2">
+				<name>æfing 2</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>
+			<exercise id = "3">
+				<name>æfing 3</name>
+				<set id="1">
+					<reps>24</reps>
+				</set>
+			</exercise>	
+		</day>
+	</plan>	
+</XML-S>

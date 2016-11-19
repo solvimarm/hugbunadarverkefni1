@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<div class="container">
-		</p>
+			</p>
 			<form method="POST" role="form">
 				<div class="form-group">
 					<label for="person_id">Type Your Username</label>

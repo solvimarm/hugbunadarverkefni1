@@ -13,30 +13,42 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<form method="POST" role="form">
-			<div class="form-group">
-	 			<table class="table">
-  					<tr>
-    					<th>Name</th>
-    					<th>Sets</th> 
-    					<th>Reps</th>
-    					<th>Dumbel weight</th>
-  					</tr>
-  					<c:forEach var="i" items="${workout}">
-  						<tr>
-    						<td>${i}</td>
-   							<td>3</td> 
-    						<td>${rep}</td>
-    						<td>
-    							<div class="col-xs-3">
-    								<input type="int" name="${i}" class="form-control">
-    							</div>
-    						</td>
-  						</tr>
-  					</c:forEach>
-				</table>
+		<div class="container">
+			</p>
+			<ul class="nav nav-tabs">
+  				<li role="presentation"><a href="homepage">Home</a></li>
+				<li role="presentation"><a href="myProfile">My Profile</a></li>
+			</ul>
+			<div class="jumbotron">
+				<h1>Fill in your workout weights!</h1>
+  				<p>That will help you keep track of your progress.</p>
 			</div>
-			<input type="submit" name="button" value="Submit"/>
-		</form>
+			<form method="POST" role="form">
+				<div class="form-group">
+		 			<table class="table">
+	  					<tr>
+	    					<th>Name</th>
+	    					<th>Sets</th> 
+	    					<th>Reps</th>
+	    					<th>Dumbel weight</th>
+	  					</tr>
+	  					<c:forEach var="i" items="${workout}">
+	  						<tr>
+	    						<td>${i}</td>
+	   							<td>3</td> 
+	    						<td>${rep}</td>
+	    						<td>
+	    							<div class="col-xs-3">
+	    								<input type="int" name="${i}" class="form-control">
+	    							</div>
+	    						</td>
+	  						</tr>
+	  					</c:forEach>
+					</table>
+				</div>
+				<input class="btn btn-primary" type="submit" name="button" value="Submit"/>
+			</form>
+		</p>
+		</div>
 	</body>
 </html>

@@ -14,6 +14,7 @@
 	</head>
 	<body>
 		<div class="container">
+			</p>
 			<form method="POST" role="form">
 				<div class="form-group">
 					<label for="name">Type your Name</label>
@@ -29,7 +30,7 @@
 				</div>
 				<div class="form-group">
 					<label for="password">Select the password</label>
-					<input value="${password}" type="text" class="form-control" name="password" required/>
+					<input value="${password}" type="password" class="form-control" name="password" required/>
 				</div>
 				<div class="form-group">
 					<label for="age">Type your age</label>

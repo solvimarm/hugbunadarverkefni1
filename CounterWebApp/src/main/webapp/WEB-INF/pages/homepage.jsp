@@ -14,10 +14,10 @@
 	</head>
 	<body>
 		<div class="container">
-		</p>
+			</p>
 			<ul class="nav nav-tabs">
   				<li role="presentation" class="active"><a href="homepage">Home</a></li>
-				<li role="presentation"><a href="currentCycle">My Profile</a></li>
+				<li role="presentation"><a href="myProfile">My Profile</a></li>
 			</ul>
 			<div class="jumbotron">
 				<h1>Welcome to your homepage!</h1>
@@ -100,5 +100,6 @@
 		  		</form>
 			</div>			
 		</div>
+		</p>
 	</body>
 </html>

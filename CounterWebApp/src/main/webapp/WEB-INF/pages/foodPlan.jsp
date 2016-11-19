@@ -14,15 +14,22 @@
 	</head>
 	<body>
 		<div class= "container">
-			<img src="https://assets.entrepreneur.com/content/16x9/822/20150408144705-90-minute-morning-routine-workday-more-productive-healthy-breakfast-cereal-fruit-smoothie.jpeg" alt="">
-			<h1>Diet plan</h1>
-			
-			<h4>Breakfast</h4>
+			</p>
+			<ul class="nav nav-tabs">
+  				<li role="presentation"><a href="homepage">Home</a></li>
+				<li role="presentation"><a href="myProfile">My Profile</a></li>
+			</ul>
+			<div class="jumbotron">
+				<h1>Your Diet Plan!</h1>
+  				<p>Now you can start eating right.</p>
+			</div>						
+			<h3>Breakfast</h3>
 			<p>${breakfast}</p>
-			<h4>Lunch</h4>
+			<h3>Lunch</h3>
 			<p>${lunch}</p>
-			<h4>Dinner</h4>
+			<h3>Dinner</h3>
 			<p>${dinner}</p>
 		</div>
+		</p>
 	</body>
 </html>
