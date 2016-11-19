@@ -105,7 +105,7 @@ public class UserController extends HttpServlet{
 		model.addAttribute("goal", goal );
 		model.addAttribute("gender", gender);
 		model.addAttribute("weight", weight);
-		model.addAttribute("error", error+":");
+		model.addAttribute("error", error);
 
 		return null;
 	}
