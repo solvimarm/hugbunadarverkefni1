@@ -107,10 +107,9 @@ public class WorkoutController extends HttpServlet{
 		//Input information from day into view. Not implemennted
 		ArrayList<Exercises> exercise = day.getExercises();
 		ArrayList workout = new ArrayList();
-		ArrayList<Set> set = exercise.get(0).getSet();
+		ArrayList<Set> set = new ArrayList<Set>();
 		for(int i = 0; i < exercise.size(); i++){
-			System.out.println(exercise.get(i).getSet());
-			//set.add(exercise.get(i).getSet());
+			set.addAll(exercise.get(i).getSet());
 			workout.add(exercise.get(i).getName());
 		}
 		int rep = (int)set.get(0).getRep();
