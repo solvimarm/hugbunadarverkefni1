@@ -123,7 +123,8 @@ public class WorkoutController extends HttpServlet{
 
 	//Not fully implemented
 	@RequestMapping(value = "workoutOfToday", method= RequestMethod.POST)
-	public String getSpecificDayPost(){
+	public String getSpecificDayPost(HttpSession session, HttpServletRequest request){
+		System.out.println(request.getParameter("æfing 1"));
 
 		VIEW_INDEX = "homepage";
 		return "redirect:/"+VIEW_INDEX;

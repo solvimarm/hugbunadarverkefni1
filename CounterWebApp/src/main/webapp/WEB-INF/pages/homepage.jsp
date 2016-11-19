@@ -16,7 +16,7 @@
 		<div class="container">
 			<img src="<c:url value='/images/picture.jpg'/>" />
 			<ul class="nav nav-tabs">
-  				<li role="presentation" class="active"><a href="hompage">Home</a></li>
+  				<li role="presentation" class="active"><a href="homepage">Home</a></li>
 				<li role="presentation"><a href="currentCycle">My Profile</a></li>
 			</ul>			
 			<form method="POST" role="form">

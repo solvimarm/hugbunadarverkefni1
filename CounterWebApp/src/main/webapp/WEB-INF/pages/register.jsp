@@ -19,32 +19,39 @@
 				<input value="${name}" type="text" class="form-control" name="name" required/>
 			</div>
 			<div class="form-group">
-				<label for="email">Type the email</label>
+				<label for="email">Type your email</label>
 				<input value="${email}" type="text" class="form-control" name="email" required/>
 			</div>
 			<div class="form-group">
-				<label for="username">Type the username</label>
+				<label for="username">Select your username</label>
 				<input value="${username}" type="text" class="form-control" name="username" required/>
 			</div>
 			<div class="form-group">
-				<label for="password">Type the password</label>
+				<label for="password">Select the password</label>
 				<input value="${password}" type="text" class="form-control" name="password" required/>
 			</div>
 			<div class="form-group">
-				<label for="age">Type the age</label>
+				<label for="age">Type your age</label>
 				<input value="${age}" type="text" class="form-control" name="age" required/>
 			</div>
 			<div class="form-group">
-				<label for="goal">Type the goal</label>
-				<input age="${goal}" type="text" class="form-control" name="goal" required/>
+				<label for="goal">Select Goal</label>
+				<select name="goal">
+  					<option value="stronger">Stronger</option>
+  					<option value="buffer">Buffer</option>
+					<option value="leaner">Leaner</option>
+				</select>
 			</div>
 			<div class="form-group">
-				<label for="gender">Type the gender</label>
-				<input value="${gender}" type="text" class="form-control" name="gender" required/>
+				<label for="gender">Select gender</label>
+				<select name="gender">
+  					<option value="male">Male</option>
+  					<option value="female">Female</option>
+				</select>
 			</div>
 			<div class="form-group">
-				<label for="weight">Type the weight</label>
-				<input value="${weight}" type="text" class="form-control" name="weight" required/>
+				<label for="weight">Type your weight</label>
+				<input value="${weight}" type="double" class="form-control" name="weight" required/>
 			</div>
 			<div>
 				<c:forEach var="i" items="${error}">
