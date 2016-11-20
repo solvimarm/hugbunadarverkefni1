@@ -1,6 +1,10 @@
-package com.mkyong.controller;
+package service;
+
 import persistence.entities.User;
 import java.util.*;
+
+import persistence.repositories.UserRepository;
+import persistence.repositories.WorkoutRepository;
 
 public class UserService{
 

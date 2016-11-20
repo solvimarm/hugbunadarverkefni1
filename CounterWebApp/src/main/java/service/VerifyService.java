@@ -1,5 +1,9 @@
-package com.mkyong.controller;
+package service;
+
 import persistence.entities.User;
+
+import persistence.repositories.UserRepository;
+
 //Not fully implemented
 public class VerifyService{
 

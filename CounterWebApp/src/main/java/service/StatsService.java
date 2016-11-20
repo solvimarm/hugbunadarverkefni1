@@ -1,4 +1,4 @@
-package com.mkyong.service;
+package service;
 
 import persistence.entities.User;
 import persistence.entities.Stats;
@@ -6,8 +6,10 @@ import persistence.entities.Day;
 import persistence.entities.Exercises;
 import persistence.entities.Set;
 import java.util.*;
+
 import persistence.repositories.UserRepository;
 import persistence.repositories.WorkoutRepository;
+
 
 public class StatsService{
 

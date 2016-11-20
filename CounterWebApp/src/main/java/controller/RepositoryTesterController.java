@@ -1,4 +1,4 @@
-package com.mkyong.controller;
+package controller;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -20,7 +20,13 @@ import java.util.Map;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
+
 import service.StatsService;
+import service.WorkoutService;
+import persistence.repositories.UserRepository;
+import persistence.repositories.WorkoutRepository;
+import persistence.repositories.FoodRepository;
+
 
 @Controller
 public class RepositoryTesterController extends HttpServlet{
@@ -260,4 +266,5 @@ public class RepositoryTesterController extends HttpServlet{
 			VIEW_INDEX = "testwtg";
 		return VIEW_INDEX;
 	}
+
 }

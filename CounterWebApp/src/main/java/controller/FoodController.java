@@ -1,4 +1,4 @@
-package com.mkyong.controller;
+package controller;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -10,6 +10,9 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.ArrayList;
 import persistence.entities.Food;
+
+import service.FoodService;
+import service.UserService;
 
 //Not fully implemented
 @Controller

@@ -1,4 +1,4 @@
-package com.mkyong.controller;
+package controller;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -13,6 +13,9 @@ import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+
+import service.UserService;
+import service.VerifyService;
 
 
 @Controller

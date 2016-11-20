@@ -1,4 +1,4 @@
-package com.mkyong.controller;
+package service;
 
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;

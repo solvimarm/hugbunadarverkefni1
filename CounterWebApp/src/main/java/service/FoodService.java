@@ -1,8 +1,8 @@
-package com.mkyong.controller;
+package service;
 
 import java.util.ArrayList;
 import persistence.entities.Food;
-
+import persistence.repositories.FoodRepository;
 //Not fully implemented
 public class FoodService{
 

@@ -1,4 +1,4 @@
-package com.mkyong.controller;
+package controller;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import persistence.entities.Day;
 import persistence.entities.Exercises;
 import persistence.entities.Set;
+
+import service.WorkoutService;
 
 
 @Controller

@@ -1,4 +1,4 @@
-package com.mkyong.controller;
+package service;
 
 import java.util.ArrayList;
 import persistence.entities.Day;
@@ -9,6 +9,9 @@ import java.text.DateFormat;
 import java.util.Date;
 import persistence.entities.Exercises;
 import persistence.entities.Set;
+
+import persistence.repositories.UserRepository;
+import persistence.repositories.WorkoutRepository;
 
 public class WorkoutService{
 

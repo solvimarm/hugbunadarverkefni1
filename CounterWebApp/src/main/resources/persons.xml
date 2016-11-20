@@ -1,5 +1,327 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<XML-S>
-
+<?xml version="1.0" encoding="UTF-8"?><XML-S>
+  <person username="okokok">
+    <name>okokok</name>
+    <password>OdA/ATqOpcNuXX81B5YigtqhTXkzBLTC28BkiiYyT/I=
+$/Jl20XffWPu/gv51pwBkXTOvdJb1E+4r+3H3gHm9jxI=
+</password>
+    <email>okokok@sdf.is</email>
+    <age>22</age>
+    <goal>stronger</goal>
+    <gender>male</gender>
+    <userWeight>22.0</userWeight>
+    <nextUpdate>25/11/2016</nextUpdate>
+    <workoutPlan>
+      <day id="1" Date="20/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>Squats</name>
+          <set id="1">
+            <reps>3</reps>
+          </set>
+          <set id="2">
+            <reps>3</reps>
+          </set>
+          <set id="3">
+            <reps>3</reps>
+          </set>
+          <set id="4">
+            <reps>3</reps>
+          </set>
+          <set id="5">
+            <reps>3</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Seated Leg Press</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Romaian Deadlift</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="4">
+          <name>Lunges</name>
+          <set id="1">
+            <reps>10</reps>
+          </set>
+          <set id="2">
+            <reps>10</reps>
+          </set>
+          <set id="3">
+            <reps>10</reps>
+          </set>
+          <set id="4">
+            <reps>10</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="2" Date="21/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>Barbell Bench Press</name>
+          <set id="1">
+            <reps>3</reps>
+          </set>
+          <set id="2">
+            <reps>3</reps>
+          </set>
+          <set id="3">
+            <reps>3</reps>
+          </set>
+          <set id="4">
+            <reps>3</reps>
+          </set>
+          <set id="5">
+            <reps>3</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Dumbbell Bench Press</name>
+          <set id="1">
+            <reps>3</reps>
+          </set>
+          <set id="2">
+            <reps>3</reps>
+          </set>
+          <set id="3">
+            <reps>3</reps>
+          </set>
+          <set id="4">
+            <reps>3</reps>
+          </set>
+          <set id="5">
+            <reps>3</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Incline Dumbbell Bench Press</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Dips</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="3" Date="22/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>Deadlift</name>
+          <set id="1">
+            <reps>3</reps>
+          </set>
+          <set id="2">
+            <reps>3</reps>
+          </set>
+          <set id="3">
+            <reps>2</reps>
+          </set>
+          <set id="4">
+            <reps>1</reps>
+          </set>
+          <set id="5">
+            <reps>1</reps>
+          </set>
+          <set id="6">
+            <reps>1</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Dumbbell Rows</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Lat Pulldowns</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="4" Date="23/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>Seating Dumbbell Shoulder Press</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Side Lateral Raise</name>
+          <set id="1">
+            <reps>10</reps>
+          </set>
+          <set id="2">
+            <reps>10</reps>
+          </set>
+          <set id="3">
+            <reps>10</reps>
+          </set>
+          <set id="4">
+            <reps>10</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Rear Delt Fly</name>
+          <set id="1">
+            <reps>10</reps>
+          </set>
+          <set id="2">
+            <reps>10</reps>
+          </set>
+          <set id="3">
+            <reps>10</reps>
+          </set>
+          <set id="4">
+            <reps>10</reps>
+          </set>
+        </exercise>
+        <exercise id="4">
+          <name>Shrugs</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="5" Date="24/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>EZ Bar Curl</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Hammer Curl</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Close Grip Bench Press</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Dips</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+    </workoutPlan>
+  </person>
 </XML-S>
 
