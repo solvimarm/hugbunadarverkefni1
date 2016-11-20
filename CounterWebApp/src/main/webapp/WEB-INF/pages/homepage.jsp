@@ -14,29 +14,92 @@
 	</head>
 	<body>
 		<div class="container">
+			</p>
 			<ul class="nav nav-tabs">
-  				<li role="presentation" class="active"><a href="hompage">Home</a></li>
-				<li role="presentation"><a href="currentCycle">My Profile</a></li>
-			</ul>			
-			<form method="POST" role="form">
-				<div class = "form-group">
-					<div class="row">
-						<div class ="col-md-4">
-							<input class="btn-primary" type="submit" name="food" value="Food">
-						</div>
-						<div class ="col-md-4">
-							<input class="btn-primary" type="submit" name="week" value="Current cycle">
-						</div>
-						<div class ="col-md-4">
-							<input class="btn-primary" type="submit" name="day" value="Current Day">
-						</div>
-					</div>
-					<h3>Welcome to your home page</h3>
-					<h4>${name}</h4>
-					<h4>${email}</h4>
-					<h4>${goal}</h4>
-				</div>
-			</form>
+  				<li role="presentation" class="active"><a href="homepage">Home</a></li>
+				<li role="presentation"><a href="myProfile">My Profile</a></li>
+			</ul>
+			<div class="jumbotron">
+				<h1>Welcome to your homepage!</h1>
+  				<p>Now you can start exercising.</p>
+			</div>
+			<div class="row">
+				<form method="POST", role="form">
+		  			<div class="col-sm-6">
+		   				<div class="card card-block">
+		      				<h3 class="card-title">Monday</h3>
+		      				<p>${mondayDate}</p>
+		     				 <ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${mondayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<input type="submit" name="monday" class="btn btn-primary" value="Fill in results"></input>
+		    			</div>
+		  			</div>
+		 			 <div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Tuesday</h3>
+		      				<p>${tuesdayDate}</p>
+		      				<ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${tuesdayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<input type="submit" name="tuesday" class="btn btn-primary" value="Fill in results"></input>
+		    			</div>
+		  			</div>
+		  			<div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Wednesday</h3>
+		      				<p>${wednesdayDate}</p>
+		      				<ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${wednesdayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<input type="submit" name="wednesday" class="btn btn-primary" value="Fill in results"></input>
+		    			</div>
+		  			</div>
+		  			<div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Thursday</h3>
+		      				<p>${thursdayDate}</p>
+		      				<ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${thursdayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<input type="submit" name="thursday" class="btn btn-primary" value="Fill in results"></input>
+		    			</div>
+		  			</div>
+		  			<div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Friday</h3>
+		      				<p>${fridayDate}</p>
+		      				<ul class="list-group list-group-flush">
+		     				 	<c:forEach var="i" items="${fridayEx}">
+	    							<li class="list-group-item">${i.name}</li>
+	    						</c:forEach>
+	 				 		</ul>
+		      				<input type="submit" name="friday" class="btn btn-primary" value="Fill in results"></input>
+		    			</div>
+		  			</div>
+		  			<div class="col-sm-6">
+		    			<div class="card card-block">
+		      				<h3 class="card-title">Diet Plan</h3>
+		      				<p>Suggested diet plan just for you.</p>
+		      				<ul class="list-group list-group-flush">
+		      					<li class="list-group-item">Breakfast</li>
+		      					<li class="list-group-item">Lunch</li>
+		      					<li class="list-group-item">Dinner</li>
+		      				</ul>
+		      				<input type="submit" name="food" class="btn btn-primary" value="Check it out"></input>
+		    			</div>
+		  			</div>
+		  		</form>
+			</div>			
 		</div>
+		</p>
 	</body>
 </html>

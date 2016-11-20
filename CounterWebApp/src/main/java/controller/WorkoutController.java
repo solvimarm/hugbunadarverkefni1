@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.ArrayList;
 import persistence.entities.Day;
 import persistence.entities.Exercises;
+import persistence.entities.Set;
 
 
 @Controller
@@ -22,12 +23,14 @@ public class WorkoutController extends HttpServlet{
 	private static WorkoutService workoutService = new WorkoutService();
 	
 	//Gets the current workout cycle and shows it to the user
-	@RequestMapping(value = "currentCycle", method = RequestMethod.GET)
+	@RequestMapping(value = "homepage", method = RequestMethod.GET)
 	public String getCurrentCycleGet(HttpSession session, ModelMap model){
 		
+		//Finds current workout cycle for the user
 		String username = (String)session.getAttribute("username");
 
 		ArrayList<Day> cycle = workoutService.getCurrentCycle(username);
+		session.setAttribute("currentCycle",cycle);
 
 		Day monday = cycle.get(0);
 		Day tuesday = cycle.get(1);
@@ -41,6 +44,7 @@ public class WorkoutController extends HttpServlet{
 		ArrayList<Exercises> thursdayEx = thursday.getExercises();
 		ArrayList<Exercises> fridayEx = friday.getExercises();
 
+		//Shows it to the user
 		model.addAttribute("mondayDate",monday.getDate());
 		model.addAttribute("tuesdayDate",tuesday.getDate());
 		model.addAttribute("wednesdayDate",wednesday.getDate());
@@ -52,19 +56,45 @@ public class WorkoutController extends HttpServlet{
 		model.addAttribute("thursdayEx",thursdayEx);
 		model.addAttribute("fridayEx",fridayEx);
 
-		VIEW_INDEX = "currentCycle";
+		VIEW_INDEX = "homepage";
 		return VIEW_INDEX;
 	}
 
-	//Not fully implemented
-	@RequestMapping(value = "currentCycle", method = RequestMethod.POST)
+	//Takes the user to a specific day in the cycle
+	@RequestMapping(value = "homepage", method = RequestMethod.POST)
 	public String getCurrentCyclePost(HttpSession session, HttpServletRequest request){
 
-		if(request.getParameter("monday")!=null){
-			session.setAttribute("date","dagur");
-			System.out.println("ég er hjér að ýta á mánudagggggggg");
-		}
+		//Find the right date and keep it in session
+		ArrayList<Day> currentCycle = (ArrayList<Day>)session.getAttribute("currentCycle");
 		VIEW_INDEX = "workoutOfToday";
+		if(request.getParameter("monday")!=null){
+
+			String date = currentCycle.get(0).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("tuesday")!=null){
+
+			String date = currentCycle.get(1).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("wednesday")!=null){
+
+			String date = currentCycle.get(2).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("thursday")!=null){
+
+			String date = currentCycle.get(3).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("friday")!=null){
+
+			String date = currentCycle.get(4).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("food")!=null){
+			VIEW_INDEX = "foodPlan";
+		}
 		return "redirect:/"+VIEW_INDEX;
 	}
 
@@ -74,10 +104,20 @@ public class WorkoutController extends HttpServlet{
 
 		//Get parameters
 		String username = (String)session.getAttribute("username");
-		String date = "03/01/2016";
+		String date = (String)session.getAttribute("date");
 
 		Day day = workoutService.getSpecificDay(username, date);
 		//Input information from day into view. Not implemennted
+		ArrayList<Exercises> exercise = day.getExercises();
+		ArrayList workout = new ArrayList();
+		ArrayList<Set> set = new ArrayList<Set>();
+		for(int i = 0; i < exercise.size(); i++){
+			set.addAll(exercise.get(i).getSet());
+			workout.add(exercise.get(i).getName());
+		}
+		int rep = (int)set.get(0).getRep();
+		model.addAttribute("workout", workout);
+		model.addAttribute("rep",rep);
 
 		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;
@@ -85,7 +125,8 @@ public class WorkoutController extends HttpServlet{
 
 	//Not fully implemented
 	@RequestMapping(value = "workoutOfToday", method= RequestMethod.POST)
-	public String getSpecificDayPost(){
+	public String getSpecificDayPost(HttpSession session, HttpServletRequest request){
+		System.out.println(request.getParameter("æfing 1"));
 
 		VIEW_INDEX = "homepage";
 		return "redirect:/"+VIEW_INDEX;

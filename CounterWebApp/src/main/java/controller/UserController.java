@@ -79,7 +79,7 @@ public class UserController extends HttpServlet{
 				error.add("Invalid username");
 			}
 			if(!verifyService.verifyPass(password)){
-				error.add("Invalid password");
+				error.add("Password must be at least six characters");
 			}
 			if(!verifyService.verifyEmail(email)){
 				error.add("Invalid email");
@@ -105,7 +105,7 @@ public class UserController extends HttpServlet{
 		model.addAttribute("goal", goal );
 		model.addAttribute("gender", gender);
 		model.addAttribute("weight", weight);
-		model.addAttribute("error", error+":");
+		model.addAttribute("error", error);
 
 		return null;
 	}
@@ -136,45 +136,23 @@ public class UserController extends HttpServlet{
 		}
 
 	}
+	//Gets the user profile page
+	@RequestMapping(value = "myProfile", method = RequestMethod.GET)
+	public String myProfileGet(HttpSession session, ModelMap model){
 
-	//Gets homepage specific for each user
-	@RequestMapping(value = "homepage", method = RequestMethod.GET)
-	public String getHomepage(HttpSession session, ModelMap model){
-		
-		//Redirects to index if not loged in
-		if(session == null){
-			indexGet();//Vitlaust :/
-		}
-		else{
-			String username =  (String)session.getAttribute("username");
-			ArrayList user = new ArrayList();
+		String username = (String)session.getAttribute("username");
+		ArrayList user = userService.findUser(username);
 
-			user = userService.findUser(username);
+		model.addAttribute("name",user.get(0));
+		model.addAttribute("goal",user.get(1));
+		model.addAttribute("email",user.get(2));
+		model.addAttribute("age",user.get(3));
+		model.addAttribute("gender",user.get(4));
+		model.addAttribute("weight",user.get(5));
 
-			model.addAttribute("name",user.get(0));
-			model.addAttribute("email",user.get(2));
-			model.addAttribute("goal",user.get(1));
-			VIEW_INDEX = "homepage";
-		}
+		VIEW_INDEX = "myProfile";
 		return VIEW_INDEX;
 	}
-
-	//Redirect from homepage
-	@RequestMapping(value = "homepage", method = RequestMethod.POST)
-	public String homeToNextDest(HttpServletRequest request){
-		if(request.getParameter("week")!=null){
-			VIEW_INDEX = "currentCycle";
-		}
-		else if(request.getParameter("day")!=null){
-			VIEW_INDEX = "workoutOfToday";
-		}
-		else if(request.getParameter("food")!=null){
-			VIEW_INDEX = "foodPlan";
-		}
-
-		return "redirect:/"+VIEW_INDEX;
-	}
-
 }
 
 

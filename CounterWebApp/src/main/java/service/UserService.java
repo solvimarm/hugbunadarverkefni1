@@ -52,13 +52,18 @@ public class UserService{
 
 			ArrayList user = new ArrayList();
 			String name = userFound.getName();
-			String goal = userFound.getGoal();
 			String email = userFound.getEmail();
+			String goal = userFound.getGoal();
+			int age = userFound.getAge();
+			String gender = userFound.getGender();
+			Double weight = userFound.getUserWeight();
 
 			user.add(name);
 			user.add(goal);
 			user.add(email);
-
+			user.add(age);
+			user.add(gender);
+			user.add(weight);
 			return user;
 		}
 
