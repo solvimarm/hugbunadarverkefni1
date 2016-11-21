@@ -17,6 +17,7 @@
 	</head>
 	<body>
 		<div class= "container">
+			</p>
 			<div class="jumbotron">
   				<h1>Your Health & fitness</h1>
   				<p>A health and lifestyle application that will help users to improve their overall health. The system makes exercise plans and tracks user progress.</p>

@@ -69,6 +69,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t</head>\n");
       out.write("\t<body>\n");
       out.write("\t\t<div class= \"container\">\n");
+      out.write("\t\t\t</p>\n");
       out.write("\t\t\t<div class=\"jumbotron\">\n");
       out.write("  \t\t\t\t<h1>Your Health & fitness</h1>\n");
       out.write("  \t\t\t\t<p>A health and lifestyle application that will help users to improve their overall health. The system makes exercise plans and tracks user progress.</p>\n");

@@ -81,4 +81,22 @@ public class WorkoutService{
 		return null;
 	}
 
+	public String getWeekday(String date){
+
+		SimpleDateFormat simpleDateformat1 = new SimpleDateFormat("dd/MM/yyyy"); 
+		SimpleDateFormat simpleDateformat2 = new SimpleDateFormat("EEEE");
+		Date day;
+		String weekday;
+		try{
+			day = simpleDateformat1.parse(date);
+			weekday = simpleDateformat2.format(day);
+			return weekday;
+
+		}catch(Exception e){
+			System.out.println("þú ert inní exception auli");
+			return null;
+		}
+	}
+
+
 }

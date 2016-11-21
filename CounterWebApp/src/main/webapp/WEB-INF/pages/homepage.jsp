@@ -27,10 +27,10 @@
 				<form method="POST", role="form">
 		  			<div class="col-sm-6">
 		   				<div class="card card-block">
-		      				<h3 class="card-title">Monday</h3>
-		      				<p>${mondayDate}</p>
+		      				<h3 class="card-title">${day1Weekday}</h3>
+		      				<p>${day1Date}</p>
 		     				 <ul class="list-group list-group-flush">
-		     				 	<c:forEach var="i" items="${mondayEx}">
+		     				 	<c:forEach var="i" items="${day1Ex}">
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
@@ -39,10 +39,10 @@
 		  			</div>
 		 			 <div class="col-sm-6">
 		    			<div class="card card-block">
-		      				<h3 class="card-title">Tuesday</h3>
-		      				<p>${tuesdayDate}</p>
+		      				<h3 class="card-title">${day2Weekday}</h3>
+		      				<p>${day2Date}</p>
 		      				<ul class="list-group list-group-flush">
-		     				 	<c:forEach var="i" items="${tuesdayEx}">
+		     				 	<c:forEach var="i" items="${day2Ex}">
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
@@ -51,10 +51,10 @@
 		  			</div>
 		  			<div class="col-sm-6">
 		    			<div class="card card-block">
-		      				<h3 class="card-title">Wednesday</h3>
-		      				<p>${wednesdayDate}</p>
+		      				<h3 class="card-title">${day3Weekday}</h3>
+		      				<p>${day3Date}</p>
 		      				<ul class="list-group list-group-flush">
-		     				 	<c:forEach var="i" items="${wednesdayEx}">
+		     				 	<c:forEach var="i" items="${day3Ex}">
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
@@ -63,10 +63,10 @@
 		  			</div>
 		  			<div class="col-sm-6">
 		    			<div class="card card-block">
-		      				<h3 class="card-title">Thursday</h3>
-		      				<p>${thursdayDate}</p>
+		      				<h3 class="card-title">${day4Weekday}</h3>
+		      				<p>${day4Date}</p>
 		      				<ul class="list-group list-group-flush">
-		     				 	<c:forEach var="i" items="${thursdayEx}">
+		     				 	<c:forEach var="i" items="${day4Ex}">
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
@@ -75,10 +75,10 @@
 		  			</div>
 		  			<div class="col-sm-6">
 		    			<div class="card card-block">
-		      				<h3 class="card-title">Friday</h3>
-		      				<p>${fridayDate}</p>
+		      				<h3 class="card-title">${day5Weekday}</h3>
+		      				<p>${day5Date}</p>
 		      				<ul class="list-group list-group-flush">
-		     				 	<c:forEach var="i" items="${fridayEx}">
+		     				 	<c:forEach var="i" items="${day5Ex}">
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>

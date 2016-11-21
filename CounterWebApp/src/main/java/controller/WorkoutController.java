@@ -34,29 +34,40 @@ public class WorkoutController extends HttpServlet{
 		ArrayList<Day> cycle = workoutService.getCurrentCycle(username);
 		session.setAttribute("currentCycle",cycle);
 
-		Day monday = cycle.get(0);
-		Day tuesday = cycle.get(1);
-		Day wednesday = cycle.get(2);
-		Day thursday = cycle.get(3);
-		Day friday = cycle.get(4);
+		Day day1 = cycle.get(4);
+		Day day2 = cycle.get(3);
+		Day day3 = cycle.get(2);
+		Day day4 = cycle.get(1);
+		Day day5 = cycle.get(0);
 
-		ArrayList<Exercises> mondayEx = monday.getExercises();
-		ArrayList<Exercises> tuesdayEx = tuesday.getExercises();
-		ArrayList<Exercises> wednesdayEx = wednesday.getExercises();
-		ArrayList<Exercises> thursdayEx = thursday.getExercises();
-		ArrayList<Exercises> fridayEx = friday.getExercises();
+		ArrayList<Exercises> day1Ex = day1.getExercises();
+		ArrayList<Exercises> day2Ex = day2.getExercises();
+		ArrayList<Exercises> day3Ex = day3.getExercises();
+		ArrayList<Exercises> day4Ex = day4.getExercises();
+		ArrayList<Exercises> day5Ex = day5.getExercises();
+
+		String weekday1 = workoutService.getWeekday(day1.getDate());
+		String weekday2 = workoutService.getWeekday(day2.getDate());
+		String weekday3 = workoutService.getWeekday(day3.getDate());
+		String weekday4 = workoutService.getWeekday(day4.getDate());
+		String weekday5 = workoutService.getWeekday(day5.getDate());
 
 		//Shows it to the user
-		model.addAttribute("mondayDate",monday.getDate());
-		model.addAttribute("tuesdayDate",tuesday.getDate());
-		model.addAttribute("wednesdayDate",wednesday.getDate());
-		model.addAttribute("thursdayDate",thursday.getDate());
-		model.addAttribute("fridayDate", friday.getDate());
-		model.addAttribute("mondayEx",mondayEx);
-		model.addAttribute("tuesdayEx",tuesdayEx);
-		model.addAttribute("wednesdayEx",wednesdayEx);
-		model.addAttribute("thursdayEx",thursdayEx);
-		model.addAttribute("fridayEx",fridayEx);
+		model.addAttribute("day1Weekday",weekday1);
+		model.addAttribute("day2Weekday",weekday2);
+		model.addAttribute("day3Weekday",weekday3);
+		model.addAttribute("day4Weekday",weekday4);
+		model.addAttribute("day5Weekday",weekday5);
+		model.addAttribute("day1Date",day1.getDate());
+		model.addAttribute("day2Date",day2.getDate());
+		model.addAttribute("day3Date",day3.getDate());
+		model.addAttribute("day4Date",day4.getDate());
+		model.addAttribute("day5Date",day5.getDate());
+		model.addAttribute("day1Ex",day1Ex);
+		model.addAttribute("day2Ex",day2Ex);
+		model.addAttribute("day3Ex",day3Ex);
+		model.addAttribute("day4Ex",day4Ex);
+		model.addAttribute("day5Ex",day5Ex);
 
 		VIEW_INDEX = "homepage";
 		return VIEW_INDEX;

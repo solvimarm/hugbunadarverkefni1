@@ -83,9 +83,11 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t<form method=\"POST\", role=\"form\">\n");
       out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\n");
       out.write("\t\t   \t\t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Monday</h3>\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day1Weekday}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</h3>\n");
       out.write("\t\t      \t\t\t\t<p>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mondayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day1Date}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("</p>\n");
       out.write("\t\t     \t\t\t\t <ul class=\"list-group list-group-flush\">\n");
       out.write("\t\t     \t\t\t\t \t");
@@ -98,9 +100,11 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t  \t\t\t</div>\n");
       out.write("\t\t \t\t\t <div class=\"col-sm-6\">\n");
       out.write("\t\t    \t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Tuesday</h3>\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day2Weekday}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</h3>\n");
       out.write("\t\t      \t\t\t\t<p>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${tuesdayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day2Date}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("</p>\n");
       out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\n");
       out.write("\t\t     \t\t\t\t \t");
@@ -113,9 +117,11 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t  \t\t\t</div>\n");
       out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\n");
       out.write("\t\t    \t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Wednesday</h3>\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day3Weekday}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</h3>\n");
       out.write("\t\t      \t\t\t\t<p>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${wednesdayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day3Date}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("</p>\n");
       out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\n");
       out.write("\t\t     \t\t\t\t \t");
@@ -128,9 +134,11 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t  \t\t\t</div>\n");
       out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\n");
       out.write("\t\t    \t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Thursday</h3>\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day4Weekday}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</h3>\n");
       out.write("\t\t      \t\t\t\t<p>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${thursdayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day4Date}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("</p>\n");
       out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\n");
       out.write("\t\t     \t\t\t\t \t");
@@ -143,9 +151,11 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t  \t\t\t</div>\n");
       out.write("\t\t  \t\t\t<div class=\"col-sm-6\">\n");
       out.write("\t\t    \t\t\t<div class=\"card card-block\">\n");
-      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">Friday</h3>\n");
+      out.write("\t\t      \t\t\t\t<h3 class=\"card-title\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day5Weekday}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</h3>\n");
       out.write("\t\t      \t\t\t\t<p>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fridayDate}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${day5Date}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("</p>\n");
       out.write("\t\t      \t\t\t\t<ul class=\"list-group list-group-flush\">\n");
       out.write("\t\t     \t\t\t\t \t");
@@ -197,7 +207,7 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/pages/homepage.jsp(33,13) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("i");
     // /WEB-INF/pages/homepage.jsp(33,13) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(33,13) '${mondayEx}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${mondayEx}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(33,13) '${day1Ex}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${day1Ex}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
@@ -238,7 +248,7 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/pages/homepage.jsp(45,13) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("i");
     // /WEB-INF/pages/homepage.jsp(45,13) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(45,13) '${tuesdayEx}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${tuesdayEx}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(45,13) '${day2Ex}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${day2Ex}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();
@@ -279,7 +289,7 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/pages/homepage.jsp(57,13) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f2.setVar("i");
     // /WEB-INF/pages/homepage.jsp(57,13) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f2.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(57,13) '${wednesdayEx}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${wednesdayEx}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fforEach_005f2.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(57,13) '${day3Ex}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${day3Ex}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f2 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f2 = _jspx_th_c_005fforEach_005f2.doStartTag();
@@ -320,7 +330,7 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/pages/homepage.jsp(69,13) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f3.setVar("i");
     // /WEB-INF/pages/homepage.jsp(69,13) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f3.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(69,13) '${thursdayEx}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${thursdayEx}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fforEach_005f3.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(69,13) '${day4Ex}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${day4Ex}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f3 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f3 = _jspx_th_c_005fforEach_005f3.doStartTag();
@@ -361,7 +371,7 @@ public final class homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/pages/homepage.jsp(81,13) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f4.setVar("i");
     // /WEB-INF/pages/homepage.jsp(81,13) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f4.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(81,13) '${fridayEx}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${fridayEx}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fforEach_005f4.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/homepage.jsp(81,13) '${day5Ex}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${day5Ex}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f4 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f4 = _jspx_th_c_005fforEach_005f4.doStartTag();
