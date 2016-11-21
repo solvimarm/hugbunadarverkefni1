@@ -123,14 +123,23 @@ public class WorkoutController extends HttpServlet{
 		//Input information from day into view. Not implemennted
 		ArrayList<Exercises> exercise = day.getExercises();
 		ArrayList workout = new ArrayList();
-		ArrayList<Set> set = new ArrayList<Set>();
+		ArrayList sets = new ArrayList();
+		int set = exercise.get(0).getSet().size();
 		for(int i = 0; i < exercise.size(); i++){
-			set.addAll(exercise.get(i).getSet());
+
+			sets.add(exercise.get(i).getSet().size());
 			workout.add(exercise.get(i).getName());
 		}
-		int rep = (int)set.get(0).getRep();
+		//int rep = (int)set.get(0).getRep();
+		//int sets = set.size();
+		ArrayList rep = new ArrayList();
+		/*for(int i = 0; i < sets; i++){
+			rep.add(set.get(i).getRep());
+		}*/
+
+		model.addAttribute("sets", sets);
 		model.addAttribute("workout", workout);
-		model.addAttribute("rep",rep);
+		//model.addAttribute("rep",rep);
 
 		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;

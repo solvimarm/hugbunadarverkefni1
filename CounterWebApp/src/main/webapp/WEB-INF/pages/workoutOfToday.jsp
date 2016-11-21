@@ -35,8 +35,8 @@
 	  					<c:forEach var="i" items="${workout}">
 	  						<tr>
 	    						<td>${i}</td>
-	   							<td>3</td> 
-	    						<td>${rep}</td>
+	   							<td>${sets}</td> 
+	    						<td>6</td>
 	    						<td>
 	    							<div class="col-xs-3">
 	    								<input type="int" name="${i}" class="form-control">
