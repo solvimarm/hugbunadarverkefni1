@@ -80,29 +80,29 @@ public class WorkoutController extends HttpServlet{
 		//Find the right date and keep it in session
 		ArrayList<Day> currentCycle = (ArrayList<Day>)session.getAttribute("currentCycle");
 		VIEW_INDEX = "workoutOfToday";
-		if(request.getParameter("monday")!=null){
+		if(request.getParameter("day1")!=null){
 
-			String date = currentCycle.get(0).getDate();
+			String date = currentCycle.get(4).getDate();
 			session.setAttribute("date",date);
 		}
-		if(request.getParameter("tuesday")!=null){
-
-			String date = currentCycle.get(1).getDate();
-			session.setAttribute("date",date);
-		}
-		if(request.getParameter("wednesday")!=null){
-
-			String date = currentCycle.get(2).getDate();
-			session.setAttribute("date",date);
-		}
-		if(request.getParameter("thursday")!=null){
+		if(request.getParameter("day2")!=null){
 
 			String date = currentCycle.get(3).getDate();
 			session.setAttribute("date",date);
 		}
-		if(request.getParameter("friday")!=null){
+		if(request.getParameter("day3")!=null){
 
-			String date = currentCycle.get(4).getDate();
+			String date = currentCycle.get(2).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("day4")!=null){
+
+			String date = currentCycle.get(1).getDate();
+			session.setAttribute("date",date);
+		}
+		if(request.getParameter("day5")!=null){
+
+			String date = currentCycle.get(0).getDate();
 			session.setAttribute("date",date);
 		}
 		if(request.getParameter("food")!=null){
@@ -111,7 +111,7 @@ public class WorkoutController extends HttpServlet{
 		return "redirect:/"+VIEW_INDEX;
 	}
 
-	//Not fully implemented
+	//Show user the whole workout for a specific day.
 	@RequestMapping(value = "workoutOfToday", method = RequestMethod.GET)
 	public String getSpecificDayGet(HttpSession session, ModelMap model){
 
@@ -120,26 +120,11 @@ public class WorkoutController extends HttpServlet{
 		String date = (String)session.getAttribute("date");
 
 		Day day = workoutService.getSpecificDay(username, date);
-		//Input information from day into view. Not implemennted
-		ArrayList<Exercises> exercise = day.getExercises();
-		ArrayList workout = new ArrayList();
-		ArrayList sets = new ArrayList();
-		int set = exercise.get(0).getSet().size();
-		for(int i = 0; i < exercise.size(); i++){
+		
+		//Input information from day into view. 
+		ArrayList<Exercises> exercises = day.getExercises();
+		model.addAttribute("exercises",exercises);
 
-			sets.add(exercise.get(i).getSet().size());
-			workout.add(exercise.get(i).getName());
-		}
-		//int rep = (int)set.get(0).getRep();
-		//int sets = set.size();
-		ArrayList rep = new ArrayList();
-		/*for(int i = 0; i < sets; i++){
-			rep.add(set.get(i).getRep());
-		}*/
-
-		model.addAttribute("sets", sets);
-		model.addAttribute("workout", workout);
-		//model.addAttribute("rep",rep);
 
 		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;
@@ -148,7 +133,6 @@ public class WorkoutController extends HttpServlet{
 	//Not fully implemented
 	@RequestMapping(value = "workoutOfToday", method= RequestMethod.POST)
 	public String getSpecificDayPost(HttpSession session, HttpServletRequest request){
-		System.out.println(request.getParameter("æfing 1"));
 
 		VIEW_INDEX = "homepage";
 		return "redirect:/"+VIEW_INDEX;

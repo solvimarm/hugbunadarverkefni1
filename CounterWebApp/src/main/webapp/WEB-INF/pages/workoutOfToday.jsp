@@ -28,20 +28,25 @@
 		 			<table class="table">
 	  					<tr>
 	    					<th>Name</th>
-	    					<th>Sets</th> 
+	    					<th>Set</th> 
 	    					<th>Reps</th>
 	    					<th>Dumbel weight</th>
 	  					</tr>
-	  					<c:forEach var="i" items="${workout}">
+	  					<c:forEach var="exercise" items="${exercises}">
 	  						<tr>
-	    						<td>${i}</td>
-	   							<td>${sets}</td> 
-	    						<td>6</td>
-	    						<td>
-	    							<div class="col-xs-3">
-	    								<input type="int" name="${i}" class="form-control">
-	    							</div>
-	    						</td>
+	    						<td colspan="4">${exercise.name}</td>
+	   							<c:forEach var="set" items="${exercise.set}">
+		   							<tr>
+		   								<td></td>
+		   								<td>${set.number}</td> 
+		    							<td>${set.rep}</td>
+		    							<td>
+		    								<div class="col-xs-3">
+		    									<input type="int" name="${exercise}" class="form-control">
+		    								</div>
+		    							</td>
+		    						</tr>
+	    						</c:forEach>
 	  						</tr>
 	  					</c:forEach>
 					</table>

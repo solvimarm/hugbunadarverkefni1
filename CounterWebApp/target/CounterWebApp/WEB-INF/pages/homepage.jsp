@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>username</title>
+		<title>Homepage</title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css">         
 		<script src="../js/bootstrap.min.js"></script>
 		<meta charset="utf-8">
@@ -34,7 +34,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<input type="submit" name="monday" class="btn btn-primary" value="Fill in results"></input>
+		      				<input type="submit" name="day1" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		 			 <div class="col-sm-6">
@@ -46,7 +46,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<input type="submit" name="tuesday" class="btn btn-primary" value="Fill in results"></input>
+		      				<input type="submit" name="day2" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		  			<div class="col-sm-6">
@@ -58,7 +58,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<input type="submit" name="wednesday" class="btn btn-primary" value="Fill in results"></input>
+		      				<input type="submit" name="day3" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		  			<div class="col-sm-6">
@@ -70,7 +70,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<input type="submit" name="thursday" class="btn btn-primary" value="Fill in results"></input>
+		      				<input type="submit" name="day4" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		  			<div class="col-sm-6">
@@ -82,7 +82,7 @@
 	    							<li class="list-group-item">${i.name}</li>
 	    						</c:forEach>
 	 				 		</ul>
-		      				<input type="submit" name="friday" class="btn btn-primary" value="Fill in results"></input>
+		      				<input type="submit" name="day5" class="btn btn-primary" value="Fill in results"></input>
 		    			</div>
 		  			</div>
 		  			<div class="col-sm-6">

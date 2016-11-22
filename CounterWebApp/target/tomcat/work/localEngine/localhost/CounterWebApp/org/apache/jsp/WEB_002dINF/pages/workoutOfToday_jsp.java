@@ -54,51 +54,51 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<html>\r\n");
-      out.write("\t<head>\r\n");
-      out.write("\t\t<title>workout of today</title>\r\n");
-      out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \r\n");
-      out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\r\n");
-      out.write("\t\t<meta charset=\"utf-8\">\r\n");
-      out.write("\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
-      out.write("\t\t<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">\r\n");
-      out.write("\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js\"></script>\r\n");
-      out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\r\n");
-      out.write("\t</head>\r\n");
-      out.write("\t<body>\r\n");
-      out.write("\t\t<div class=\"container\">\r\n");
-      out.write("\t\t\t</p>\r\n");
-      out.write("\t\t\t<ul class=\"nav nav-tabs\">\r\n");
-      out.write("  \t\t\t\t<li role=\"presentation\"><a href=\"homepage\">Home</a></li>\r\n");
-      out.write("\t\t\t\t<li role=\"presentation\"><a href=\"myProfile\">My Profile</a></li>\r\n");
-      out.write("\t\t\t</ul>\r\n");
-      out.write("\t\t\t<div class=\"jumbotron\">\r\n");
-      out.write("\t\t\t\t<h1>Fill in your workout weights!</h1>\r\n");
-      out.write("  \t\t\t\t<p>That will help you keep track of your progress.</p>\r\n");
-      out.write("\t\t\t</div>\r\n");
-      out.write("\t\t\t<form method=\"POST\" role=\"form\">\r\n");
-      out.write("\t\t\t\t<div class=\"form-group\">\r\n");
-      out.write("\t\t \t\t\t<table class=\"table\">\r\n");
-      out.write("\t  \t\t\t\t\t<tr>\r\n");
-      out.write("\t    \t\t\t\t\t<th>Name</th>\r\n");
-      out.write("\t    \t\t\t\t\t<th>Sets</th> \r\n");
-      out.write("\t    \t\t\t\t\t<th>Reps</th>\r\n");
-      out.write("\t    \t\t\t\t\t<th>Dumbel weight</th>\r\n");
-      out.write("\t  \t\t\t\t\t</tr>\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("\t<head>\n");
+      out.write("\t\t<title>workout of today</title>\n");
+      out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \n");
+      out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\n");
+      out.write("\t\t<meta charset=\"utf-8\">\n");
+      out.write("\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("\t\t<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">\n");
+      out.write("\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js\"></script>\n");
+      out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
+      out.write("\t</head>\n");
+      out.write("\t<body>\n");
+      out.write("\t\t<div class=\"container\">\n");
+      out.write("\t\t\t</p>\n");
+      out.write("\t\t\t<ul class=\"nav nav-tabs\">\n");
+      out.write("  \t\t\t\t<li role=\"presentation\"><a href=\"homepage\">Home</a></li>\n");
+      out.write("\t\t\t\t<li role=\"presentation\"><a href=\"myProfile\">My Profile</a></li>\n");
+      out.write("\t\t\t</ul>\n");
+      out.write("\t\t\t<div class=\"jumbotron\">\n");
+      out.write("\t\t\t\t<h1>Fill in your workout weights!</h1>\n");
+      out.write("  \t\t\t\t<p>That will help you keep track of your progress.</p>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<form method=\"POST\" role=\"form\">\n");
+      out.write("\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t \t\t\t<table class=\"table\">\n");
+      out.write("\t  \t\t\t\t\t<tr>\n");
+      out.write("\t    \t\t\t\t\t<th>Name</th>\n");
+      out.write("\t    \t\t\t\t\t<th>Set</th> \n");
+      out.write("\t    \t\t\t\t\t<th>Reps</th>\n");
+      out.write("\t    \t\t\t\t\t<th>Dumbel weight</th>\n");
+      out.write("\t  \t\t\t\t\t</tr>\n");
       out.write("\t  \t\t\t\t\t");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
-      out.write("\r\n");
-      out.write("\t\t\t\t\t</table>\r\n");
-      out.write("\t\t\t\t</div>\r\n");
-      out.write("\t\t\t\t<input class=\"btn btn-primary\" type=\"submit\" name=\"button\" value=\"Submit\"/>\r\n");
-      out.write("\t\t\t</form>\r\n");
-      out.write("\t\t</p>\r\n");
-      out.write("\t\t</div>\r\n");
-      out.write("\t</body>\r\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t</table>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<input class=\"btn btn-primary\" type=\"submit\" name=\"button\" value=\"Submit\"/>\n");
+      out.write("\t\t\t</form>\n");
+      out.write("\t\t</p>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</body>\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -121,31 +121,24 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
     // /WEB-INF/pages/workoutOfToday.jsp(35,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setVar("i");
+    _jspx_th_c_005fforEach_005f0.setVar("exercise");
     // /WEB-INF/pages/workoutOfToday.jsp(35,8) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(35,8) '${workout}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${workout}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(35,8) '${exercises}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${exercises}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\r\n");
-          out.write("\t  \t\t\t\t\t\t<tr>\r\n");
-          out.write("\t    \t\t\t\t\t\t<td>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</td>\r\n");
-          out.write("\t   \t\t\t\t\t\t\t<td>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sets}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</td> \r\n");
-          out.write("\t    \t\t\t\t\t\t<td>6</td>\r\n");
-          out.write("\t    \t\t\t\t\t\t<td>\r\n");
-          out.write("\t    \t\t\t\t\t\t\t<div class=\"col-xs-3\">\r\n");
-          out.write("\t    \t\t\t\t\t\t\t\t<input type=\"int\" name=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("\" class=\"form-control\">\r\n");
-          out.write("\t    \t\t\t\t\t\t\t</div>\r\n");
-          out.write("\t    \t\t\t\t\t\t</td>\r\n");
-          out.write("\t  \t\t\t\t\t\t</tr>\r\n");
+          out.write("\n");
+          out.write("\t  \t\t\t\t\t\t<tr>\n");
+          out.write("\t    \t\t\t\t\t\t<td colspan=\"4\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${exercise.name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write("</td>\n");
+          out.write("\t   \t\t\t\t\t\t\t");
+          if (_jspx_meth_c_005fforEach_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
+            return true;
+          out.write("\n");
+          out.write("\t  \t\t\t\t\t\t</tr>\n");
           out.write("\t  \t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -162,6 +155,60 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
     } finally {
       _jspx_th_c_005fforEach_005f0.doFinally();
       _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.reuse(_jspx_th_c_005fforEach_005f0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_005fforEach_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fforEach_005f0, PageContext _jspx_page_context, int[] _jspx_push_body_count_c_005fforEach_005f0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_005fforEach_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fforEach_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
+    // /WEB-INF/pages/workoutOfToday.jsp(38,11) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f1.setVar("set");
+    // /WEB-INF/pages/workoutOfToday.jsp(38,11) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(38,11) '${exercise.set}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${exercise.set}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();
+      if (_jspx_eval_c_005fforEach_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("\t\t   \t\t\t\t\t\t\t<tr>\n");
+          out.write("\t\t   \t\t\t\t\t\t\t\t<td></td>\n");
+          out.write("\t\t   \t\t\t\t\t\t\t\t<td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${set.number}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write("</td> \n");
+          out.write("\t\t    \t\t\t\t\t\t\t<td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${set.rep}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write("</td>\n");
+          out.write("\t\t    \t\t\t\t\t\t\t<td>\n");
+          out.write("\t\t    \t\t\t\t\t\t\t\t<div class=\"col-xs-3\">\n");
+          out.write("\t\t    \t\t\t\t\t\t\t\t\t<input type=\"int\" name=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${exercise}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write("\" class=\"form-control\">\n");
+          out.write("\t\t    \t\t\t\t\t\t\t\t</div>\n");
+          out.write("\t\t    \t\t\t\t\t\t\t</td>\n");
+          out.write("\t\t    \t\t\t\t\t\t</tr>\n");
+          out.write("\t    \t\t\t\t\t\t");
+          int evalDoAfterBody = _jspx_th_c_005fforEach_005f1.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_005fforEach_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_005fforEach_005f1[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_005fforEach_005f1.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_005fforEach_005f1.doFinally();
+      _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.reuse(_jspx_th_c_005fforEach_005f1);
     }
     return false;
   }

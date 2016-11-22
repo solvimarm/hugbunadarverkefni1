@@ -32,15 +32,32 @@
 	    					<th>Reps</th>
 	    					<th>Dumbel weight</th>
 	  					</tr>
-	  					<c:forEach var="i" items="${workout}">
+	  					<c:forEach var="exercise" items="${exercises}">
 	  						<tr>
-	    						<td>${i}</td>
-	   							<td>${sets}</td> 
-	    						<td>6</td>
+	    						<td>${exercise.name}</td>
 	    						<td>
-	    							<div class="col-xs-3">
-	    								<input type="int" name="${i}" class="form-control">
-	    							</div>
+	   							<c:forEach var="set" items="${exercise.set}">
+	   								
+	   									<ul>
+	   									
+	   										<li>${set.number}</li>
+	   									
+	   									</ul>
+	   								</td> 
+	    							<td>
+	    								<ul>
+	   									
+	   										<li>${set.rep}</li>
+	   									
+	   									</ul>
+	    							</td>
+	    						
+	    							<td>
+	    								<div class="col-xs-3">
+	    									<input type="int" name="${exercise}" class="form-control">
+	    								</div>
+	    							
+	    						</c:forEach>
 	    						</td>
 	  						</tr>
 	  					</c:forEach>
