@@ -26,4 +26,7 @@ public class Set{
 	public int getNumber(){
 		return number;
 	}
+	public void setWeight(Double weight){
+		this.weight = weight;
+	}
 }

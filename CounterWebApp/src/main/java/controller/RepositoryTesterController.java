@@ -32,7 +32,7 @@ import persistence.repositories.FoodRepository;
 public class RepositoryTesterController extends HttpServlet{
 
 	
-	private static String VIEW_INDEX = "index";
+	/*private static String VIEW_INDEX = "index";
 	//private final static org.slf4j.Logger logger = LoggerFactory.getLogger(BaseController.class);
 	private static UserRepository groovyXml=new UserRepository();
 	private static WorkoutRepository groovyWorkout = new WorkoutRepository();
@@ -265,6 +265,6 @@ public class RepositoryTesterController extends HttpServlet{
 
 			VIEW_INDEX = "testwtg";
 		return VIEW_INDEX;
-	}
+	}*/
 
 }

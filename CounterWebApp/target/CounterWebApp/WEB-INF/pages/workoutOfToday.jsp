@@ -28,38 +28,28 @@
 		 			<table class="table">
 	  					<tr>
 	    					<th>Name</th>
-	    					<th>Sets</th> 
+	    					<th>Set</th> 
 	    					<th>Reps</th>
-	    					<th>Dumbel weight</th>
+	    					<th>Dumbbell weight</th>
 	  					</tr>
+	  					<c:set var="count" value="0" scope="page" />
 	  					<c:forEach var="exercise" items="${exercises}">
-	  						<tr>
-	    						<td>${exercise.name}</td>
-	    						<td>
-	   							<c:forEach var="set" items="${exercise.set}">
-	   								
-	   									<ul>
-	   									
-	   										<li>${set.number}</li>
-	   									
-	   									</ul>
-	   								</td> 
-	    							<td>
-	    								<ul>
-	   									
-	   										<li>${set.rep}</li>
-	   									
-	   									</ul>
-	    							</td>
-	    						
-	    							<td>
-	    								<div class="col-xs-3">
-	    									<input type="int" name="${exercise}" class="form-control">
-	    								</div>
-	    							
-	    						</c:forEach>
-	    						</td>
-	  						</tr>
+		  					<tr>
+		    					<td colspan="4">${exercise.name}</td>
+		   						<c:forEach var="set" items="${exercise.set}">
+		   						<c:set var="count" value="${count + 1}" scope="page"/>
+		   							<tr>
+		   								<td></td>
+		   								<td>${set.number}</td> 
+			   							<td>${set.rep}</td>
+			   							<td>
+			   								<div class="col-xs-3">
+			    								<input type="text" name="${count}" value="${set.weight}" required="required" pattern="[0-9]"class="form-control">
+			   								</div>
+			    						</td>
+			    					</tr>
+		    					</c:forEach>
+		  					</tr>
 	  					</c:forEach>
 					</table>
 				</div>

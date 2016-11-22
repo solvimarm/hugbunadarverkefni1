@@ -11,6 +11,7 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
 
   private static java.util.List _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
@@ -21,12 +22,14 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
   }
 
   public void _jspInit() {
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.release();
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
   }
 
@@ -86,8 +89,12 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\t    \t\t\t\t\t<th>Name</th>\n");
       out.write("\t    \t\t\t\t\t<th>Set</th> \n");
       out.write("\t    \t\t\t\t\t<th>Reps</th>\n");
-      out.write("\t    \t\t\t\t\t<th>Dumbel weight</th>\n");
+      out.write("\t    \t\t\t\t\t<th>Dumbbell weight</th>\n");
       out.write("\t  \t\t\t\t\t</tr>\n");
+      out.write("\t  \t\t\t\t\t");
+      if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
+        return;
+      out.write("\n");
       out.write("\t  \t\t\t\t\t");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
@@ -112,6 +119,29 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
     }
   }
 
+  private boolean _jspx_meth_c_005fset_005f0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:set
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    _jspx_th_c_005fset_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fset_005f0.setParent(null);
+    // /WEB-INF/pages/workoutOfToday.jsp(35,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setVar("count");
+    // /WEB-INF/pages/workoutOfToday.jsp(35,8) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(35,8) '0'",_el_expressionfactory.createValueExpression("0",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/pages/workoutOfToday.jsp(35,8) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setScope("page");
+    int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
+    if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f0);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f0);
+    return false;
+  }
+
   private boolean _jspx_meth_c_005fforEach_005f0(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -120,25 +150,25 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /WEB-INF/pages/workoutOfToday.jsp(35,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/workoutOfToday.jsp(36,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("exercise");
-    // /WEB-INF/pages/workoutOfToday.jsp(35,8) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(35,8) '${exercises}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${exercises}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/pages/workoutOfToday.jsp(36,8) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(36,8) '${exercises}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${exercises}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\n");
-          out.write("\t  \t\t\t\t\t\t<tr>\n");
-          out.write("\t    \t\t\t\t\t\t<td colspan=\"4\">");
+          out.write("\t\t  \t\t\t\t\t<tr>\n");
+          out.write("\t\t    \t\t\t\t\t<td colspan=\"4\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${exercise.name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("</td>\n");
-          out.write("\t   \t\t\t\t\t\t\t");
+          out.write("\t\t   \t\t\t\t\t\t");
           if (_jspx_meth_c_005fforEach_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
           out.write("\n");
-          out.write("\t  \t\t\t\t\t\t</tr>\n");
+          out.write("\t\t  \t\t\t\t\t</tr>\n");
           out.write("\t  \t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -167,33 +197,39 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/pages/workoutOfToday.jsp(38,11) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/workoutOfToday.jsp(39,11) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("set");
-    // /WEB-INF/pages/workoutOfToday.jsp(38,11) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(38,11) '${exercise.set}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${exercise.set}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/pages/workoutOfToday.jsp(39,11) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(39,11) '${exercise.set}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${exercise.set}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();
       if (_jspx_eval_c_005fforEach_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\n");
+          out.write("\t\t   \t\t\t\t\t\t");
+          if (_jspx_meth_c_005fset_005f1(_jspx_th_c_005fforEach_005f1, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f1))
+            return true;
+          out.write("\n");
           out.write("\t\t   \t\t\t\t\t\t\t<tr>\n");
           out.write("\t\t   \t\t\t\t\t\t\t\t<td></td>\n");
           out.write("\t\t   \t\t\t\t\t\t\t\t<td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${set.number}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("</td> \n");
-          out.write("\t\t    \t\t\t\t\t\t\t<td>");
+          out.write("\t\t\t   \t\t\t\t\t\t\t<td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${set.rep}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("</td>\n");
-          out.write("\t\t    \t\t\t\t\t\t\t<td>\n");
-          out.write("\t\t    \t\t\t\t\t\t\t\t<div class=\"col-xs-3\">\n");
-          out.write("\t\t    \t\t\t\t\t\t\t\t\t<input type=\"int\" name=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${exercise}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("\" class=\"form-control\">\n");
-          out.write("\t\t    \t\t\t\t\t\t\t\t</div>\n");
-          out.write("\t\t    \t\t\t\t\t\t\t</td>\n");
-          out.write("\t\t    \t\t\t\t\t\t</tr>\n");
-          out.write("\t    \t\t\t\t\t\t");
+          out.write("\t\t\t   \t\t\t\t\t\t\t<td>\n");
+          out.write("\t\t\t   \t\t\t\t\t\t\t\t<div class=\"col-xs-3\">\n");
+          out.write("\t\t\t    \t\t\t\t\t\t\t\t<input type=\"text\" name=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${count}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write("\" value=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${set.weight}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write("\" required=\"required\" pattern=\"[0-9]+\"class=\"form-control\">\n");
+          out.write("\t\t\t   \t\t\t\t\t\t\t\t</div>\n");
+          out.write("\t\t\t    \t\t\t\t\t\t</td>\n");
+          out.write("\t\t\t    \t\t\t\t\t</tr>\n");
+          out.write("\t\t    \t\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -210,6 +246,29 @@ public final class workoutOfToday_jsp extends org.apache.jasper.runtime.HttpJspB
       _jspx_th_c_005fforEach_005f1.doFinally();
       _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.reuse(_jspx_th_c_005fforEach_005f1);
     }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_005fset_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fforEach_005f1, PageContext _jspx_page_context, int[] _jspx_push_body_count_c_005fforEach_005f1)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:set
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f1 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    _jspx_th_c_005fset_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fset_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f1);
+    // /WEB-INF/pages/workoutOfToday.jsp(40,11) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setVar("count");
+    // /WEB-INF/pages/workoutOfToday.jsp(40,11) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/workoutOfToday.jsp(40,11) '${count + 1}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${count + 1}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/pages/workoutOfToday.jsp(40,11) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f1.setScope("page");
+    int _jspx_eval_c_005fset_005f1 = _jspx_th_c_005fset_005f1.doStartTag();
+    if (_jspx_th_c_005fset_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f1);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.reuse(_jspx_th_c_005fset_005f1);
     return false;
   }
 }

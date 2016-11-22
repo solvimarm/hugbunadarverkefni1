@@ -16,63 +16,97 @@ $/Jl20XffWPu/gv51pwBkXTOvdJb1E+4r+3H3gHm9jxI=
           <name>Squats</name>
           <set id="1">
             <reps>3</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="2">
             <reps>3</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="3">
             <reps>3</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="4">
             <reps>3</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="5">
             <reps>3</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
         </exercise>
         <exercise id="2">
           <name>Seated Leg Press</name>
           <set id="1">
             <reps>6</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="2">
             <reps>6</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="3">
             <reps>6</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="4">
             <reps>6</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
         </exercise>
         <exercise id="3">
           <name>Romaian Deadlift</name>
           <set id="1">
             <reps>6</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="2">
             <reps>6</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="3">
             <reps>6</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="4">
             <reps>6</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
         </exercise>
         <exercise id="4">
           <name>Lunges</name>
           <set id="1">
             <reps>10</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="2">
             <reps>10</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="3">
             <reps>10</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
           <set id="4">
             <reps>10</reps>
+            <dbWeight/>
+            <dbWeight/>
           </set>
         </exercise>
       </day>
@@ -81,51 +115,69 @@ $/Jl20XffWPu/gv51pwBkXTOvdJb1E+4r+3H3gHm9jxI=
           <name>Barbell Bench Press</name>
           <set id="1">
             <reps>3</reps>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="2">
             <reps>3</reps>
+            <dbWeight>3.0</dbWeight>
           </set>
           <set id="3">
             <reps>3</reps>
+            <dbWeight>4.0</dbWeight>
           </set>
           <set id="4">
             <reps>3</reps>
+            <dbWeight>5.0</dbWeight>
           </set>
           <set id="5">
             <reps>3</reps>
+            <dbWeight>6.0</dbWeight>
           </set>
         </exercise>
         <exercise id="2">
           <name>Dumbbell Bench Press</name>
           <set id="1">
             <reps>3</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="2">
             <reps>3</reps>
+            <dbWeight>8.0</dbWeight>
           </set>
           <set id="3">
             <reps>3</reps>
+            <dbWeight>9.0</dbWeight>
           </set>
           <set id="4">
             <reps>3</reps>
+            <dbWeight>10.0</dbWeight>
           </set>
           <set id="5">
             <reps>3</reps>
+            <dbWeight>11.0</dbWeight>
           </set>
         </exercise>
         <exercise id="3">
           <name>Incline Dumbbell Bench Press</name>
           <set id="1">
             <reps>6</reps>
+            <dbWeight>12.0</dbWeight>
+            <dbWeight>16.0</dbWeight>
           </set>
           <set id="2">
             <reps>6</reps>
+            <dbWeight>13.0</dbWeight>
+            <dbWeight>17.0</dbWeight>
           </set>
           <set id="3">
             <reps>6</reps>
+            <dbWeight>14.0</dbWeight>
+            <dbWeight>18.0</dbWeight>
           </set>
           <set id="4">
             <reps>6</reps>
+            <dbWeight>15.0</dbWeight>
+            <dbWeight>19.0</dbWeight>
           </set>
         </exercise>
         <exercise id="3">
@@ -264,45 +316,61 @@ $/Jl20XffWPu/gv51pwBkXTOvdJb1E+4r+3H3gHm9jxI=
           <name>EZ Bar Curl</name>
           <set id="1">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="2">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="3">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="4">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
         </exercise>
         <exercise id="2">
           <name>Hammer Curl</name>
           <set id="1">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="2">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="3">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="4">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
           </set>
         </exercise>
         <exercise id="3">
           <name>Close Grip Bench Press</name>
           <set id="1">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
+            <dbWeight>9.0</dbWeight>
           </set>
           <set id="2">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="3">
             <reps>6</reps>
+            <dbWeight>7.0</dbWeight>
+            <dbWeight>7.0</dbWeight>
           </set>
           <set id="4">
             <reps>6</reps>
+            <dbWeight>8.0</dbWeight>
+            <dbWeight>7.0</dbWeight>
           </set>
         </exercise>
         <exercise id="3">

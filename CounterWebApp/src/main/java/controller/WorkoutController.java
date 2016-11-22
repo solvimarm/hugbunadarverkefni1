@@ -111,7 +111,7 @@ public class WorkoutController extends HttpServlet{
 		return "redirect:/"+VIEW_INDEX;
 	}
 
-	//Show user the whole workout for a specific day.
+	//Show user the wholw workout for a specific day.
 	@RequestMapping(value = "workoutOfToday", method = RequestMethod.GET)
 	public String getSpecificDayGet(HttpSession session, ModelMap model){
 
@@ -123,8 +123,13 @@ public class WorkoutController extends HttpServlet{
 		
 		//Input information from day into view. 
 		ArrayList<Exercises> exercises = day.getExercises();
-		model.addAttribute("exercises",exercises);
+		int numberOfInputs=0;
 
+		for(int i=0; i<exercises.size();i++){
+			 numberOfInputs += exercises.get(i).getSet().size();
+		}
+		session.setAttribute("numberOfInputs",numberOfInputs);
+		model.addAttribute("exercises",exercises);
 
 		VIEW_INDEX = "workoutOfToday";
 		return VIEW_INDEX;
@@ -132,8 +137,37 @@ public class WorkoutController extends HttpServlet{
 
 	//Not fully implemented
 	@RequestMapping(value = "workoutOfToday", method= RequestMethod.POST)
-	public String getSpecificDayPost(HttpSession session, HttpServletRequest request){
+	public String getSpecificDayPost(HttpSession session, HttpServletRequest request, ModelMap model){
 
+		String username = (String)session.getAttribute("username");
+		String date = (String)session.getAttribute("date");
+		int numberOfInputs = (Integer)session.getAttribute("numberOfInputs");
+		Day day = workoutService.getSpecificDay(username,date);
+		ArrayList<Exercises> exercises = day.getExercises();
+		ArrayList<Double> inputs = new ArrayList<Double>();
+
+		//Gets weights inputs from user
+		for(int i=1; i<=numberOfInputs;i++){
+			String number = Integer.toString(i);
+			inputs.add(Double.parseDouble(request.getParameter(number)));
+		}
+
+		//Adds input into day object.
+		int index = 0;
+		for(int i=0; i<exercises.size(); i++){
+			Exercises exercise = exercises.get(i);
+			ArrayList<Set> sets = exercise.getSet();
+			for(int j=0; j<sets.size();j++){
+				Set set = sets.get(j);
+				Double input = inputs.get(index);
+				set.setWeight(input);
+				index++;
+			}
+		}
+		//Add input into databse
+		workoutService.updateDay(day, username);
+	
+			
 		VIEW_INDEX = "homepage";
 		return "redirect:/"+VIEW_INDEX;
 	}

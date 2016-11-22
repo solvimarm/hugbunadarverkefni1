@@ -42,18 +42,18 @@ public class WorkoutService{
 		}	
 	}
 
-	public void updateDay(Day day,User user){
+	public void updateDay(Day day,String username){
 		ArrayList<Exercises> exercises = day.getExercises();
 		for(int i=0; i<exercises.size(); i++){
 			Exercises exercise = exercises.get(i);
 			ArrayList<Set> sets = exercise.getSet();
 			for(int j=0; j<sets.size();j++){
 				Set set = sets.get(j);
-				workoutRepository.updateSet(user.getUsername(), set.getWeight(), set.getNumber(), exercise.getId(), day.getDate());
+				workoutRepository.updateSet(username, set.getWeight(), set.getNumber(), exercise.getId(), day.getDate());
 			}
 		}
 		
-		workoutRepository.wentToGym(user.getUsername(), day.getDate());
+		workoutRepository.wentToGym(username, day.getDate());
 
 	}
 
