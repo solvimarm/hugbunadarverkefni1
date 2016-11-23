@@ -74,5 +74,9 @@ public class UserService{
 		return null;
 
 	}
+	public void updateUser(User user){
+
+		userRepository.updateUser(user);
+	}
 
 }

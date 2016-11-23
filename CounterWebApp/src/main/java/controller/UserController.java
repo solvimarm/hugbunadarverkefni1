@@ -13,6 +13,7 @@ import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import persistence.entities.User;
 
 import service.UserService;
 import service.VerifyService;
@@ -155,6 +156,61 @@ public class UserController extends HttpServlet{
 
 		VIEW_INDEX = "myProfile";
 		return VIEW_INDEX;
+	}
+	//Redirects to update user page
+	@RequestMapping(value = "myProfile", method = RequestMethod.POST)
+	public String myProfilePost(){
+		
+
+		VIEW_INDEX = "updateUser";
+		return "redirect:/"+VIEW_INDEX;
+	}
+	//Gets update user page
+	//Not fully implemented
+	@RequestMapping(value = "updateUser", method = RequestMethod.GET)
+	public String updateUserGet(HttpSession session, ModelMap model){
+		String username = (String)session.getAttribute("username");
+		ArrayList user = userService.findUser(username);
+
+		model.addAttribute("goal",user.get(1));
+		model.addAttribute("email",user.get(2));
+		model.addAttribute("age",user.get(3));
+		model.addAttribute("gender",user.get(4));
+		model.addAttribute("weight",user.get(5));
+
+		return VIEW_INDEX;
+	}	
+	//Updates user informaition
+	//Not fully implemented
+	@RequestMapping(value = "updateUser", method = RequestMethod.POST)
+	public String updateUserPost(HttpServletRequest request, HttpSession session, ModelMap model){
+
+		String username = (String)session.getAttribute("username");
+
+		String goal = request.getParameter("goal");
+		int age	 = Integer.parseInt(request.getParameter("age"));
+		String weight = request.getParameter("weight");
+		ArrayList error = new ArrayList();
+		
+		if(!verifyService.verifyWeight(weight)){
+			error.add("Invalid weight");
+
+			//Keeps input if not succesful
+			model.addAttribute("age", age);
+			model.addAttribute("goal", goal );
+			model.addAttribute("weight", weight);
+			model.addAttribute("error", error);
+
+			return null;
+
+		}
+
+		User user = new User(null,null,null,age,username,goal,null,Double.parseDouble(weight),null);
+
+		userService.updateUser(user);
+
+		VIEW_INDEX = "myProfile";
+		return "redirect:/"+ VIEW_INDEX;
 	}
 }
 

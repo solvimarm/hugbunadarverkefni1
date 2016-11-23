@@ -38,7 +38,7 @@
 					<h3>Weight</h3>
 					<p>${weight}</p>
 				</div>
-				<input class="btn btn-primary" type="submit" name="button" value="Submit"/>
+				<input class="btn btn-primary" type="submit" name="update" value="Update Profile"/>
 			</form>
 		</p>
 		</div>
