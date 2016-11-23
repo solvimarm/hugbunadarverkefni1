@@ -116,11 +116,11 @@ public class WorkoutRepository {
 				it.set.each{iterator ->
 					def check=iterator.dbWeight.findAll{}
 					if(check.size()>0){
-						Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
+						Set set = new Set(iterator.reps.text().toInteger(), iterator.dbWeight.text().toDouble(), iterator.@id.toInteger() )
 					sets.add(set)
 					}
 					else{
-						Set set = new Set(iterator.reps.text().toInteger(), iterator.dbWeight.text().toDouble(), iterator.@id.toInteger() )
+						Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
 					sets.add(set)
 					}
 					
@@ -158,7 +158,14 @@ public class WorkoutRepository {
 						it.@id == noOfSet.toString()}
 						println "comment 4"
 					if(setNode != null){
-						new Node (setNode, "dbWeight", dbWeight)
+						def check = setNode.dbWeight.findAll{}
+						if(check.size()>0){
+							new Node (setNode, "dbWeight", dbWeight)
+						}
+						else{
+							setNode.dbWeight[0].value = dbWeight
+						}
+						//new Node (setNode, "dbWeight", dbWeight)
 						println "updateset er her"
 						personFile.withWriter ("utf-8") {writer ->
 							writer.writeLine(new XmlUtil().serialize(personXML))}
