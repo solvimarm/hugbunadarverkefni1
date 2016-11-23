@@ -44,7 +44,7 @@
 			   							<td>${set.rep}</td>
 			   							<td>
 			   								<div class="col-xs-3">
-			    								<input type="text" name="${count}" value="${set.weight}" required="required" pattern="[0-9]+"class="form-control">
+			    								<input type="text" name="${count}" value="${set.weight}" required="required" pattern="^[0-9]+\.?[0-9]+"class="form-control">
 			   								</div>
 			    						</td>
 			    					</tr>

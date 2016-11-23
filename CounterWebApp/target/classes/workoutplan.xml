@@ -118,7 +118,7 @@
 					<reps>6</reps>
 				</set>
 			</exercise>
-			<exercise id = "3">
+			<exercise id = "4">
 				<name>Dips</name>
 				<set id="1">
 					<reps>6</reps>
@@ -295,7 +295,7 @@
 					<reps>6</reps>
 				</set>
 			</exercise>
-			<exercise id = "3">
+			<exercise id = "4">
 				<name>Dips</name>
 				<set id="1">
 					<reps>6</reps>
@@ -667,7 +667,7 @@
 					<reps>12</reps>
 				</set>
 			</exercise>
-			<exercise id = "3">
+			<exercise id = "4">
 				<name>Hammer Curls</name>
 				<set id="1">
 					<reps>12</reps>

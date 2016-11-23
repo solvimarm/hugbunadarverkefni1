@@ -38,7 +38,7 @@
 				</div>
 				<div class="form-group">
 					<label for="weight">Type your weight</label>
-					<input value="${weight}" type="double" class="form-control" name="weight" required/>
+					<input value="${weight}" type="double" pattern="^[0-9]+\.?[0-9]+" class="form-control" name="weight" required/>
 				</div>
 				<c:forEach var="i" items="${error}">
 					<div class="alert alert-danger">

@@ -192,18 +192,13 @@ public class UserController extends HttpServlet{
 		String weight = request.getParameter("weight");
 		ArrayList error = new ArrayList();
 		
-		if(!verifyService.verifyWeight(weight)){
-			error.add("Invalid weight");
+
 
 			//Keeps input if not succesful
 			model.addAttribute("age", age);
 			model.addAttribute("goal", goal );
 			model.addAttribute("weight", weight);
-			model.addAttribute("error", error);
 
-			return null;
-
-		}
 
 		User user = new User(null,null,null,age,username,goal,null,Double.parseDouble(weight),null);
 
