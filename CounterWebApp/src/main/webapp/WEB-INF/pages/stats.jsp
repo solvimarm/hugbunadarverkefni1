@@ -23,7 +23,12 @@
 			<div class="jumbotron">
 				<h1>Your Statistics!</h1>
   				<p>Now you can view your progress.</p>
-			</div>						
+			</div>	
+			<ul class="list-group list-group-flush">
+		     	<c:forEach var="i" items="${average}">
+	    			<li class="list-group-item">${i}</li>
+	    		</c:forEach>
+	 		</ul>				
 		</div>
 		</p>
 	</body>

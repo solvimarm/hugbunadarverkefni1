@@ -195,10 +195,14 @@ public class WorkoutController extends HttpServlet{
 		String date = (String)session.getAttribute("date");
 		ArrayList user = userService.findUser(username);
 		String goal = (String)user.get(1);
-		int id = workoutService.getIdByDate(date);
+		int id = workoutService.getIdByDate(username, date);
 
 		ArrayList<Stats> stats = statsService.getAveragePerDay(username,id,goal);
-		
+		ArrayList average = new ArrayList();
+		for(int i = 0; i < stats.size();i++){
+			average.add(stats.get(i).getAverage());
+		}
+		model.addAttribute("average",average);
 
 
 		VIEW_INDEX = "stats";

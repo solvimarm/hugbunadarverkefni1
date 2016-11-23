@@ -98,8 +98,8 @@ public class WorkoutService{
 		}
 	}
 
-	public int getIdByDate(String date){
-		return(getIdfromDate(date));
+	public int getIdByDate(String username,String date){
+		return Integer.valueOf((String)workoutRepository.getIdfromDate(username,date));
 	}
 
 
