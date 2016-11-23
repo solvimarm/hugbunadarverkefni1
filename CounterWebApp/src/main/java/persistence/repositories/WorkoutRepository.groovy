@@ -160,10 +160,10 @@ public class WorkoutRepository {
 					if(setNode != null){
 						def check = setNode.dbWeight.findAll{}
 						if(check.size()>0){
-							new Node (setNode, "dbWeight", dbWeight)
+							setNode.dbWeight[0].value = dbWeight
 						}
 						else{
-							setNode.dbWeight[0].value = dbWeight
+							new Node (setNode, "dbWeight", dbWeight)
 						}
 						//new Node (setNode, "dbWeight", dbWeight)
 						println "updateset er her"
