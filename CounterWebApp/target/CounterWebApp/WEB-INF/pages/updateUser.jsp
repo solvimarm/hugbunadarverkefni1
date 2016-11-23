@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>create new user</title>
+		<title>Update your user information</title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css">         
 		<script src="../js/bootstrap.min.js"></script>
 		<meta charset="utf-8">
@@ -15,6 +15,14 @@
 	<body>
 		<div class="container">
 			</p>
+			<ul class="nav nav-tabs">
+  				<li role="presentation"><a href="homepage">Home</a></li>
+				<li role="presentation"><a href="myProfile">My Profile</a></li>
+			</ul>
+			<div class="jumbotron">
+				<h1>Update Your information!</h1>
+  				<p>...</p>
+			</div>
 			<form method="POST" role="form">
 				<div class="form-group">
 					<label for="age">Type your age</label>
@@ -39,7 +47,7 @@
 						</tr>
 					</div>
 				</c:forEach>
-				<input class="btn btn-primary" type="submit" name="submit" value="Submit"/>
+				<input class="btn btn-primary" type="submit" name="submit" value="Update"/>
 			</form>
 		</div>
 	</body>
