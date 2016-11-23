@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class testwtg_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -55,7 +55,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("<html>\n");
       out.write("\t<head>\n");
-      out.write("\t\t<title>Login</title>\n");
+      out.write("\t\t<title>get workoutplan</title>\n");
       out.write("\t\t<link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\">         \n");
       out.write("\t\t<script src=\"../js/bootstrap.min.js\"></script>\n");
       out.write("\t\t<meta charset=\"utf-8\">\n");
@@ -65,25 +65,15 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script>\n");
       out.write("\t</head>\n");
       out.write("\t<body>\n");
-      out.write("\t\t<div class=\"container\">\n");
-      out.write("\t\t\t</p>\n");
-      out.write("\t\t\t<form method=\"POST\" role=\"form\">\n");
-      out.write("\t\t\t\t<div class=\"form-group\">\n");
-      out.write("\t\t\t\t\t<label for=\"person_id\">Type Your Username</label>\n");
-      out.write("\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"person_id\"/>\n");
-      out.write("\t\t\t\t</div>\n");
-      out.write("\t\t\t\t<div class=\"form-group\">\n");
-      out.write("\t\t\t\t\t<label for=\"pw\">Type Your Password</label>\n");
-      out.write("\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"pw\"/>\n");
-      out.write("\t\t\t\t</div>\n");
-      out.write("\t\t\t\t<div>\n");
-      out.write("\t\t\t\t\t<p>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${error}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</p>\n");
-      out.write("\t\t\t\t</div>\n");
-      out.write("\t\t\t\t<input class=\"btn btn-primary\" type=\"submit\" name=\"login\" value=\"Login\"/>\n");
-      out.write("\t\t\t</form>\n");
-      out.write("\t\t</div>\n");
+      out.write("\t\t\t\t<form method=\"POST\" role=\"form\">\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("\t\t\t\t\t\t<label for=\"username\">Type your userName</label>\n");
+      out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"username\"/>\n");
+      out.write("\t\t\t\t\t\t<label for=\"date\">Type your date</label>\n");
+      out.write("\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"date\"/>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<input type=\"submit\" name=\"button\" value=\"Submit\"/>\n");
+      out.write("\t\t\t\t</form>\n");
       out.write("\t</body>\n");
       out.write("</html>");
     } catch (Throwable t) {

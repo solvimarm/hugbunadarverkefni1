@@ -112,9 +112,18 @@ public class WorkoutRepository {
 
 			workoutDay.exercise.each{it ->
 				ArrayList<Set> sets = new ArrayList<Set>()
+
 				it.set.each{iterator ->
-					Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
+					def check=iterator.dbWeight.findAll{}
+					if(check.size()>0){
+						Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
 					sets.add(set)
+					}
+					else{
+						Set set = new Set(iterator.reps.text().toInteger(), iterator.dbWeight.text().toDouble(), iterator.@id.toInteger() )
+					sets.add(set)
+					}
+					
 				}
 				Exercises exercise = new Exercises( it.name.text(), sets, it.@id.toInteger() )
 				exercises.add(exercise)
@@ -170,23 +179,23 @@ public class WorkoutRepository {
 	def wentToGym(String username, String date){
 		def personFile=new File("${new File(new File(".").getCanonicalPath())}//src//main//resources//persons.xml")
 		def personXML= new XmlParser().parse(personFile)
-
+		println "er inni í went to gym"
 		def userNode = personXML.person.find{it -> 
 			it.@username == username}
 		if(userNode != null){
 			def dayNode = userNode.workoutPlan[0].day.find{it ->
-				it.@id == date}
-
+				it.@Date == date}
+				println "fann user"
 				if(dayNode!=null){
 					Date d = Date.parse("dd/MM/yyyy", date)		
-
+					println "fann day node"
 					new Node (dayNode, "wentToGym", "true")
 
 					def loop = true
 					while(loop){
 						d=d.previous()
 						def preDayNode = userNode.workoutPlan[0].day.find{it ->
-							it.@id == d.format("dd/MM/yyyy")}
+							it.@Date == d.format("dd/MM/yyyy")}
 						if(preDayNode!=null){
 							def check = preDayNode.wentToGym.findAll{}	
 							if(check.size()>0){
@@ -216,15 +225,19 @@ public class WorkoutRepository {
 			it.@username == username}	
 
 		println "comment 0" 
-
-		userNode.workoutPlan[0].day.each{it ->
-			println "fyrir if <----------------"
-			if(it.@id == id.toString() && goal.compareTo(it.@Goal ) == 0){
-				ArrayList<Day> daysByID = new ArrayList<Day>();
-					daysByID.add(getSpecificDay(username, it.@Date ))
+		if(userNode != null){
+			ArrayList<Day> daysByID = new ArrayList<Day>();
+			userNode.workoutPlan[0].day.each{it ->
+				println "fyrir if <----------------"
+				if(it.@id.toInteger() == id && goal.compareTo(it.@Goal ) == 0){
+					println"inni if <-------------------"
+						//herna var arrylist
+						daysByID.addAll(getSpecificDay(username, it.@Date ))
+					}
 				}
-			}
-			return daysByID
+				return daysByID
+		}
+
 
 		}
 

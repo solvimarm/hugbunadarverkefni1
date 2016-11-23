@@ -32,7 +32,7 @@ import persistence.repositories.FoodRepository;
 public class RepositoryTesterController extends HttpServlet{
 
 	
-	/*private static String VIEW_INDEX = "index";
+	private static String VIEW_INDEX = "index";
 	//private final static org.slf4j.Logger logger = LoggerFactory.getLogger(BaseController.class);
 	private static UserRepository groovyXml=new UserRepository();
 	private static WorkoutRepository groovyWorkout = new WorkoutRepository();
@@ -230,7 +230,7 @@ public class RepositoryTesterController extends HttpServlet{
 
 
 
-
+/*
 	@RequestMapping(value = "testUpdateSetDay", method = RequestMethod.GET)
 	public String updatetestshit(HttpServletRequest request) {
 			
@@ -255,16 +255,16 @@ public class RepositoryTesterController extends HttpServlet{
 			VIEW_INDEX = "testgetdietplan";
 		return VIEW_INDEX;
 	}
-
+*/
 	@RequestMapping(value = "testsum", method = RequestMethod.GET)
 	public String getsum() {
 
 			//groovyWorkout.getDaysByID("okok", 1, "stronger");
 
-			statsService.getAveragePerDay("okok", 1, "stronger");
+			statsService.getAveragePerDay("sol", 1, "stronger");
 
 			VIEW_INDEX = "testwtg";
 		return VIEW_INDEX;
-	}*/
+	}
 
 }

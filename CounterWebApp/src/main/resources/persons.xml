@@ -19,30 +19,40 @@ $/Jl20XffWPu/gv51pwBkXTOvdJb1E+4r+3H3gHm9jxI=
             <dbWeight/>
             <dbWeight/>
             <dbWeight>5.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="2">
             <reps>3</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>6.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="3">
             <reps>3</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>7.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="4">
             <reps>3</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>8.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="5">
             <reps>3</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>9.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
         </exercise>
         <exercise id="2">
@@ -52,24 +62,32 @@ $/Jl20XffWPu/gv51pwBkXTOvdJb1E+4r+3H3gHm9jxI=
             <dbWeight/>
             <dbWeight/>
             <dbWeight>10.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="2">
             <reps>6</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>11.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="3">
             <reps>6</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>12.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="4">
             <reps>6</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>13.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
         </exercise>
         <exercise id="3">
@@ -79,24 +97,32 @@ $/Jl20XffWPu/gv51pwBkXTOvdJb1E+4r+3H3gHm9jxI=
             <dbWeight/>
             <dbWeight/>
             <dbWeight>14.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="2">
             <reps>6</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>15.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="3">
             <reps>6</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>16.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="4">
             <reps>6</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>17.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
         </exercise>
         <exercise id="4">
@@ -106,24 +132,32 @@ $/Jl20XffWPu/gv51pwBkXTOvdJb1E+4r+3H3gHm9jxI=
             <dbWeight/>
             <dbWeight/>
             <dbWeight>18.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="2">
             <reps>10</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>19.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="3">
             <reps>10</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>20.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
           <set id="4">
             <reps>10</reps>
             <dbWeight/>
             <dbWeight/>
             <dbWeight>21.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
+            <dbWeight>2.0</dbWeight>
           </set>
         </exercise>
       </day>
@@ -1361,6 +1395,348 @@ $dNCnPSWxDeTMHQk65tezweh6ca9N5IYOzOZbpjDkLcA=
           </set>
           <set id="4">
             <reps>24</reps>
+          </set>
+        </exercise>
+      </day>
+    </workoutPlan>
+  </person>
+  <person username="sol">
+    <name>sol</name>
+    <password>DWUAQ8TaRAcv3o1Jqt9Rs9pQ2MV1wOHxw8ONVA/4yWA=
+$qX183jatpfxbC49sFXXBRXRdWD6+NvcP9JpB5g1o4PM=
+</password>
+    <email>solvimar@gmail.com</email>
+    <age>22</age>
+    <goal>stronger</goal>
+    <gender>male</gender>
+    <userWeight>97.0</userWeight>
+    <nextUpdate>28/11/2016</nextUpdate>
+    <workoutPlan>
+      <day id="1" Date="23/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>Squats</name>
+          <set id="1">
+            <reps>3</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="2">
+            <reps>3</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="3">
+            <reps>3</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="4">
+            <reps>3</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="5">
+            <reps>3</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Seated Leg Press</name>
+          <set id="1">
+            <reps>6</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Romaian Deadlift</name>
+          <set id="1">
+            <reps>6</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+        </exercise>
+        <exercise id="4">
+          <name>Lunges</name>
+          <set id="1">
+            <reps>10</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="2">
+            <reps>10</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="3">
+            <reps>10</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+          <set id="4">
+            <reps>10</reps>
+            <dbWeight>2.0</dbWeight>
+          </set>
+        </exercise>
+        <wentToGym>true</wentToGym>
+      </day>
+      <day id="2" Date="24/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>Barbell Bench Press</name>
+          <set id="1">
+            <reps>3</reps>
+          </set>
+          <set id="2">
+            <reps>3</reps>
+          </set>
+          <set id="3">
+            <reps>3</reps>
+          </set>
+          <set id="4">
+            <reps>3</reps>
+          </set>
+          <set id="5">
+            <reps>3</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Dumbbell Bench Press</name>
+          <set id="1">
+            <reps>3</reps>
+          </set>
+          <set id="2">
+            <reps>3</reps>
+          </set>
+          <set id="3">
+            <reps>3</reps>
+          </set>
+          <set id="4">
+            <reps>3</reps>
+          </set>
+          <set id="5">
+            <reps>3</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Incline Dumbbell Bench Press</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="4">
+          <name>Dips</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="3" Date="25/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>Deadlift</name>
+          <set id="1">
+            <reps>3</reps>
+          </set>
+          <set id="2">
+            <reps>3</reps>
+          </set>
+          <set id="3">
+            <reps>2</reps>
+          </set>
+          <set id="4">
+            <reps>1</reps>
+          </set>
+          <set id="5">
+            <reps>1</reps>
+          </set>
+          <set id="6">
+            <reps>1</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Dumbbell Rows</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Lat Pulldowns</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="4" Date="26/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>Seating Dumbbell Shoulder Press</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Side Lateral Raise</name>
+          <set id="1">
+            <reps>10</reps>
+          </set>
+          <set id="2">
+            <reps>10</reps>
+          </set>
+          <set id="3">
+            <reps>10</reps>
+          </set>
+          <set id="4">
+            <reps>10</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Rear Delt Fly</name>
+          <set id="1">
+            <reps>10</reps>
+          </set>
+          <set id="2">
+            <reps>10</reps>
+          </set>
+          <set id="3">
+            <reps>10</reps>
+          </set>
+          <set id="4">
+            <reps>10</reps>
+          </set>
+        </exercise>
+        <exercise id="4">
+          <name>Shrugs</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+      </day>
+      <day id="5" Date="27/11/2016" Goal="stronger">
+        <exercise id="1">
+          <name>EZ Bar Curl</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="2">
+          <name>Hammer Curl</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="3">
+          <name>Close Grip Bench Press</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
+          </set>
+        </exercise>
+        <exercise id="4">
+          <name>Dips</name>
+          <set id="1">
+            <reps>6</reps>
+          </set>
+          <set id="2">
+            <reps>6</reps>
+          </set>
+          <set id="3">
+            <reps>6</reps>
+          </set>
+          <set id="4">
+            <reps>6</reps>
           </set>
         </exercise>
       </day>
