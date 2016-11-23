@@ -11,8 +11,6 @@ public final class updateUser_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
-
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
 
@@ -21,13 +19,11 @@ public final class updateUser_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -74,6 +70,7 @@ public final class updateUser_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t<ul class=\"nav nav-tabs\">\n");
       out.write("  \t\t\t\t<li role=\"presentation\"><a href=\"homepage\">Home</a></li>\n");
       out.write("\t\t\t\t<li role=\"presentation\"><a href=\"myProfile\">My Profile</a></li>\n");
+      out.write("\t\t\t\t<li role=\"presentation\"><a href=\"logout\">Log out</a></li>\n");
       out.write("\t\t\t</ul>\n");
       out.write("\t\t\t<div class=\"jumbotron\">\n");
       out.write("\t\t\t\t<h1>Update Your information!</h1>\n");
@@ -108,10 +105,9 @@ public final class updateUser_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${weight}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\" type=\"double\" pattern=\"^[0-9]+\\.?[0-9]+\" class=\"form-control\" name=\"weight\" required/>\n");
       out.write("\t\t\t\t</div>\n");
-      out.write("\t\t\t\t");
-      if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
-        return;
-      out.write("\n");
+      out.write("\t\t\t\t<p>If a Goal is changed then you will get a new program on this date ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${update}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("</p>\n");
       out.write("\t\t\t\t<input class=\"btn btn-primary\" type=\"submit\" name=\"submit\" value=\"Update\"/>\n");
       out.write("\t\t\t</form>\n");
       out.write("\t\t</div>\n");
@@ -127,50 +123,5 @@ public final class updateUser_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
-  }
-
-  private boolean _jspx_meth_c_005fforEach_005f0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:forEach
-    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
-    _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /WEB-INF/pages/updateUser.jsp(43,4) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setVar("i");
-    // /WEB-INF/pages/updateUser.jsp(43,4) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/updateUser.jsp(43,4) '${error}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${error}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
-    try {
-      int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
-      if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        do {
-          out.write("\n");
-          out.write("\t\t\t\t\t<div class=\"alert alert-danger\">\n");
-          out.write("\t\t\t\t\t\t<tr>\n");
-          out.write("\t\t\t\t\t\t\t<td>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</td>\n");
-          out.write("\t\t\t\t\t\t</tr>\n");
-          out.write("\t\t\t\t\t</div>\n");
-          out.write("\t\t\t\t");
-          int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
-          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-            break;
-        } while (true);
-      }
-      if (_jspx_th_c_005fforEach_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        return true;
-      }
-    } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_c_005fforEach_005f0[0]-- > 0)
-        out = _jspx_page_context.popBody();
-      _jspx_th_c_005fforEach_005f0.doCatch(_jspx_exception);
-    } finally {
-      _jspx_th_c_005fforEach_005f0.doFinally();
-      _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.reuse(_jspx_th_c_005fforEach_005f0);
-    }
-    return false;
   }
 }

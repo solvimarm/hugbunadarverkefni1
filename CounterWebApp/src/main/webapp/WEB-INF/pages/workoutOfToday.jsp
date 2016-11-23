@@ -18,6 +18,7 @@
 			<ul class="nav nav-tabs">
   				<li role="presentation"><a href="homepage">Home</a></li>
 				<li role="presentation"><a href="myProfile">My Profile</a></li>
+				<li role="presentation"><a href="logout">Log out</a></li>
 			</ul>
 			<div class="jumbotron">
 				<h1>Fill in your workout weights!</h1>

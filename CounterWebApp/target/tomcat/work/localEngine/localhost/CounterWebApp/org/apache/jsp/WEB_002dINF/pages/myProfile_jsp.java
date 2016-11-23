@@ -69,7 +69,9 @@ public final class myProfile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</p>\n");
       out.write("\t\t\t<ul class=\"nav nav-tabs\">\n");
       out.write("  \t\t\t\t<li role=\"presentation\"><a href=\"homepage\">Home</a></li>\n");
-      out.write("\t\t\t\t<li role=\"presentation\" class=\"active\"><a href=\"myProfile\">My Profile</a></li>\n");
+      out.write("\t\t\t\t<li role=\"presentation\" class=\"active\"><a href=\"myProfile\">My Profile</a>\n");
+      out.write("\t\t\t\t<li role=\"presentation\"><a href=\"logout\">Log out</a></li>\n");
+      out.write("\t\t\t\t</li>\n");
       out.write("\t\t\t</ul>\n");
       out.write("\t\t\t<div class=\"jumbotron\">\n");
       out.write("\t\t\t\t<h1>Your Profile</h1>\n");

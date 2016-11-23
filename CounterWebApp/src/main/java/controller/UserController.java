@@ -143,8 +143,13 @@ public class UserController extends HttpServlet{
 	//Gets the user profile page
 	@RequestMapping(value = "myProfile", method = RequestMethod.GET)
 	public String myProfileGet(HttpSession session, ModelMap model){
+		if(session.getAttribute("username") == null){
+			VIEW_INDEX = "index";
+			return "redirect:/"+VIEW_INDEX;
+		}
 
 		String username = (String)session.getAttribute("username");
+
 		ArrayList user = userService.findUser(username);
 
 		model.addAttribute("name",user.get(0));
@@ -169,6 +174,10 @@ public class UserController extends HttpServlet{
 	//Not fully implemented
 	@RequestMapping(value = "updateUser", method = RequestMethod.GET)
 	public String updateUserGet(HttpSession session, ModelMap model){
+		if(session.getAttribute("username") == null){
+			VIEW_INDEX = "index";
+			return "redirect:/"+VIEW_INDEX;
+		}
 		String username = (String)session.getAttribute("username");
 		ArrayList user = userService.findUser(username);
 
@@ -177,6 +186,7 @@ public class UserController extends HttpServlet{
 		model.addAttribute("age",user.get(3));
 		model.addAttribute("gender",user.get(4));
 		model.addAttribute("weight",user.get(5));
+		model.addAttribute("update",user.get(6));
 
 		return VIEW_INDEX;
 	}	
@@ -186,13 +196,10 @@ public class UserController extends HttpServlet{
 	public String updateUserPost(HttpServletRequest request, HttpSession session, ModelMap model){
 
 		String username = (String)session.getAttribute("username");
-
 		String goal = request.getParameter("goal");
 		int age	 = Integer.parseInt(request.getParameter("age"));
 		String weight = request.getParameter("weight");
-		ArrayList error = new ArrayList();
 		
-
 
 			//Keeps input if not succesful
 			model.addAttribute("age", age);
@@ -206,6 +213,12 @@ public class UserController extends HttpServlet{
 
 		VIEW_INDEX = "myProfile";
 		return "redirect:/"+ VIEW_INDEX;
+	}
+	@RequestMapping(value = "logout", method = RequestMethod.GET)
+	public String logOutGet(HttpSession session) {
+		session.invalidate();
+		VIEW_INDEX = "index";
+		return "redirect:/"+VIEW_INDEX;
 	}
 }
 

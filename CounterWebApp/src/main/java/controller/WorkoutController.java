@@ -27,6 +27,10 @@ public class WorkoutController extends HttpServlet{
 	//Gets the current workout cycle and shows it to the user
 	@RequestMapping(value = "homepage", method = RequestMethod.GET)
 	public String getCurrentCycleGet(HttpSession session, ModelMap model){
+		if(session.getAttribute("username") == null){
+			VIEW_INDEX = "index";
+			return "redirect:/"+VIEW_INDEX;
+		}
 		
 		//Finds current workout cycle for the user
 		String username = (String)session.getAttribute("username");
@@ -114,6 +118,10 @@ public class WorkoutController extends HttpServlet{
 	//Show user the wholw workout for a specific day.
 	@RequestMapping(value = "workoutOfToday", method = RequestMethod.GET)
 	public String getSpecificDayGet(HttpSession session, ModelMap model){
+		if(session.getAttribute("username") == null){
+			VIEW_INDEX = "index";
+			return "redirect:/"+VIEW_INDEX;
+		}
 
 		//Get parameters
 		String username = (String)session.getAttribute("username");

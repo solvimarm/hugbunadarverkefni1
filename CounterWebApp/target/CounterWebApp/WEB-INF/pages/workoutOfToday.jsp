@@ -18,6 +18,7 @@
 			<ul class="nav nav-tabs">
   				<li role="presentation"><a href="homepage">Home</a></li>
 				<li role="presentation"><a href="myProfile">My Profile</a></li>
+				<li role="presentation"><a href="logout">Log out</a></li>
 			</ul>
 			<div class="jumbotron">
 				<h1>Fill in your workout weights!</h1>
@@ -44,7 +45,7 @@
 			   							<td>${set.rep}</td>
 			   							<td>
 			   								<div class="col-xs-3">
-			    								<input type="text" name="${count}" value="${set.weight}" required="required" pattern="[0-9]+//.[0-9]+"class="form-control">
+			    								<input type="text" name="${count}" value="${set.weight}" required="required" pattern="^[0-9]+\.?[0-9]+"class="form-control">
 			   								</div>
 			    						</td>
 			    					</tr>
