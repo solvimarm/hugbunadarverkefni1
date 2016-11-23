@@ -61,6 +61,7 @@ public class UserService{
 			int age = userFound.getAge();
 			String gender = userFound.getGender();
 			Double weight = userFound.getUserWeight();
+			String update = userFound.getNextUpdate();
 
 			user.add(name);
 			user.add(goal);
@@ -68,6 +69,7 @@ public class UserService{
 			user.add(age);
 			user.add(gender);
 			user.add(weight);
+			user.add(update);
 			return user;
 		}
 

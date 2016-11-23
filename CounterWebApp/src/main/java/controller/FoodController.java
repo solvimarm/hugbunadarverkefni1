@@ -25,6 +25,10 @@ public class FoodController extends HttpServlet{
 
 	@RequestMapping(value = "foodPlan", method = RequestMethod.GET)
 	public String publishSuggestedFoodsPost(HttpSession session, ModelMap model){
+		if(session.getAttribute("username") == null){
+			VIEW_INDEX = "index";
+			return "redirect:/"+VIEW_INDEX;
+		}
 
 		String username = (String)session.getAttribute("username");
 
