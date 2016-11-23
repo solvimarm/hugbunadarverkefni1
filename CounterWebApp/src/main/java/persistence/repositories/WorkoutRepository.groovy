@@ -116,11 +116,11 @@ public class WorkoutRepository {
 				it.set.each{iterator ->
 					def check=iterator.dbWeight.findAll{}
 					if(check.size()>0){
-						Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
+						Set set = new Set(iterator.reps.text().toInteger(), iterator.dbWeight.text().toDouble(), iterator.@id.toInteger() )
 					sets.add(set)
 					}
 					else{
-						Set set = new Set(iterator.reps.text().toInteger(), iterator.dbWeight.text().toDouble(), iterator.@id.toInteger() )
+						Set set = new Set(iterator.reps.text().toInteger(), null, iterator.@id.toInteger() )
 					sets.add(set)
 					}
 					
@@ -158,7 +158,14 @@ public class WorkoutRepository {
 						it.@id == noOfSet.toString()}
 						println "comment 4"
 					if(setNode != null){
-						new Node (setNode, "dbWeight", dbWeight)
+						def check = setNode.dbWeight.findAll{}
+						if(check.size()>0){
+							setNode.dbWeight[0].value = dbWeight
+						}
+						else{
+							new Node (setNode, "dbWeight", dbWeight)
+						}
+						//new Node (setNode, "dbWeight", dbWeight)
 						println "updateset er her"
 						personFile.withWriter ("utf-8") {writer ->
 							writer.writeLine(new XmlUtil().serialize(personXML))}
@@ -240,6 +247,25 @@ public class WorkoutRepository {
 
 
 		}
+
+	def getIdfromDate(String date){
+		def personFile=new File("${new File(new File(".").getCanonicalPath())}//src//main//resources//persons.xml")
+		def personXML= new XmlParser().parse(personFile)
+
+		def userNode = personXML.person.find{it -> 
+			it.@username == username}
+
+		if(userNode != null){
+			def dayNode = userNode.workoutPlan[0].day.find{it ->
+				it.@Date = date}
+			if(dayNode != null){
+				def ID = dayNode.@id.toInteger()
+				return ID
+			}
+		}
+		return
+
+	}
 
 
 
