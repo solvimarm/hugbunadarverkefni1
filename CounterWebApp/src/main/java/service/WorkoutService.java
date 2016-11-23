@@ -98,5 +98,9 @@ public class WorkoutService{
 		}
 	}
 
+	public int getIdByDate(String date){
+		return(getIdfromDate(date));
+	}
+
 
 }

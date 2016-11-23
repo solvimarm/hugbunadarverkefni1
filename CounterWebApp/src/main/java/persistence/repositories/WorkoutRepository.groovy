@@ -248,6 +248,25 @@ public class WorkoutRepository {
 
 		}
 
+	def getIdfromDate(String date){
+		def personFile=new File("${new File(new File(".").getCanonicalPath())}//src//main//resources//persons.xml")
+		def personXML= new XmlParser().parse(personFile)
+
+		def userNode = personXML.person.find{it -> 
+			it.@username == username}
+
+		if(userNode != null){
+			def dayNode = userNode.workoutPlan[0].day.find{it ->
+				it.@Date = date}
+			if(dayNode != null){
+				def ID = dayNode.@id.toInteger()
+				return ID
+			}
+		}
+		return
+
+	}
+
 
 
 }	
