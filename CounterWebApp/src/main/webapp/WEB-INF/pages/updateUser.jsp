@@ -18,6 +18,7 @@
 			<ul class="nav nav-tabs">
   				<li role="presentation"><a href="homepage">Home</a></li>
 				<li role="presentation"><a href="myProfile">My Profile</a></li>
+				<li role="presentation"><a href="stats">Progress</a></li>
 				<li role="presentation"><a href="logout">Log out</a></li>
 			</ul>
 			<div class="jumbotron">

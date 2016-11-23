@@ -13,8 +13,11 @@ import java.util.ArrayList;
 import persistence.entities.Day;
 import persistence.entities.Exercises;
 import persistence.entities.Set;
+import persistence.entities.Stats;
 
 import service.WorkoutService;
+import service.StatsService;
+import service.UserService;
 
 
 @Controller
@@ -23,6 +26,8 @@ public class WorkoutController extends HttpServlet{
 	private static String VIEW_INDEX = "homepage";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(WorkoutController.class);
 	private static WorkoutService workoutService = new WorkoutService();
+	private static StatsService statsService = new StatsService();
+	private static UserService userService = new UserService();
 	
 	//Gets the current workout cycle and shows it to the user
 	@RequestMapping(value = "homepage", method = RequestMethod.GET)
@@ -154,6 +159,7 @@ public class WorkoutController extends HttpServlet{
 		ArrayList<Exercises> exercises = day.getExercises();
 		ArrayList<Double> inputs = new ArrayList<Double>();
 
+
 		//Gets weights inputs from user
 		for(int i=1; i<=numberOfInputs;i++){
 			String number = Integer.toString(i);
@@ -179,4 +185,32 @@ public class WorkoutController extends HttpServlet{
 		VIEW_INDEX = "homepage";
 		return "redirect:/"+VIEW_INDEX;
 	}
+	@RequestMapping(value = "stats", method = RequestMethod.GET)
+	public String statsGet(HttpSession session, ModelMap model){
+		if(session.getAttribute("username") == null){
+			VIEW_INDEX = "index";
+			return "redirect:/"+VIEW_INDEX;
+		}
+		String username = (String)session.getAttribute("username");
+		String date = (String)session.getAttribute("date");
+		ArrayList user = userService.findUser(username);
+		String goal = (String)user.get(1);
+		int id = workoutService.getIdByDate(date);
+
+		ArrayList<Stats> stats = statsService.getAveragePerDay(username,id,goal);
+		
+
+
+		VIEW_INDEX = "stats";
+		return VIEW_INDEX;
+	}
 }
+
+
+
+
+
+
+
+
+
