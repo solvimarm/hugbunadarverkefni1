@@ -196,14 +196,14 @@ public class WorkoutController extends HttpServlet{
 		ArrayList user = userService.findUser(username);
 		String goal = (String)user.get(1);
 		int id = workoutService.getIdByDate(username, date);
-
+		System.out.println("hæerlæhflæsdhfls");
 		ArrayList<Stats> stats = statsService.getAveragePerDay(username,id,goal);
+		System.out.println("<----------- framhja");
 		ArrayList average = new ArrayList();
 		for(int i = 0; i < stats.size();i++){
 			average.add(stats.get(i).getAverage());
 		}
 		model.addAttribute("average",average);
-
 
 		VIEW_INDEX = "stats";
 		return VIEW_INDEX;

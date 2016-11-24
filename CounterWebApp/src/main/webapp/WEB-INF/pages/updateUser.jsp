@@ -18,7 +18,6 @@
 			<ul class="nav nav-tabs">
   				<li role="presentation"><a href="homepage">Home</a></li>
 				<li role="presentation"><a href="myProfile">My Profile</a></li>
-				<li role="presentation"><a href="stats">Progress</a></li>
 				<li role="presentation"><a href="logout">Log out</a></li>
 			</ul>
 			<div class="jumbotron">
@@ -40,7 +39,7 @@
 				</div>
 				<div class="form-group">
 					<label for="weight">Type your weight</label>
-					<input value="${weight}" type="double" pattern="^[0-9]+\.?[0-9]+" class="form-control" name="weight" required/>
+					<input value="${weight}" type="double" pattern="^[0-9]+(\.[0-9]+)?" class="form-control" name="weight" required/>
 				</div>
 				<p>If a Goal is changed then you will get a new program on this date ${update}</p>
 				<input class="btn btn-primary" type="submit" name="submit" value="Update"/>
