@@ -29,12 +29,14 @@ public class StatsService{
 				ArrayList<Exercises> exer = days.get(i).getExercises();
 				for(int j = 0 ; j < exer.size(); j ++){
 					ArrayList<Set> sets = exer.get(j).getSet();
-					System.out.println(sets + "<---------------");
+					System.out.println(sets.size() + "<---------------");
 					for(int k = 0; k < sets.size(); k++){
+						System.out.println(k+"   " + "<--------------");
 						sum += sets.get(k).getWeight();
 						count++;
 						}
 				}
+				System.out.println("hér"+ "<---------------");
 				stats.add(new Stats(days.get(i).getDate(), sum/count));
 				System.out.println(stats.get(0).getAverage() + " <--------------------------");
 				System.out.println(stats.get(0).getDate() + " <--------------------------");

@@ -193,10 +193,11 @@ public class WorkoutController extends HttpServlet{
 		}
 		String username = (String)session.getAttribute("username");
 		String date = (String)session.getAttribute("date");
+
 		ArrayList user = userService.findUser(username);
 		String goal = (String)user.get(1);
 		int id = workoutService.getIdByDate(username, date);
-		System.out.println("hæerlæhflæsdhfls");
+		System.out.println("<----------- "+date);
 		ArrayList<Stats> stats = statsService.getAveragePerDay(username,id,goal);
 		System.out.println("<----------- framhja");
 		ArrayList average = new ArrayList();
