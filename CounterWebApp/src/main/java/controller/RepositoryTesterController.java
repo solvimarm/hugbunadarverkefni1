@@ -20,7 +20,7 @@ import java.util.Map;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
-
+import service.LineChartService;
 import service.StatsService;
 import service.WorkoutService;
 import persistence.repositories.UserRepository;
@@ -39,6 +39,7 @@ public class RepositoryTesterController extends HttpServlet{
 	private static FoodRepository groovyFood = new FoodRepository();
 	private static WorkoutService workoutService = new WorkoutService();
 	private static StatsService statsService = new StatsService();
+	
 
 	@RequestMapping(value = "test", method = RequestMethod.GET)
 	public String login() {
@@ -260,8 +261,9 @@ public class RepositoryTesterController extends HttpServlet{
 	public String getsum() {
 
 			//groovyWorkout.getDaysByID("okok", 1, "stronger");
-
-			statsService.getAveragePerDay("sol", 1, "stronger");
+			LineChartService lcs = new LineChartService();
+			lcs.getLineChart("sol", 1, "stronger");
+			//statsService.getAveragePerDay("sol", 1, "stronger");
 
 			VIEW_INDEX = "testwtg";
 		return VIEW_INDEX;

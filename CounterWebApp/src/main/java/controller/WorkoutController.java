@@ -14,7 +14,7 @@ import persistence.entities.Day;
 import persistence.entities.Exercises;
 import persistence.entities.Set;
 import persistence.entities.Stats;
-
+import service.LineChartService;
 import service.WorkoutService;
 import service.StatsService;
 import service.UserService;
@@ -206,6 +206,9 @@ public class WorkoutController extends HttpServlet{
 		}
 		model.addAttribute("average",average);
 
+		LineChartService lcs = new LineChartService();
+		lcs.getLineChart(username, id, goal);
+		model.addAttribute("username", username);
 		VIEW_INDEX = "stats";
 		return VIEW_INDEX;
 	}
